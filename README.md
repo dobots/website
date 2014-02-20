@@ -1,32 +1,37 @@
-# Jekyll-Bootstrap-3
+# DoBots website
 
-Easily publish Bootstrap 3 powered Jekyll sites.  
-Fork of the well known jekyll-bootstrap (v0.3.0). Original project is [here](https://github.com/plusjade/jekyll-bootstrap).  
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages.  
+You can find this website at [www.dobots.nl](http://www.dobots.nl).
 
-## Usage
+## Users
 
-### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.com*  
+You can add a blog post by:
 
-### 2. Install Jekyll-Bootstrap-3  
-<pre>
-  <code>
-    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.com
-    $ cd USERNAME.github.com
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
-    $ git push origin master  
-  </code>
-</pre>  
-### 3. Enjoy !
-- After giving 10 mins to GitHub of course.  
+    rake post --title="Your fancy title"
+    
+Now navigate to the file created for you and adjust it.
 
-For original project's usage and documentation please see: <http://jekyllbootstrap.com>  
+## Admin
 
-## License
+The site is run through Jekyll:
 
-[MIT](http://opensource.org/licenses/MIT)
+    jekyll serve
+    
+There is Procfile that allows you to run it on Heroku:
 
+    web: jekyll serve -P $PORT
+    
+You can install a theme through:
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/jekyll-bootstrap-3/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+    rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git"
+    
+And switch a theme through:
 
+   rake theme:switch name="flat"
+    
+## Copyrights
+
+The license for the Jekyll part is MIT. The license for Bootstrap as well. The copryights of Bootstrap belong to Twitter.
+
+* [MIT](http://opensource.org/licenses/MIT)
+
+With respect to our companies theme, please, try to create a distinct look for your users compared to ours. However, we won't mind if you use parts of it.
