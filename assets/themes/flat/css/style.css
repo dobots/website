@@ -386,3 +386,23 @@ p{
 	}
 }
 
+.switching-image img {
+//	opacity: 1;
+//	background-image: url('../images/home-lightson.png');
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	-webkit-filter: grayscale(100%);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)';
+	filter:progid: DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	// transition: opacity .25s ease-in-out;
+	//-moz-transition: opacity .25s ease-in-out;
+	//-webkit-transition: opacity .25s ease-in-out;
+}
+
+.switching:hover .switching-image img {
+//	opacity: 0;
+//	background-image: url('../images/home-lightson.png');
+	-webkit-filter: grayscale(0%);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(grayScale=0)';
+	filter:progid: DXImageTransform.Microsoft.BasicImage(grayscale=0);
+}
