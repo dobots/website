@@ -27,6 +27,8 @@ author :
 #
 production_url : http://dobots.github.io
 
+markdown : kramdown
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -127,4 +129,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  

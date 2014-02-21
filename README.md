@@ -6,7 +6,7 @@ You can find this website at [www.dobots.nl](http://www.dobots.nl).
 
 You can add a blog post by:
 
-    rake post --title="Your fancy title"
+    rake post title="Your fancy title"
     
 Now navigate to the file created for you and adjust it.
 
@@ -27,6 +27,8 @@ You can install a theme through:
 And switch a theme through:
 
    rake theme:switch name="flat"
+
+If you want to adjust the theme, you have to navigate to "\_includes/themes/flat/" and "assets/themes/flat/".
     
 ## Copyrights
 

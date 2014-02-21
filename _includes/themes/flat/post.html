@@ -8,7 +8,10 @@
 <div class="row post-full">
   <div class="col-md-12">
     <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+	    <strong class="date_month">{{ page.date | date: "%-b" }}</strong>
+	    <strong class="date_day">{{ page.date | date: "%-d" }}</strong>
+	    <strong class="date_year">{{ page.date | date: "%-Y" }}</strong>
+	    <!--      <span>{{ page.date | date_to_long_string }}</span> -->
     </div>
     <div class="content">
       {{ content }}

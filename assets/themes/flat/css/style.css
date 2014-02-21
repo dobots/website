@@ -11,6 +11,9 @@ body{
 h1,h2,h3,h4,h5,h6{
 	 font-family: 'oswaldbold';
 }
+h1{
+	font-size:80px;
+}
 h2{
 	font-size:65px;
 }
@@ -405,4 +408,41 @@ p{
 	-webkit-filter: grayscale(0%);
 	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(grayScale=0)';
 	filter:progid: DXImageTransform.Microsoft.BasicImage(grayscale=0);
+}
+
+/* Calendar style date
+ * ----------------------------------------------- */
+.date {
+	background: transparent url(../images/calendar_background.png) no-repeat;
+	display: block;
+	width:60px;
+	height:60px;
+	float: left;
+	margin: 15px 2px -40px -108px;
+	padding: 0 0 8px 0px;
+	border: 0;
+	text-transform: uppercase;
+}
+.date_month {
+	display: block;
+	font-size: 15px;
+	font-weight:bold;
+	margin-top:-1px;
+	text-align:center;
+	color:#ffffff; /* Month's color */
+}
+.date_day {
+	display: block;
+	font-size: 28px;
+	font-weight:bold;
+	margin-top:-8px;
+	text-align:center;
+	color:#282828; /* Day's color */
+}
+.date_year {
+	display: block;
+	font-size: 10px;
+	margin-top:-8px;
+	text-align:center;
+	color:#282828; /* Year's color */
 }
