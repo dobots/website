@@ -39,6 +39,8 @@ So now we have a robot that can learn some simple things about itself and the en
 
 Some of this can be found in the following movie.
 
-{% youtube qHFX0Mr_RoA 480 360 %}
+{% embedly http://www.youtube.com/watch?v=qHFX0Mr_RoA %}
+
+<!-- {% youtube qHFX0Mr_RoA 480 360 %} -->
 
 In conclusion, the robot can detect some changes to the environment, like humans entering the scene or bright objects that were not there before. Other things like dark objects or changes near a part of the environment that is particularly noisy, are harder. So this robot is not a real surveillance robot yet, but it certainly has potential for the future.

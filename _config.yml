@@ -29,6 +29,9 @@ production_url : http://dobots.github.io
 
 markdown : kramdown
 
+embedly:
+  api_key : a778f6d72ab94285b94bac9f7d51a286
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

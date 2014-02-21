@@ -30,7 +30,7 @@ And switch a theme through:
 
 If you want to adjust the theme, you have to navigate to "\_includes/themes/flat/" and "assets/themes/flat/".
 
-For running on Heroku, there is a Gemfile added.
+For running on Heroku, there is a Gemfile added. You add for example kramdown to it, or oembed and run "bundle install".
     
 ## Copyrights
 
