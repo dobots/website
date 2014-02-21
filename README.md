@@ -29,6 +29,8 @@ And switch a theme through:
    rake theme:switch name="flat"
 
 If you want to adjust the theme, you have to navigate to "\_includes/themes/flat/" and "assets/themes/flat/".
+
+For running on Heroku, there is a Gemfile added.
     
 ## Copyrights
 
