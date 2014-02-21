@@ -9,7 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : DoBots
-tagline: Distributed Organisms: Robots, Devices and Humans
+tagline: "Distributed Organisms: Robots, Devices and Humans"
 author :
   name : Anne van Rossum
   email : anne@dobots.nl
