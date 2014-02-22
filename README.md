@@ -10,6 +10,15 @@ You can add a blog post by:
     
 Now navigate to the file created for you and adjust it.
 
+In case you have never worked with a markdown syntax before. It is quite easy. This very file is written in it! The variant of markdown that is used is called kramdown. It makes writing also mathematics very easy. So, a very short overview:
+
+ * A movie can be embedded by using `{% embedly https://youtube-link %}`
+ * An image can be embedded by placing it in the attachments folder and link it through `![Alternative description]({{ site.url }}/attachments/image_file.png "Image description")`
+ * An example of a right-floated image: `![Meccano Spykee]({{ site.url }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right}` which uses kramdown to use the css style `float-right`.
+ * A mathematical equation can be described with `$$y=x^2$$`
+
+The other syntax options you can probably find in no time searching online or checking other posts.
+
 ## Admin
 
 The site is run through Jekyll:

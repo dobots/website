@@ -9,7 +9,7 @@ body{
 
 }
 h1,h2,h3,h4,h5,h6{
-	 font-family: 'oswaldbold';
+	font-family: 'oswaldbold';
 }
 h1{
 	font-size:80px;
@@ -45,11 +45,11 @@ p{
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus ,
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
 	background-color: #2398d6;
-    color: #fffdff;
+	color: #fffdff;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #303e48;
+	color: #303e48;
 }
 .navbar-nav > li > a {
 	padding:3px 10px;
@@ -62,7 +62,7 @@ p{
 #sub-menu{
 	background:#2398d6;
 	padding:5px 0;
-	
+
 }
 .sub-menu {
 	margin-bottom:0;
@@ -80,7 +80,7 @@ p{
 .sub-menu li a{
 	font:normal 18px/1 'oswaldlight', Helvetica, sans-serif;
 	color:#fff;
-	
+
 }
 
 .dark-blue{
@@ -93,7 +93,7 @@ p{
 	font-size:94px;
 	line-height:1;
 	margin-bottom:0;
-	
+
 }
 .light-blue{
 	background:#2398d6 url(../images/sep.jpg) repeat-x;
@@ -182,10 +182,10 @@ p{
 }
 
 .sep{
-		border:1px solid #303e48;
+	border:1px solid #303e48;
 	width:80%;
 
-	
+
 }
 .moving{
 	position:relative;
@@ -238,7 +238,7 @@ p{
 }
 .inner-robot-dilog{
 	position:relative;
-	
+
 }
 .inner-arrow-right{
 	position:absolute;
@@ -268,27 +268,13 @@ p{
 }
 
 @font-face {
-    font-family: 'oswaldbold';
-    src: url('../fonts/oswald-bold_0-webfont.eot');
-    src: url('../fonts/oswald-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/oswald-bold_0-webfont.woff') format('woff'),
-         url('../fonts/oswald-bold_0-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-	
-}
-
-
-
-
-@font-face {
-    font-family: 'oswaldlight';
-    src: url('../fonts/oswald-light_0-webfont.eot');
-    src: url('../fonts/oswald-light_0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/oswald-light_0-webfont.woff') format('woff'),
-         url('../fonts/oswald-light_0-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'oswaldbold';
+	src: url('../fonts/oswald-bold_0-webfont.eot');
+	src: url('../fonts/oswald-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oswald-bold_0-webfont.woff') format('woff'),
+	url('../fonts/oswald-bold_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
@@ -296,18 +282,32 @@ p{
 
 
 @font-face {
-    font-family: 'oswaldregular';
-    src: url('../fonts/oswald-regular-webfont.eot');
-    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/oswald-regular-webfont.woff') format('woff'),
-         url('../fonts/oswald-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'oswaldlight';
+	src: url('../fonts/oswald-light_0-webfont.eot');
+	src: url('../fonts/oswald-light_0-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oswald-light_0-webfont.woff') format('woff'),
+	url('../fonts/oswald-light_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oswaldregular';
+	src: url('../fonts/oswald-regular-webfont.eot');
+	src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oswald-regular-webfont.woff') format('woff'),
+	url('../fonts/oswald-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @media (min-width: 768px) and (max-width: 991px){
-		.flex-control-paging li a{
+	.flex-control-paging li a{
 		width:10px;
 		height:10px;
 	}
@@ -326,22 +326,22 @@ p{
 		border-color:#ced0d1;
 	}
 	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #e1e3e4;
-}
-h2{
-	font-size:40px !important;
-}
-.main-nav{
-	margin-top:0;
-}
-.sub-menu li{
-	margin:0 10px;
-}
-p{
-	margin-bottom:20px;
-}.flex-control-nav{
-	top:35px;
-}
+		border-color: #e1e3e4;
+	}
+	h2{
+		font-size:40px !important;
+	}
+	.main-nav{
+		margin-top:0;
+	}
+	.sub-menu li{
+		margin:0 10px;
+	}
+	p{
+		margin-bottom:20px;
+	}.flex-control-nav{
+		top:35px;
+	}
 	.flex-control-nav{
 		display:none;
 	}
@@ -383,15 +383,15 @@ p{
 	}
 }
 @media (max-width: 320px){
-		.model,
-		.moving{
+	.model,
+	.moving{
 		min-height:700px !important;
 	}
 }
 
 .switching-image img {
-//	opacity: 1;
-//	background-image: url('../images/home-lightson.png');
+	//	opacity: 1;
+	//	background-image: url('../images/home-lightson.png');
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
 	-webkit-filter: grayscale(100%);
@@ -403,8 +403,8 @@ p{
 }
 
 .switching:hover .switching-image img {
-//	opacity: 0;
-//	background-image: url('../images/home-lightson.png');
+	//	opacity: 0;
+	//	background-image: url('../images/home-lightson.png');
 	-webkit-filter: grayscale(0%);
 	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(grayScale=0)';
 	filter:progid: DXImageTransform.Microsoft.BasicImage(grayscale=0);
@@ -445,4 +445,45 @@ p{
 	margin-top:-8px;
 	text-align:center;
 	color:#282828; /* Year's color */
+}
+
+.float-right {
+	float: right;
+	margin: 0px 0px 15px 20px;
+}
+
+//.embedly-embed {
+//	text-align: center;
+//}
+
+// following does not work...
+.float-center {
+	margin: 0 auto;
+}
+
+.embed {
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+//.embed.large {
+//	width: 960px !important;
+//}
+
+.embed.video, .embed.rich {
+	margin-bottom: 32px;
+}
+
+//.embed > * {
+//	text-align: center;
+//}
+
+.author-block {
+	display: block;
+	margin: 20px -240px 0px 0px;
+	float: right;
+	border: 0;
+	text-transform: uppercase;
+	height:150px;
 }
