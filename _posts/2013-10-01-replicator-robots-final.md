@@ -41,6 +41,6 @@ So, what should be done differently next time?
   * Last point. The modularity of the modular robots has not been extended towards the internals of the robots. Each robot has been designed as a monolithic block. It is not possible to add a little sensor block with a camera to one of the modules, or achieve heterogeneity in another lego block like manner. Worse, there has not been any attempt to create something like a "robot heart". Almost every European robotic project fails to use smartphone technology. Moreover, they invent the wheel themselves time afte rtime. The core of a robot, that is, the processor, a few sensors, and wireless communication, and power management for these items is a recurring aspect of every robot. Still, none of the European projects tries to create something like a "robot heart" that can be reused by other projects. Although the actuators and power management for the motors are highly intertwined with the mechanics and electronics, the "payload" as it is called in unmanned aerial vehicles, should undergo some standardization. Modularity and standardization in academic robotics are absent.
 
 Notwithstanding the critical remarks, the project has been fun for Almende and
-inspired a lot of technology at DO bots. Let's take these lessons at heart!
+inspired a lot of technology at Dobots. Let's take these lessons at heart!
 
 

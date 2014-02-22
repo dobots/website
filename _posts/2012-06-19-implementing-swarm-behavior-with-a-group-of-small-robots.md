@@ -12,7 +12,7 @@ tags: []
 ##  Introduction
 
 If you have read the ["Building a swarm robot"](http://www.dobots.nl/blog/-/blogs/building-a-swarm-bot) post, you
-already know that we at DO Bots are aiming to develop a cheap platform for
+already know that we at Dobots are aiming to develop a cheap platform for
 swarming experiments. The Dotty is the result of our first attempts. As
 mentioned before, we are interested in equipping our small bots with machine
 learning algorithms to assist the swarm in fulfilling the given task and
