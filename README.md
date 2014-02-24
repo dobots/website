@@ -35,9 +35,9 @@ You can install a theme through:
     
 And switch a theme through:
 
-   rake theme:switch name="flat"
+    rake theme:switch name="flat"
 
-If you want to adjust the theme, you have to navigate to "\_includes/themes/flat/" and "assets/themes/flat/".
+If you want to adjust the theme, you have to navigate to `\_includes/themes/flat/` and `assets/themes/flat/`.
 
 For running on Heroku, there is a Gemfile added. You add for example kramdown to it, or oembed and run "bundle install".
     
@@ -47,4 +47,10 @@ The license for the Jekyll part is MIT. The license for Bootstrap as well. The c
 
 * [MIT](http://opensource.org/licenses/MIT)
 
-With respect to our companies theme, please, try to create a distinct look for your users compared to ours. However, we won't mind if you use parts of it.
+With respect to our companies theme, please, try to create a distinct look for your users compared to ours. However, we won't mind if you use parts of it. The copyrights (2013) of these belong to:
+
+* Author: Anne van Rossum
+* Almende B.V., http://www.almende.com and DO bots B.V., http://www.dobots.nl
+* Rotterdam, The Netherlands
+
+The theme design itself is done by Ahmet Bektes. The content of our website is our own, and thanks to Bart, Remco, Dominik, Marc, Peet, Anne, Roemer, Laurens, Jorik, Merel, Bhenaz, Remco, Jannie, Alexander, and others.
