@@ -14,7 +14,7 @@ author :
   name : Anne van Rossum
   email : anne@dobots.nl
   github : dobots
-  twitter : username
+  twitter : annevanrossum
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -28,12 +28,6 @@ author :
 production_url : http://dobots.github.io
 
 markdown : kramdown
-
-embedly :
-  api_key : a778f6d72ab94285b94bac9f7d51a286
-  
-  youtube :
-    text-align: center;
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -135,20 +129,4 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding. 
-
-authors:
-  annevanrossum:
-    display_name: Anne van Rossum
-    gravatar: 818dc2df03cd2f1ca7d6e6e701052f0c
-    email: anne@dobots.nl
-    web: http://www.annevanrossum.nl
-    twitter: annevanrossum
-    github: mrquincle
-
-  laurensbliek:
-    display_name: Laurens Bliek
-
-  remcotukker:
-    display_name: Remco Tukker
-
 
