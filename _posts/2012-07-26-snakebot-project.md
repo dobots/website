@@ -46,7 +46,7 @@ The segmented approach makes it possible to assemble longer and shorter
 snakes.
 
 The segments were 3D printed, and covered with a plastic coating to make them
-water proof. None of the DO employees had ever used a 3D printer before, so
+water proof. None of the DoBots employees had ever used a 3D printer before, so
 this project was also a valuable learning experience for us! We're now
 seriously considering using the 3D printer to expand some of the off-the-shelf
 robots that we use in our experiments.

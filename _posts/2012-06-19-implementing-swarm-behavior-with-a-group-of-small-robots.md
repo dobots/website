@@ -91,7 +91,7 @@ additional resistors.
 
 ![](\[$dl-reference=/groups/10157/portlets/20/file-entries/23462/1.0.xml$\])
 
-_Schematic of Light sensor circuit for the DO Bot One_
+_Schematic of Light sensor circuit for the DoBots Bot One_
 
 ##  Links:
 

@@ -9,7 +9,7 @@ tags: []
 
 When browsing through the various blogposts, I noticed that the ideas of DO
 have many parallels with the [maker culture](http://en.wikipedia.org/wiki/Maker_culture). The maker movement has
-quickly been gaining popularity over the past years, and in that respect DO is
+quickly been gaining popularity over the past years, and in that respect DoBots is
 a typical example of modern engineering culture: we like fast prototyping, we
 build upon existing hardware, use software where appropriate (contrary to all-
 hardware solutions), and embrace the open-source principles. Because of these

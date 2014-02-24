@@ -19,10 +19,12 @@
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
 <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/elusive-webfont.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="{{ ASSET_PATH }}/css/flexslider.css" rel="stylesheet">
 <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet"> 
+
 
 <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
@@ -62,10 +64,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="list-unstyled sub-menu pull-right">
+				<ul class="list-unstyled sub-menu pull-right slogan">
+					<li>"Computers, come, join us in the real world!"</li>
+					<!--
 					<li><a href="#">Home Automation</a></li>
 					<li><a href="#">Smartbots</a></li>
 					<li><a href="#">Interested?</a></li>
+					-->
 				</ul>
 			</div>
 		</div>
@@ -78,7 +83,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
-				<img src="{{ BASE_PATH }}/images/twitter.png" alt="twitter"> Watch our new review video for Rotix Bit.ly/cea12 </div>
+				<img src="{{ BASE_PATH }}/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a>. </div>
 			<div class="col-xs-6 col-sm-6 col-md-6">
 				<ul class="list-items pull-right gutter-top-btm">
 					<li><a href="index.html">
@@ -88,7 +93,7 @@
 					</a>
 					<div class="footer-robot-dilog">
 						<div class="inner-robot-dilog">
-							Do you have a question? <a href="#" class="btn btn-default">Yes</a>
+							Do you have a question? <a href="mailto:info@dobots.nl" class="btn btn-default">Yes</a>
 							<div class="inner-arrow-right">
 								<img alt="dilog" class="img-responsive" src="{{ BASE_PATH }}/images/inner-dilog.png" draggable="false"> </div>
 						</div>

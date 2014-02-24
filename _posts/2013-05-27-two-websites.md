@@ -35,7 +35,7 @@ idea.
 
 ##  Dodedodo
 
-A funny name, with a lot of DO in it. That's our website
+A funny name, with a lot of DO (from DoBots) in it. That's our website
 very well that we now have market places or app stores to get applications for
 our smartphones. However, smartphones are not the only devices in our life.
 Especially from our perspective of robotics, we want to have a seamless

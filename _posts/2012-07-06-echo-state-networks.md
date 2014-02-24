@@ -9,7 +9,7 @@ tags: []
 
 Just a quick post for people that are interested in Echo State Networks
   
-The past months I spent my time at DO to investigate Echo State Networks
+The past months I spent my time at DoBots to investigate Echo State Networks
 (ESNs) as part of my studies Cognitive Neuroscience. ESNs are a type of
 recurrent neural network that is easier to train than conventional recurrent
 neural networks. Those conventional networks require gradient-based learning

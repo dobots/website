@@ -160,7 +160,7 @@ resolution of 640x480 VGA and a high speed 64° vertical camera with 60 fps.
 For the AR Drone 2.0 the front camera was replaced with a 720p HD camera
 providing 30 fps.
 
-##  DO Bot aka Dotty
+##  DoBots Bot aka Dotty
 
 ![Dotty, our home-made robot](\[$dl-reference=/groups/10157/portlets/20/file-entries/32040/1.0.xml$\])Last but not least
 [Dotty](http://www.dobots.nl/dotty), our home-made robot was included in this
