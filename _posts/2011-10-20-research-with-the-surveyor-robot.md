@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-The Surveyor robot is a moderately cheap robot with ad-hoc WIFI and a camera
+The Surveyor robot is a moderately cheap robot with ad-hoc WIFI connection and a camera
 on-board. We mounted a laser on front which projects a red line in the forward
 direction. The default lasers are just point lasers, and do not project a
 line. We subsequently test our software using camera and laser information
