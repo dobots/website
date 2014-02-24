@@ -8,9 +8,9 @@ tags: []
 {% include JB/setup %}
 
 This list contains a series of papers which we consider as tightly related to
-the concept of **self-organization**. Dobots is a spin-off of
+the concept of **self-organization**. DoBots is a spin-off of
 [Almende](http://www.almende.com), a company that performs research on this
-specific topic and Dobots is moderately "infected" by it. :-) Reading the
+specific topic and DoBots is moderately "infected" by it. :-) Reading the
 following literature might bring you a bit closer to the general thought
 package of Almende, which was originally inspired by the [Santa Fé
 Institute](http://www.santafe.edu) on the other side of the ocean. We will try

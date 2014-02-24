@@ -139,7 +139,7 @@ estimated location based on odometry.
 
 
 
-At Dobots we are mostly interested in projects involving Visual SLAM, where
+At DoBots we are mostly interested in projects involving Visual SLAM, where
 the range measurement sensor is simply a camera. Using camera as range
 measurement device has some advantages such as:
 

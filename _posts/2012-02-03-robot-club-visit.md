@@ -13,7 +13,7 @@ engineers: in their school's Robot Project they scavenged their parents' old
 cell phones, bicycle led lights and toothbrushes and created their own working
 bristle bots!
 
-Now, they wanted to see what we were up to at Dobots.
+Now, they wanted to see what we were up to at DoBots.
 
 ##  Masterclass
 

@@ -83,7 +83,7 @@ does have a Google supported Android port. This means that a smartphone can
 operate as a ROS node and - potentially - send commands to a NXT connected
 through it through Bluetooth. The ROS code for this is not yet written. It has
 already been demonstrated by the MindDroid app (and a derivative called
-MindOpen from Dobots) that the NXT can be controlled from an Android phone.
+MindOpen from DoBots) that the NXT can be controlled from an Android phone.
 As soon as such ROS code would be in place, it would be logical to write a ROS
 wrapper for the distributed computing solution
 [Ibis](http://www.cs.vu.nl/ibis/index.html) for example. We can have large
