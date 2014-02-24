@@ -52,8 +52,8 @@ module Jekyll
       end
 
       encoded_url = CGI::escape url
-      embedly_url = URI.parse "http://api.embed.ly/1/oembed?key=#{@api_key}" +
-                              "&url=#{encoded_url}#{param_string}"
+      embedly_url = URI.parse "http://api.embed.ly/1/oembed?key=" + ENV['EMBEDLY_KEY'] + "&url=#{encoded_url}#{param_string}"
+#      embedly_url = URI.parse "http://api.embed.ly/1/oembed?key=#{@api_key}" + "&url=#{encoded_url}#{param_string}"
 
       json_rep = JSON.parse resolve(embedly_url)
 

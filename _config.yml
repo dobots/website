@@ -29,6 +29,10 @@ production_url : http://dobots.github.io
 
 markdown : kramdown
 
+embedly :
+  youtube :
+    text-align: center;
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
