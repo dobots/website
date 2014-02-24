@@ -2,6 +2,11 @@
 
 You can find this website at [www.dobots.nl](http://www.dobots.nl).
 
+## Prerequisites
+
+    sudo apt-get install rake
+    sudo gem install jekyll
+
 ## Users
 
 You can add a blog post by:
@@ -10,7 +15,7 @@ You can add a blog post by:
     
 Now navigate to the file created for you and adjust it.
 
-In case you have never worked with a markdown syntax before. It is quite easy. This very file is written in it! The variant of markdown that is used is called kramdown. It makes writing also mathematics very easy. So, a very short overview:
+In case you have never worked with a markdown syntax before. It is quite easy. This very file is written in it! The variant of markdown that is used is called kramdown. A very short overview:
 
  * A movie can be embedded by using `{% embedly https://youtube-link %}`
  * An image can be embedded by placing it in the attachments folder and link it through `![Alternative description]({{ site.url }}/attachments/image_file.png "Image description")`
