@@ -20,7 +20,7 @@ bringing a Nabaztag (version 1) back to live.
 
 ###  Nabaztag
 
-![Nabaztag]({{ site.url }}/attachments/nabaztag.jpg "Nabaztag")
+![Nabaztag]({{ site.url }}/attachments/nabaztag.jpg "Nabaztag"){: .float-right} 
 
 We keep two comatose [Nabaztag](http://en.wikipedia.org/wiki/Nabaztag) rabbits
 in our office from an old project. They still look cute, but their stillness
@@ -51,7 +51,7 @@ idea is this: put your cup with pretty (maybe even customized) RFID tag in the
 coffee machine, and you get your standard brew without touching any buttons.
 Just think of the possibilities and advantages!
 
-![Mug]({{ site.url }}/attachments/mug.jpg "robot mug")
+![Mug]({{ site.url }}/attachments/mug.jpg "robot mug"){: .float-right} 
 
   * Getting coffee for colleagues becomes a breeze
   * No germ spreading through coffee machine buttons
