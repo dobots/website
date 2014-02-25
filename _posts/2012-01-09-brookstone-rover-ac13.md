@@ -1,15 +1,18 @@
 ---
+author: annevanrossum
 layout: post
-title: Brookstone Rover AC13 United States
+title: "Brookstone Rover AC13 United States"
 description: 
 category: 
 tags: []
 ---
 {% include JB/setup %}
 
+# Brookstone Rover AC13
+
 ##  Introduction
 
-![Brookstone Rover AC13](\[$dl-reference=/groups/10157/portlets/20/file-entries/16403/1.0.xml$\])
+![Brookstone Rover AC13]({{ site.url }}/attachments/Brookstone_Rover_AC13_200.png "Brookstone Rover AC13")
 
 The Brookstone® Rover is sold exclusively (for $99,-)
 in the United States and can be controlled by ipod, iphone, or other Apple
@@ -33,8 +36,8 @@ Version" phrase, just as Foscam IP cameras do! Probably the same developers
 have programmed the firmware for the Rover! Time to disassemble the robot to
 check if this is true.
 
-![Disassembled Rover](/image/image_gallery?uuid=4718cc1d-6d3a-4262-a428-28e1317e6338&groupId=10530&t=1326105996659)
-![](/image/image_gallery?uuid=ab9b5dd2-ca5c-4f0d-8bc4-9984d96ce6af&groupId=10530&t=1326106008833)
+![Disassembled Rover]({{ site.url }}/attachments/Brookstone_Rover_AC13_0.jpeg "Disassembled Rover")
+![Disassembled Rover]({{ site.url }}/attachments/Brookstone_Rover_AC13_1.jpeg "Disassembled Rover")
 
 Yes! Remarkably enough there is a similar chip which reads spansion
 s29gl032n90tfi040 (Flash) as in the Foscam line of IP cameras. The board looks
@@ -49,8 +52,8 @@ We connect an iphone to the robot via the default ad-hoc network started up by
 the rover. And we connect a mini laptop to it at the same time, now running
 "sudo tcpdump -XXvvvs0 -i wlan0 port 80" reveals the network traffic. And we
 just see that the iphone logs into the browser by issuing an HTTP GET request
-"http://192.168.1.100/check_user.cgi?user=AC13&pwd;=AC13". That was easy, we
-already now the username and password: AC13. Now, to quickly check if there
+"http://192.168.1.100/check_user.cgi?user=AC13&pwd=AC13". That was easy, we
+already know the username and password: AC13. Now, to quickly check if there
 are (unencrypted) images going through the network we run 
 
     "sudo driftnet -i wlan0" 
