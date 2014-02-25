@@ -29,6 +29,14 @@ The other syntax options you can probably find in no time searching online or ch
 The site is run through Jekyll:
 
     jekyll serve
+
+Or if you have an older jekyll installation
+
+    jekyll --server --auto
+
+You can then see the website served at:
+
+    localhost:4000
     
 There is Procfile that allows you to run it on Heroku:
 
