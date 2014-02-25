@@ -2,7 +2,8 @@
 layout: post
 title: Review of Meccano SPYKEE spy robot
 description: 
-category: 
+category:
+author: merelvandiepen 
 tags: []
 ---
 {% include JB/setup %}
@@ -15,7 +16,7 @@ community never grew very big. This is a pity, because the robot has many
 possibilities, as described in the modding section. I will first discuss the
 out-of-the-box features and experience.
 
-{% embedly https://www.youtube.com/watch?v=-GwdixdD6ms %}
+{% youtube -GwdixdD6ms %}
 
 Meccano has a long history of construction toys, and Spykee is no exception.
 On delivery, you will find a box full of small plastic parts and a manual.

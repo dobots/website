@@ -29,7 +29,7 @@ demo of Replicator.
 
 ##  Movie
 
-{% embedly https://www.youtube.com/watch?v=fGCRjWBzEpo %}
+{% youtube fGCRjWBzEpo %}
 
 ##  Lessons learnt
 
