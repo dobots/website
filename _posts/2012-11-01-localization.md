@@ -28,8 +28,6 @@ a webcam for robust SLAM?
 
 ##  Visual SLAM
 
-{% youtube 2zZ4MrcAqNQ %}
-
 In fact, this has already been achieved with
 [PTAM](http://www.robots.ox.ac.uk/~gk/PTAM/). Unfortunately, PTAM and its
 dependencies have not been maintained the past two years. The result is
@@ -37,7 +35,7 @@ software that is hard to get working (especially on non-standard platforms
 such as smartphones) and does not include the latest developments in SLAM
 algorithms, especially regarding loop closing and bundle adjustment.
 
-
+{% youtube 2zZ4MrcAqNQ %}
 
 This means we have work to do! First of all, we have to decide whether we can
 make adaptations to the environment. Markers and so on make the task easier,
