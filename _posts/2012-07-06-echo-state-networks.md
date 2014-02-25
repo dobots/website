@@ -1,13 +1,16 @@
 ---
 layout: post
 title: Echo State Networks
+author: remcotukker
 description: 
 category: 
-tags: []
+tags: ["robot control", "echo state networks"]
 ---
 {% include JB/setup %}
 
-Just a quick post for people that are interested in Echo State Networks
+# Echo State Networks
+
+Just a quick post for people that are interested in Echo State Networks.
   
 The past months I spent my time at DoBots to investigate Echo State Networks
 (ESNs) as part of my studies Cognitive Neuroscience. ESNs are a type of
@@ -24,7 +27,7 @@ timeseries prediction.
 Here is a scholarpedia link with a better (and short) explanation of the idea
 and two good review articles:
 
-  * [http://www.scholarpedia.org/article/Ec ho_state_network](http://www.scholarpedia.org/article/Echo_state_network)
+  * [http://www.scholarpedia.org/article/Echo_state_network](http://www.scholarpedia.org/article/Echo_state_network)
   * M. Lukosevicius and H. Jaeger. Reservoir computing approaches to recurrent neural network training. Computer Science Review, 3(3):127-149, 2009.
   * B. Schrauwen, D. Verstraeten, and J. Van Campenhout. An overview of reservoir computing: theory, applications and implementations. In proceedings of the 15th European Symposium on Arti cial Neural Networks. 2007.
 
@@ -50,7 +53,7 @@ given every 15 timesteps and at the end of every such trial, the output is
 read. In a robot, this will probably not be so simple.  
   
 For more detailed information and the matlab code for the ESNs, see
-[https://github.com/RemcoTukker /PFC-ESN](https://github.com/RemcoTukker/PFC-ESN)  
+[https://github.com/RemcoTukker/PFC-ESN](https://github.com/RemcoTukker/PFC-ESN)  
   
 For reference, the most common application of ESNs in robots are for motor
 control and inverse modelling of robot control. Here's some articles about

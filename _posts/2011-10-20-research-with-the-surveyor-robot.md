@@ -1,11 +1,14 @@
 ---
+author: jannyramakers
 layout: post
-title: Research with the Surveyor robot
+title: "Research with the Surveyor robot"
 description: 
 category: 
 tags: []
 ---
 {% include JB/setup %}
+
+# Research with the Surveyor robot
 
 The Surveyor robot is a moderately cheap robot with ad-hoc WIFI connection and a camera
 on-board. We mounted a laser on front which projects a red line in the forward
@@ -17,9 +20,7 @@ Normally the robot will not be able to make a distiction between a fake and a
 real power outlet. However, with the additional distance information from the
 laser, it can! You will hear the robot respond to the real power outlet.
 
-
-
-
+{% youtube ogFNDs1SgwY %}
 
 This research robot is available in our webshop because it is really good for
 research that involves a robot camera. The robot contains a Blackfin

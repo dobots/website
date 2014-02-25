@@ -4,10 +4,11 @@ title: Robot-to-robot communication
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/23056/1.0.xml$\])
+![Replicator robot prototypes]({{ site.url }}/attachments/replicator_2prototypes_square.png){: .float-right}
 
 In
 the near future smartphones will become important as the brains for robots.
@@ -109,7 +110,7 @@ something that makes development on the smartphone side extremely easy. One
 choice could have been [bump](https://bu.mp/), which has an API that can make
 a connection on physically bumping devices together. Most promising though
 seems to be [Alljoyn](https://www.alljoyn.org/), backed up by Qualcomm and
-open- source. It works for both Wifi and Bluetooth. You can find the source
+open-source. It works for both Wifi and Bluetooth. You can find the source
 code [here at github](http://alljoyn.github.com/build.html). Happy coding!
 
 

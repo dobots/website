@@ -4,6 +4,7 @@ title: Introduction to One-Class Support Vector Machine
 description: 
 category: 
 tags: []
+author: roemervlasveld
 ---
 {% include JB/setup %}
 

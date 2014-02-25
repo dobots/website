@@ -3,10 +3,12 @@ layout: post
 title: Review of Meccano SPYKEE spy robot
 description: 
 category:
-author: merelvandiepen 
-tags: []
+author: remcotukker
+tags: ["spykee", "hacks", "mods", "firmware", "spy robot", "robot toy", "robots", "mecanno spykee"]
 ---
 {% include JB/setup %}
+
+# Review of Meccano SPYKEE spy robot
 
 Introduced a couple of years ago, Spykee was received warmly. Especially the
 promise of Meccano that the robot would be open-source was for many robot
