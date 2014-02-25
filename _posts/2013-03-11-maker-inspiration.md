@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Maker Inspiration
-author: Remco Tukker
+title: "Maker Inspiration"
+author: remcotukker
 description: 
 category: 
-tags: []
+tags: ["maker culture", "nabaztag", "rfid"]
 ---
 {% include JB/setup %}
 
 When browsing through the various blogposts, I noticed that the ideas of DO
 have many parallels with the [maker culture](http://en.wikipedia.org/wiki/Maker_culture). The maker movement has
 quickly been gaining popularity over the past years, and in that respect DoBots is
-a typical example of modern engineering culture: we like fast prototyping, we
+a typical example of modern engineering culture: we like rapid prototyping, we
 build upon existing hardware, use software where appropriate (contrary to all-
 hardware solutions), and embrace the open-source principles. Because of these
 parallels, I decided to write a short blogpost about two maker-inpired ideas
@@ -20,7 +20,7 @@ bringing a Nabaztag (version 1) back to live.
 
 ###  Nabaztag
 
-![Nabaztag](\[$dl-reference=/groups/10157/portlets/20/file-entries/39731/1.0.xml$\])
+![Nabaztag]({{ site.url }}/attachments/nabaztag.jpg "Nabaztag")
 
 We keep two comatose [Nabaztag](http://en.wikipedia.org/wiki/Nabaztag) rabbits
 in our office from an old project. They still look cute, but their stillness
@@ -51,7 +51,7 @@ idea is this: put your cup with pretty (maybe even customized) RFID tag in the
 coffee machine, and you get your standard brew without touching any buttons.
 Just think of the possibilities and advantages!
 
-![Mug](\[$dl-reference=/groups/10157/portlets/20/file-entries/39739/1.0.xml$\])
+![Mug]({{ site.url }}/attachments/mug.jpg "robot mug")
 
   * Getting coffee for colleagues becomes a breeze
   * No germ spreading through coffee machine buttons
