@@ -1,4 +1,5 @@
 ---
+author: jannyramakers
 layout: post
 title: Robot Club Visit school
 description: 
@@ -6,6 +7,8 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+
+# Robot Club Visit school
 
 Yesterday we welcomed a group of 25 kids from a local primary school. These 12
 -year-olds had already made their first steps towards becoming robotics
@@ -15,7 +18,7 @@ bristle bots!
 
 Now, they wanted to see what we were up to at DoBots.
 
-##  Masterclass
+## Masterclass
 
 The kids were introduced to our company in two sessions. In the meeting room,
 our CTO Peet van Tooren gave them a quick masterclass on swarm robotics,
@@ -27,7 +30,7 @@ a robot? Is a simulated robot really a robot, or just a computer programme?
 What rules do we need to teach our robots? How can it become independent and
 evolve? What does a robot like; can it have feelings?
 
-##  Robot Lab
+## Robot Lab
 
 But most fun was to be had in the attic, normally our break room, now
 transformed into a kids' robotics lab. One of our junior researchers, Bart van
@@ -42,9 +45,9 @@ sensors.
 
 Funny to see how some of them really think their project through, while others
 just start building things and pressing buttons, with many great and
-surprising results!
+[surprising results](http://www.flickr.com/photos/dobots/sets/72157629143184807/)!
 
-##  Demos
+## Demos
 
 To top the day off, we showed the kids some of the more serious bots that we
 are working with; the impressive smartphone-controlled Parrot, the
