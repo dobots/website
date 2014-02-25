@@ -4,17 +4,17 @@ title: SLAM (Simultaneous Localization And Mapping)
 description: 
 category: 
 tags: []
+author: behnazshirmohamadi
 ---
 {% include JB/setup %}
+
+# What is this SLAM?
 
 SLAM (Simultaneous Localization And Mapping) tries to answer two key questions
 in Robotics:
 
   * Robot Localization: “Where is the Robot?”
-
   * Robot Mapping: “What does the world around the Robot look like?”
-
-
 
 SLAM can help you solve the problem of building up a map within an unknown
 environment (without _a priori_ knowledge), or to update a map within a known
@@ -24,27 +24,17 @@ time keeping track of the current location of the robots in the environment.
 ## Some possible SLAM applications
 
   * Oil pipeline inspection
-
   * Ocean surveying and underwater navigation
-
   * Mine exploration
-
   * Coral reef inspection
-
   * Military applications
-
   * Crime scene investigation
-
   * Earthquake surveillance procedures
-
-
 
 ## Requirements
 
 In order to implement SLAM, you need a mobile robot and a range measurement
 device, such as a laser scanner, a sonar device or a camera (visual SLAM).
-
-
 
 ## How to implement SLAM
 
@@ -54,11 +44,8 @@ the world around it. A very basic localisation process consists of a numbers
 of steps:
 
   1. Move 
-
   2. Estimate position ([odometry](http://en.wikipedia.org/wiki/Odometry)) 
-
   3. Sense features 
-
   4. Map and localization update
 
 This is indeed a naive approach, because robot odomety of an unknown
@@ -67,61 +54,42 @@ inconsistent map. Therefore as an corrected version, SLAM uses a probabilistic
 approach consisting of the following steps:
 
   1. Move 
-
   2. Predict position (odometry) 
-
   3. Sense features 
-
   4. Recognize landmarks (data association) ⇒ loop closure 
-
   5. Correct position (probability theory)
 
 In this new approach, the ranging sensor data and odometry data are combined
 to correct the perception of the robot about its location and the position of
 environmental feature.
 
-
-
 This prediction and correction process is described with the aid of some
 figures below:
 
-
-
-![robot odometry: prediction of location and correction](\[$dl-reference=/groups/10157/portlets/20/file-entries/17414/1.0.xml$\])
-
-
+![Robot odometry: prediction of location and correction]({{ site.url }}/attachments/slam1.png)
 
 In the figures, the robot is represented by the triangle. The stars represent
 landmarks (environmental features). The robot initially measures the location
 of the landmarks, using its sensors (sensor measurements illustrated by the 'lightning').
 
-
-
 The robot moves. Based on robot odometry, the robot thinks that is it located
 here.
 
-![robot odemetry](\[$dl-reference=/groups/10157/portlets/20/file-entries/17307/1.0.xml$\])
-
-
+![Robot odometry]({{ site.url }}/attachments/slam2.png)
 
 Once again the robot measures its distance to the landmarks using its range
 measurement sensors. What if the odometry and sensor measurements don't match?
 The answer is: The robot is not at the location where it thinks it is
 (odometry error).
 
-![robot odometry error](\[$dl-reference=/groups/10157/portlets/20/file-entries/17325/1.0.xml$\])
-
-
+![Robot odometry error]({{ site.url }}/attachments/slam3.png)
 
 The robot has more trust in sensor data than in odometry. So, the new location
 of the robot considering the landmarks distances is here. (The dashed triangle
 is where the robot thought it was using the odometry data).
 
 
-
-![robot odometry](\[$dl-reference=/groups/10157/portlets/20/file-entries/17338/1.0.xml$\])
-
-
+![Robot odometry]({{ site.url }}/attachments/slam4.png)
 
 The actual location of the robot is here. You can see that the sensors are not
 perfect but their measurements are more reliable than odometry. The lined
@@ -129,24 +97,16 @@ triangle is the actual position of the robot, the dotted triangle is its
 estimated location based on the sensor data and the dashed triangle is its
 estimated location based on odometry.
 
-
-
-![robot odometry + sensor data](\[$dl-reference=/groups/10157/portlets/20/file-entries/17354/1.0.xml$\])
-
-
+![Robot odometry and sensor data]({{ site.url }}/attachments/slam5.png)
 
 ## Visual SLAM
-
-
 
 At DoBots we are mostly interested in projects involving Visual SLAM, where
 the range measurement sensor is simply a camera. Using camera as range
 measurement device has some advantages such as:
 
   * It is fast.
-
   * It has longer range than many other sensors.
-
   * The sensor data contains more information about the environment rather than the distances.
 
 
