@@ -8,7 +8,7 @@ tags: ["quadcopters", "painting", "demo", "prototype"]
 ---
 {% include JB/setup %}
 
-# Painting Qaudcopters
+# Painting Quadcopters
 
 It started with a simple question half a year ago: Besides capturing video and images from above, what can quadcopters actually do autonomously? More or less practical use cases haven been in the media already: [delivering books](http://edition.cnn.com/2013/10/18/tech/innovation/zookal-will-deliver-textbooks-using-drones/) or [medicines](http://matternet.us/) and [constructing buildings](http://www.youtube.com/watch?v=W18Z3UnnS_0) for example.
 
