@@ -4,10 +4,11 @@ title: The renormalization group on networks, an introduction
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
-# The renormalization group on networks, an introduction
+# The renormalization group on networks
 
 Modern physics is actually one big quest to solve the many-body problem. Most
 often stated in soundbites invented by famous people from for example the
@@ -53,7 +54,9 @@ behaviour - through a huge series of scales - from local interactions!
 
 ##  Network
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/17129/1.0.xml$\])This is all
+![Renormalization on networks]({{ site.url }}/attachments/renormalization_newman_and_watts.jpg){: .float-right}
+
+This is all
 very well, but nothing makes much sense without examples. We can give an
 example of the Ising model, or of self-organised criticality with sandpiles
 (Bak), but for swarm robotics, we are most interested in graphs. We have one
@@ -73,33 +76,35 @@ renormalization can be applied.
 
 We just summarize Newman and Watts findings here... The authors want to show
 that if the number of "shortcuts" goes to zero, the system exhibits a second-
-order phase transition observing the parameter l, the average distance between
-vertices. Besides the system size L, and a parameter k which stands for some
+order phase transition observing the parameter $$l$$, the average distance between
+vertices. Besides the system size $$L$$, and a parameter $$k$$ which stands for some
 fixed range for which every node is connected to all its neighbours, there is
-a random parameter p. This p stands for a rewiring probability for every kL
+a random parameter $$p$$. This $$p$$ stands for a rewiring probability for every $$kL$$
 connection (and is "quenched", that means, it is only done once). The
 renormalization procedure can be divided into two different cases, which is
-very typical for the procedure. For k=1, their blocking procedure takes two
+very typical for the procedure. For $$k=1$$, their blocking procedure takes two
 subsequent vertices on the ring and replaces them by one vertex. A "shortcut"
 to one of the vertices is preserved and will now point to the new vertex. The
-number of vertices L becomes L/2. The number of edges goes from L to L/2 and
-hence the probability to pick a given edge goes from p to 2p. For the case of
-k>1, the system size goes from L to L/k, the probability from p to k²p, the
-range parameter goes from k to 1, and the mean distance stays the same. Hence,
-every system with k>1 can be converted in a system with k=1 and then a group
+number of vertices $$L$$ becomes $$L/2$$. The number of edges goes from $$L$$ to $$L/2$$ and
+hence the probability to pick a given edge goes from $$p$$ to $$2p$$. For the case of
+$$k>1$$, the system size goes from $$L$$ to $$L/k$$, the probability from $$p$$ to $$k^2 p$$, the
+range parameter goes from $$k$$ to $$1$$, and the mean distance stays the same. Hence,
+every system with $$k>1$$ can be converted in a system with $$k=1$$ and then a group
 renormalisation procedure can be applied over and over again.
 
 ##  The transition
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/17142/1.0.xml$\])The authors write down an expression for l, the
+![Renormalization on networks, results]({{ site.url }}/attachments/renormalization_newman_and_watts_results.jpg){: .float-right}
+
+The authors write down an expression for $$l$$, the
 average distance between vertices. Let us not repeat the exact form of this
 equation, but explain between which regimes the mentioned transition would
-take place. If a system is really small, then for a given fixed p, there is on
+take place. If a system is really small, then for a given fixed $$p$$, there is on
 average less than one shortcut in the graph. This means that the average
 distance between vertices just happens over the ring and hence scales linearly
-with the system size L. However, when the system becomes larger, and p is
+with the system size $$L$$. However, when the system becomes larger, and $$p$$ is
 still fixed, in the end shortcuts will show up, and the distance between
-vertices will scale logarithmic with respect to L. The transition between
+vertices will scale logarithmic with respect to $$L$$. The transition between
 these two regimes is the one that interests us.
 
 ##  Conclusion
@@ -109,12 +114,11 @@ phase transition in the system. So, what do we have here!? We have a relation
 between system size and the famous average number of "degrees of separation"
 between nodes on a network. Now, you would be able to be all cocky on parties
 and tell fellow nerds that it's not just six degrees of separation between you
-and some famous person, but that this depends on L, p and k: the system size,
+and some famous person, but that this depends on $$L$$, $$p$$ and $$k$$: the system size,
 the number of shortcuts, and the range of neighbours someone has.
 
-This text introduced the renormalization group in networks. Next time we will
-look how it has been applied in swarm robotics.
+This text introduced the renormalization group in networks. Interesting would be take these results and check how it can be applied to swarm robotics!
 
-[1] Renormalization group analysis of the small-world network model
+[1] Renormalization group analysis of the small-world network model, 2009, T. Payne
 
 

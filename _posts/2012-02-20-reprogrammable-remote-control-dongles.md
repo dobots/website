@@ -4,12 +4,13 @@ title: Reprogrammable Remote Control dongles
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
 # Reprogrammable Remote Control dongles
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/16826/1.0.xml$\])
+![Toybien dongle]({{ site.url }}/attachments/toybien_dongle.jpg){: .float-right}
 
 Interested as we are in swarming, our efforts include building sort of an army
 of moving bots. To keep cost down the available toys are our first port-of-
@@ -19,13 +20,9 @@ units that are all remote controlled. Most of them use 27 MHz based RF, a few
 are on 49MHz, or even 2.4GHz (BT/Wifi/etc.). IR is also a frequently chosen
 solution.
 
-
-
 To get communication up with all of them, enabling our software to become part
 of the swarm, we need a more or less **universal solution** connecting sensors
 and actors.
-
-
 
 On the market there are a number of dongle suppliers that use the headphone
 connector to add an IR or RF extension to Android (and/or iPhone) smartphones.
@@ -33,11 +30,7 @@ What makes life difficult is that the toys mostly use very cheap encoding
 solutions based on chips like RX2B / TX2B  which are inflexible and difficult
 to combine with other coding options, either single chip based or not.
 
-
-
 **So, what is our master plan!? Make a dongle - or have a dongle made - that enables reprogramming it through the headphone connection!** It would allow us to combine the advantage of off-loading the encoding to a dedicated chip (a PIC166XX comes to mind) and still retaining the flexibility for application programmers to adapt to the required protocol.
-
-
 
 ##  Joybien
 
@@ -50,7 +43,6 @@ up their API for application developers on Android or iPhone:
   3. Provide a **programmable device** (the solution of above) that takes input from the headphone output and translates it into hex code for the microcontroller in the dongle. Instead of programming over serial, or over USB, or over Bluetooth, we program this time over audio! This of course is of much more use than only the "dongle industry". Any device attached to a smartphone (via the headphone connector) might profit from reprogrammability by users, which can be over-the-air and even come with its "own app store for smartphone add-ons".
 
 We had the idea first. :-)
-
 
 
 [1] [http://www.joybien.com/product/Product_JoyXtix.html](http://www.joybien.com/product/Product_JoyXtix.html)

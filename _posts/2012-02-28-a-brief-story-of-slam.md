@@ -3,7 +3,7 @@ layout: post
 title: SLAM (Simultaneous Localization And Mapping)
 description: 
 category: 
-tags: []
+tags: [slam]
 author: behnazshirmohamadi
 ---
 {% include JB/setup %}
@@ -109,71 +109,48 @@ measurement device has some advantages such as:
   * It has longer range than many other sensors.
   * The sensor data contains more information about the environment rather than the distances.
 
-
-
 The basic procedure of Visual SLAM is described in the following figures:
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/17371/1.0.xml$\])
+![Visual SLAM]({{ site.url }}/attachments/visual_slam1.png)
 
-
-
-
-
-The camera localization yiC depends on three parameters: camera orientation
+The camera localization $$y_i^C$$ depends on three parameters: camera orientation
 and camera position (which are given by odometry) and the range measurements
 (which is provided by the camera). The yiW
 
-is the camera distance from the landscape from measurement zi .
+is the camera distance from the landscape from measurement $$z_i$$.
 
-
-
-Predictor-Corrector
+### Predictor-Corrector
 
 At any moment(t) the robot localization can be predicted by the robot location
 at(t-1), the robot orientation and the robot position. This prediction will be
 corrected by the aid of range measurements as it is shown in below figure:
 
-
-
-
-
-**_![](\[$dl-reference=/groups/10157/portlets/20/file-entries/17388/1.0.xml$\])_**
-
-
-
-
+![Visual SLAM]({{ site.url }}/attachments/visual_slam2.png)
 
 Three stages of the SLAM(Prediction, Observartion and Update) need to be done
 based on a recursive algorithm which can derive the Robot state from the noisy
 sensor data. One the best known algorithms which is implemented to solve the
 SLAM problem is [Kalman filter](http://en.wikipedia.org/wiki/Kalman_filter).
 
-
-
 In the following links you can see some SLAM projects realization, done by
 different research groups.
 
 
-
 ## Videos
 
+The following YouTube videos give a nice insight into using visual SLAM:
 
+{% youtube bq5HZzGF3vQ %}
 
-The following YouTube videos give a nice insight into using Visual SLAM:
+{% youtube gNxmgQ2gofE %}
 
-
+{% youtube geQOxFiOj_0 %}
 
 ## References
 
-  * [Visual SLAM (2007), Andrew Davison, Andrew Calway, Walterio Mayol, BMVC 2007 Visual SLAM Tutorial](http://www.cs.bris.ac.uk/Research/Vision/Realtime/bmv
-ctutorial/bmvcVslamTut07ptI.pdf)
-
-  * [Simultaneous Localization and Mapping: Part 1(2006), HUGH DURRANT-WHYTE AND TIM BAILE, IEEE Robotics & Automation Magazine, P 99-108.](http://www.doc.ic.ac.uk/~ajd/Robotics/RoboticsResources/SLAMTutorial1
-.pdf)
-
+  * [Visual SLAM (2007), Andrew Davison, Andrew Calway, Walterio Mayol, BMVC 2007 Visual SLAM Tutorial](http://www.cs.bris.ac.uk/Research/Vision/Realtime/bmvctutorial/bmvcVslamTut07ptI.pdf)
+  * [Simultaneous Localization and Mapping: Part 1(2006), Hugh Durrant-Whyte and Tim Baile, IEEE Robotics & Automation Magazine, P 99-108.](http://www.doc.ic.ac.uk/~ajd/Robotics/RoboticsResources/SLAMTutorial1.pdf)
   * [Simultaneous Localizatioand Mapping – SLAM (2005), Andrew Hogu, York University, Toronto, Ontario](http://www.cse.yorku.ca/~hogue/qual_slides.pdf)
-
-  * [SLAM for Dummies: A Tutorial Approach to Simultaneous Localization and Mapping, Søren Riisgaard and Morten Rufus Blas.](http://ocw.mit.edu/courses/aeronautics-and-astronautics/16-412j-
-cognitive-robotics-spring-2005/projects/1aslam_blas_repo.pdf)
+  * [SLAM for Dummies: A Tutorial Approach to Simultaneous Localization and Mapping, Søren Riisgaard and Morten Rufus Blas.](http://ocw.mit.edu/courses/aeronautics-and-astronautics/16-412j-cognitive-robotics-spring-2005/projects/1aslam_blas_repo.pdf)
 
 

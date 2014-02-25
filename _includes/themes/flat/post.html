@@ -36,11 +36,12 @@
 				{% endunless %}
 
 				{% unless page.tags == empty %}
-				<ul class="tag_box inline">
-					<li><i class="icon-tags"></i></li>
+				<div class="tag_box inline">
+					<i class="icon-tags"></i>
+
 					{% assign tags_list = page.tags %}
 					{% include JB/tags_list %}
-				</ul>
+				</div>
 				{% endunless %}
 
 				<hr>

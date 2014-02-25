@@ -4,7 +4,7 @@ title: Review of Meccano SPYKEE spy robot
 description: 
 category:
 author: remcotukker
-tags: ["spykee", "hacks", "mods", "firmware", "spy robot", "robot toy", "robots", "mecanno spykee"]
+tags: [spykee, hacks, mods, firmware, spy robot, robot toy, robots, meccano spykee]
 ---
 {% include JB/setup %}
 

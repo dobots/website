@@ -3,7 +3,7 @@ layout: post
 title: Smartphone add-ons
 description: 
 category: 
-tags: []
+tags: [smartphone, romo]
 author: annevanrossum
 ---
 {% include JB/setup %}
