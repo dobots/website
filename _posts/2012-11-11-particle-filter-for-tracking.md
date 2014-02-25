@@ -4,6 +4,7 @@ title: Particle filter for tracking
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
@@ -30,6 +31,8 @@ where the structure is exploited, rather than some ad-hoc user-defined
 decomposition depending on the coffee quantity in the morning.
 
 ![smiley](http://www.dobots.nl/html/js/editor/ckeditor/plugins/smiley/images/regular_smile.gif)
+
+{% youtube LmxHQdzytRw %}
 
 For other algorithms do also not hesitate to visit the website
 [NETS](http://almende.github.com/nets/) dedicated to algorithms only!
