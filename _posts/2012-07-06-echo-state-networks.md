@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Echo State Networks
+author: remcotukker
 description: 
 category: 
-tags: []
+tags: ["robot control", "echo state networks"]
 ---
 {% include JB/setup %}
 
