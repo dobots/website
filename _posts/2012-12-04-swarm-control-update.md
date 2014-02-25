@@ -7,19 +7,21 @@ tags: []
 ---
 {% include JB/setup %}
 
+# Swarm Control Update
+
 Continuing our development of the [Swarm Control app](https://play.google.com/store/apps/details?id=org.dobots.swarmcontrol) we now
 released an updated version v0.2. In this version we included more robots to
 control and started to tackle the goal to control a swarm of robots. In
 addition, we tried to make the remote control more user friendly and added a
 joystick element to the user interface for driving.
 
-#  New Robots
+## New Robots
 
 In order to reach our goal to control a heterogeneous swarm of robots we first
 had to add more robots to our swarm; the more different their capabilities and
 sensors the better.
 
-##  Meccano Spykee
+### Meccano Spykee
 
 With the Spykee we extended our collection of robots by the first WiFi robot.
 It comes with a docking station and includes a USB webcam, a microphone, a
@@ -28,7 +30,7 @@ robot to the phone.
 For a more detailed review of the Spykee see our blog post
 [here](http://www.dobots.nl/blog/-/blogs/review-of-meccano-spykee-spy-robot).
 
-###  Prerequisites
+#### Prerequisites
 
 By default the Spykee creates an AdHoc network and waits for connections but
 it has also the functionality to connect to any AccessPoint. Because Android
@@ -37,7 +39,7 @@ adjusted so that it connects to the same network that the phone is using. Next
 in the app, when connecting to the Spykee the settings have to be entered (IP
 Address of the Spykee, Port (default 9000), user name and password).
 
-###  Control
+#### Control
 
 With this setup we are now able to control the Spykee remotely:
 
@@ -46,13 +48,13 @@ With this setup we are now able to control the Spykee remotely:
   * Start the automatic Docking (if it is undocked) and start Undock (if it is docked)
   * Let the Spykee play one of it’s pre-recorded sound effects
 
-###  Sensors
+#### Sensors
 
 As sensors, the Spykee provides us with the battery level and the docking
 state (Docked / Undocked) and in addition sends the video of the USB webcam as
 a stream to be displayed on the phone.
 
-##  Wowwee RoboScooper
+### Wowwee RoboScooper
 
 The RoboScooper is a remote controllable robot that can autonomously pick up
 small objects from the floor. It is equipped with IR sensors to detect and
@@ -61,9 +63,9 @@ addition, it has bumper sensors in it’s index fingers to detect if it hits an
 obstacle. The RoboScooper comes with an IR remote control to drive it around
 manually but has no means to connect directly to a phone or computer.
 
-###  Prerequisites
+#### Prerequisites
 
-![RoboScooper equipped with Brainlink](\[$dl-reference=/groups/10157/portlets/20/file-entries/32019/1.0.xml$\])
+![RoboScooper equiped with Brainlink]({{ site.url }}/attachments/roboscooper_brainlink.png "RoboScooper equiped with Brainlink")
 
 In order to control the RoboScooper from an Android phone we used a
 [brainlink](http://www.brainlinksystem.com/). This handy and lightweight
@@ -72,7 +74,7 @@ IO connectors. Strapped to the head of the Roboscooper, we can now connect it
 with any Android phone supporting Bluetooth and send it any signal available
 from the remote control.
 
-###  Control
+#### Control
 
 Thanks to the brainlink we are able to control the RoboScooper remotely:
 
@@ -81,7 +83,7 @@ Thanks to the brainlink we are able to control the RoboScooper remotely:
   * Enter one of the Play Modes: Clean Sweep, Pick-up, Talk or Whack
   * Pick-up / Dump objects
 
-###  Sensors
+#### Sensors
 
 The RoboScooper itself doesn’t provide us with any of it’s sensory feedback.
 However we can display the sensors of the brainlink which are:
@@ -90,7 +92,7 @@ However we can display the sensors of the brainlink which are:
   * Light Sensor
   * Accelerometer (x, y and z-Axis in Gs)
 
-##  Brainlink
+### Brainlink
 
 With the Brainlink we can now add any IR controlled robot to our app. More
 precisely, with the utility tool ‘Signal Analyzer’ we can capture, analyze and
@@ -105,9 +107,11 @@ and respond to them accordingly.
 Note that this concept can also be applied to any other IR controlled device
 and is not restricted to robots only.
 
-##  Parrot AR Drone
+### Parrot AR.Drone
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/32118/1.0.xml$\])One of the more interesting in our choice of robots
+![Parrot AR.Drone]({{ site.url }}/attachments/swarmcontrol_ardrone.png "Parrot AR.Drone"){: .float-right}
+
+One of the more interesting in our choice of robots
 is the AR Drone, a fully autonomous, radio controlled quadrocopter. It
 connects to a device over WiFi and has two cameras which can be displayed: a
 wide angle camera pointing forward and a high speed camera pointing down. A 6
@@ -122,7 +126,7 @@ review can be found [here](http://www.rchelicopterfun.com/parrot-ar-drone.html).
 The AR Drone comes in to versions. The AR Drone and the AR Drone 2.0 which are
 both supported in our app.
 
-###  Prerequisites
+#### Prerequisites
 
 The AR Drone 2.0 creates an AccessPoint and is ready to for connecting with
 any Android phone. The AR Drone however creates an AdHoc Network by default
@@ -131,7 +135,7 @@ firmware of the Parrot needs to be updated to 1.7.4 in order to turn the WiFi
 to Access Point mode. The firmware and a tutorial can be found
 [here](http://ardrone.parrot.com/parrot-ar-drone/uk/support/update).
 
-###  Control
+#### Control
 
 With ths we can now control the AR Drone remotely:
 
@@ -144,7 +148,7 @@ With ths we can now control the AR Drone remotely:
   * Set Altitude
   * Switch Camera (Front / Down)
 
-###  Sensors
+#### Sensors
 
 The AR Drone provides us with measurement and navigational data such as:
 
@@ -160,21 +164,21 @@ resolution of 640x480 VGA and a high speed 64° vertical camera with 60 fps.
 For the AR Drone 2.0 the front camera was replaced with a 720p HD camera
 providing 30 fps.
 
-##  DoBots Bot aka Dotty
+### DoBots Bot aka Dotty
 
-![Dotty, our home-made robot](\[$dl-reference=/groups/10157/portlets/20/file-entries/32040/1.0.xml$\])Last but not least
-[Dotty](http://www.dobots.nl/dotty), our home-made robot was included in this
-update. Dotty is our prototype for an autonomously recharging swarm robot.
+![Dotty, our home-made robot]({{ site.url }}/attachments/dotty.png "Dotty, our home-made robot"){: .float-right}
+
+Last but not least [Dotty](http://www.dobots.nl/dotty), our home-made robot was included in this update. Dotty is our prototype for an autonomously recharging swarm robot.
 It’s bluetooth module enables us to directly connect it with an Android phone.
 It has a two motors which can be controlled separately and several sensors
 which can be streamed and displayed on the phone.
 
-###  Control
+#### Control
 
 At the current state, the robot can be driven around remotely from the phone
 and the streaming interval of the sensors can be adjusted.
 
-###  Sensors
+#### Sensors
 
 In the current version, Dotty includes the following sensors which can be
 displayed on the phone:
@@ -184,9 +188,9 @@ displayed on the phone:
   * Light
   * Microphone
 
-# Swarm Behaviour
+![Robot list for dancing swarm behaviour]({{ site.url }}/attachments/swarmcontrol_robotlist.png "Robot list for dancing swarm behaviour"){: .float-right}
 
-![Robot List for Dancing Swarm Action](\[$dl-reference=/groups/10157/portlets/20/file-entries/32131/1.0.xml$\])
+## Swarm Behaviour
 
 To start with a simple showcase of controlling a set of different robots we
 added the dancing swarm action to the app. Here any of the available robots
@@ -205,7 +209,7 @@ Otherwise it will skip the step and wait for the next (for example only the AR
 Drone can move left and right, the other robots can only rotate left and
 right).
 
-##  Robot List
+### Robot List
 
 On starting up the dancing swarm action the list of robots has to be set up.
 After adding a robot to the list, it has to be connected. If the connection
@@ -214,7 +218,7 @@ address of the selected robot will be shown next to its name. Once the
 connection is established, the screen for the individual robot can be
 displayed and its settings can be adjusted.
 
-##  Remote Control
+### Remote Control
 
 Once all robots are connected, the group can be remote controlled the same way
 as a single robot, using either the arrow keys or the joystick.
@@ -222,9 +226,9 @@ as a single robot, using either the arrow keys or the joystick.
   
 Note: the joystick is not available for the AR Drone
 
-## Dance List
+![Created dance list]({{ site.url }}/attachments/swarmcontrol_dancelist.png "Created dance list"){: .float-right}
 
-![Created Dance List](\[$dl-reference=/groups/10157/portlets/20/file-entries/32144/1.0.xml$\])
+### Dance List
 
 To create a dance, one of the available moves can be selected from the drop
 down menu. If desired, the move duration can be adjusted and the move added to
@@ -232,7 +236,7 @@ the list. The current dance list will be displayed in the list at the top.
 Once the list is completed, a press on Start will let the robots execute the
 dance. (The current step will be highlighted in red.)
 
-#  Outlook
+## Outlook
 
 The app is still under heavy development and although a lot of our current
 stock of robots were added already there is lots of interesting stuff to come

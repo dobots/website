@@ -7,9 +7,11 @@ tags: []
 ---
 {% include JB/setup %}
 
-## Introduction
+# Swarm Control App
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/25529/1.0.xml$\])
+![Swarm Control]({{ site.url }}/attachments/swarmcontrol_main.png "Swarm Control"){: .float-right}
+
+## Introduction
 
 In our attempt to control a swarm of robots we came up with a first draft of
 an app that will let you connect to a wide range of different robots,
@@ -37,9 +39,9 @@ guarding etc).
 The app can be found on the Android market as the [Swarm Control app](https://play.google.com/store/apps/details?id=org.dobots.swarmcontrol). In the first
 draft we added the following two robots:
 
-##  IRobot Roomba
+![iRobot Roomba]({{ site.url }}/attachments/swarmcontrol_roomba.png "iRobot Roomba"){: .float-right}
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/25541/1.0.xml$\])
+##  IRobot Roomba
 
 The iRobot Roomba 521 is equipped with a Bluetooth module
 ([RooTooth](https://www.sparkfun.com/products/684?) from Sparkfun) in order to
@@ -68,11 +70,11 @@ team of two or more robots which coordinate the cleaning of a floor and use
 the same charging station but in such a way that there will never be one robot
 waiting for another to finish.
 
-## Mindstorm NXT
+## Mindstorms NXT
 
-![](\[$dl-reference=/groups/10157/portlets/20/file-entries/25553/1.0.xml$\])
+![Mindstorms NXT]({{ site.url }}/attachments/swarmcontrol_nxt.png "Mindstorms NXT"){: .float-right}
 
-The Mindstorm NXT 2.0 comes equipped with a Bluetooth module which made it
+The Mindstorms NXT 2.0 comes equipped with a Bluetooth module which made it
 perfect for a fast incorporation. We fixed the design of the robot to a
 differential robot for now and connected the left wheel motor to output port A
 and the right wheel motor to output port B.
@@ -109,7 +111,7 @@ there are a lot of things that need to be done still.
 If you are interested you should definitely check back on our website
 [www.dobots.nl](http://www.dobots.nl) where we will keep track of the
 development. But also the app is completely open source; you can find the code
-at [https:// dev.almende.com/repositories/browse/swarmcontrol](https://dev.almende.com/repositories/browse/swarmcontrol). Feel free to contribute and add
+at [https://github.com/eggerdo/swarm-control](https://github.com/eggerdo/swarm-control). Feel free to contribute and add
 your own robots to the list or let us know which ones you want to see added!
 
 

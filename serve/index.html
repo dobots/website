@@ -1,50 +1,71 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Hello World!</title>
-    
-    <meta name="author" content="Name Lastname">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Anne van Rossum">
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!--[if lt IE 9]>
-      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+<title>Home</title>
+
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:400,300,600,700,600italic,800' rel='stylesheet' type='text/css'>
+
+
+
+<link href="/assets/themes/flat/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/themes/flat/css/elusive-webfont.css" rel="stylesheet"> 
+
+<!-- Custom styles for this template -->
+<link href="/assets/themes/flat/css/flexslider.css" rel="stylesheet">
+<link href="/assets/themes/flat/css/style.css" rel="stylesheet"> 
+
+
+<!--[if lt IE 9]>
+      <script src="/assets/themes/flat/resources/respond/Respond.min.js"></script>
     <![endif]-->
 
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Jekyll Bootstrap-3</a>
-        </div>
+<body>
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            
-            
-            
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
 
 
   
     
       
+    
+  
+    
+      
       	
-      	<li><a href="/pages.html">Pages</a></li>
+      	<li><a href="/jobs.html">Jobs</a></li>
       	
       
     
@@ -52,23 +73,7 @@
     
       
       	
-      	<li><a href="/tags.html">Tags</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
+      	<li><a href="/about-us.html">About</a></li>
       	
       
     
@@ -76,7 +81,7 @@
     
       
       	
-      	<li><a href="/categories.html">Categories</a></li>
+      	<li><a href="/blog.html">Blog</a></li>
       	
       
     
@@ -89,74 +94,279 @@
       
     
   
-
-
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container">
+    
       
+      	
+      	<li class="active"><a href="/index.html" class="active">Home</a></li>
+      	
+      
+    
+  
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<section id="sub-menu"  class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-right slogan">
+					<li>"Computers, come, join us in the real world!"</li>
+					<!--
+					<li><a href="#">Home Automation</a></li>
+					<li><a href="#">Smartbots</a></li>
+					<li><a href="#">Interested?</a></li>
+					-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
 <div class="page-header">
-  <h1>Hello World!  <small>Supporting tagline</small></h1>
+  <h1>Home </h1>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-      <p>Read <a href='http://jekyllbootstrap.com/usage/jekyll-quick-start.html'>Jekyll Quick Start</a></p>
-
-<p>Complete usage and documentation available at: <a href='http://jekyllbootstrap.com'>Jekyll Bootstrap</a></p>
-
-<h2 id='update_author_attributes'>Update Author Attributes</h2>
-
-<p>In <code>_config.yml</code> remember to specify your own data:</p>
-
-<pre><code>title : My Blog =)
-
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username</code></pre>
-
-<p>The theme should reference these variables whenever needed.</p>
-
-<h2 id='sample_posts'>Sample Posts</h2>
-
-<p>This blog contains sample posts which help stage pages and blog data. When you don&#8217;t need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
-
-<pre><code>$ rm -rf _posts/core-samples</code></pre>
-
-<p>Here&#8217;s a sample &#8220;posts list&#8221;.</p>
-<ul class='posts'>
-  
-    <li><span>29 Dec 2011</span> &raquo; <a href='/lessons/2011/12/29/jekyll-introduction'>Jekyll Introduction</a></li>
-  
-</ul>
-<h2 id='todo'>To-Do</h2>
-
-<p>This theme is still unfinished. If you&#8217;d like to be added as a contributor, <a href='http://github.com/dbtek/jekyll-bootstrap-3'>please fork</a>!</p>
   </div>
 </div>
 
+-->
 
-      <hr>
-      <footer>
-        <p>
-          &copy; 2014 Name Lastname
-          <span class="pull-right text-muted">
-            powered by
-            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
-            and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
-          </span>
-        </p>
-      </footer>
-    </div>
 
-    
-    <script src="/assets/themes/bootstrap/resources/jquery/jquery.min.js"></script>
-    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+
+<section class="dark-blue mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<h1 class="big-title">DoBots*</h1>
+				<p>*It's in the name. Groups of bots searching, cooperating, grazing and negotiating. DoBots are modeled after nature where colonies, flocks, and swarms of animals show intelligent behaviour together.</p>
+			</div>
+			<div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 ">
+				<img src="images/robot.png" class="img-responsive " alt="robot"> </div>
+		</div>
+	</div>
+</section> <!--end / dark-blue-->
+
+<section class="light-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 ">
+				<img src="images/cheap.png" class="img-responsive cheap" alt="cheap"> </div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="intelligence">
+					<h2>Boost Intelligence</h2>
+					<p>DoBots envisions a world of connected robots in order to improve the quality of our life</p>
+					<p>DoBots provides the software and IT infrastructure for robot autonomy & intelligence to make that world reality.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="dark-sep mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 top-text">
+			</div>
+		</div>
+	</div>
+</section> <!--end / dark-sep-->
+
+<section class="gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="model">
+					<div class="switching">
+						<div class="switching-image">
+							<img src="images/model-house.png" class="img-responsive" alt="model-house"> 
+						</div>
+					</div>
+					<img src="images/robot-dilog.png" class="img-responsive robot-dilog" alt="robot"> 
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="flexslider text-slider">
+					<ul class="slides">
+						<li>
+						<div class="box">
+							<h2>More than vacuum cleaning</h2>
+							<p>Vacuum cleaners that can decide for themselves when to go about the house: not just for cleaning, but also to check if everything is in order... and calling in help when something is wrong. DoBots makes it happen with our wireless sensor nodes combined with intuitive user interfaces! </p>
+						</div>
+						</li>
+						<li>
+						<div class="box">
+							<h2>Living in a robot</h2>
+							<p>Want to switch off the lights or dim them? And what about measuring power consumption? DoBots introduces wireless screw terminals that makes everything controllable! We convert buildings into living systems, in which all single parts cooperate to increase the comfort we experience at home.
+							</p>
+						</div>
+						</li>
+						<li>
+						<div class="box">
+							<h2>Hardware</h2>
+							<p>Add our Roborouter to the package and you're able to identify equipment from energy consumption profiles, download these in order to intelligently control the device and potentially unlocking additional device capabilities.</p>
+							<p class="less-gutter">Our screwdriver terminal connected to the Roborouter gives you access to your devices from outside of the building. This way you can do things like switching off the heater when nobody is present.</p>
+							<a href="#" class="btn btn-default">Read more</a> 
+						</div>
+						</li>
+
+					</ul>
+					<div class="dilog-arrow">
+						<img src="images/dilog-arrow.png" class="img-responsive" alt="dilog"> </div>
+				</div>
+			</div>
+		</div>
+
+		<hr class="sep">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="flexslider text-slider">
+					<ul class="slides">
+						<li>
+						<div class="box">
+							<h2>Robot brains</h2>
+							<p>A phone with wheels, a spoon with a drive, keys that whistle... The only thing that is missing is the robot brain. DoBots works on this challenge by providing software and IT infrastructures for robot autonomy & intelligence.
+							</p>
+						</div>
+						</li>
+						<li>
+						<div class="box">
+							<h2>Personal robots</h2>
+							<p>Devices should be able to help us better and better. With the Internet of Things (IoT) in place, this has become a lot easier.</p>
+							<p class="less-gutter">Smartphone-powered devices are connected to the internet, and therefore interesting to us. We can turn robots into really good personal assistants when smartphones are used in the right way. Dobots does just that, aiming to improve the quality of our life!</p>
+							<a href="#" class="btn btn-default">Read more</a> 
+						</div>
+						</li>
+						<li>
+						<div class="box">
+							<h2>Moving devices</h2>
+							<p>Navigation is a key capability for autonomous robots. DoBots uses multiple low-cost yet robust sensors to make sure robots always find their way, even when faced with changes in the environment and humans moving about.</p>
+						</div>
+						</li>
+
+					</ul>
+					<div class="dilog-arrow-right">
+						<img src="images/dilog-arrow-right.png" class="img-responsive" alt="dilog"> </div>
+				</div>
+			</div>
+			<div class="col-xs-5 col-sm-5 col-md-5">
+				<div class="moving">
+					<h3 class="text-right">I'm moving</h3>
+					<img src="images/moving-robot.png" class="img-responsive moving-robot" alt="moving robot">
+
+					<img src="images/robot-dilog.png" class="img-responsive robot-left" alt="robot"> 
+				</div>
+			</div>
+		</div>
+	</div>
+</section> <!--end / gray-->
+
+<section class="dark-sep mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 top-text">
+			</div>
+		</div>
+	</div>
+</section> <!--end / dark-sep-->
+
+<section class="light-blue no-bg-image">
+	<div class="container">
+		<!--
+		<div class="row gutter-top-btm">
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<img src="images/career.jpg"  class="img-responsive" alt="career">
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8">
+			</div>
+		</div>
+-->
+		<div class="row gutter-top-btm">
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<img src="images/dode.png" class="img-responsive" alt="dode"> </div>
+			<div class="col-xs-8 col-sm-8 col-md-8">
+				<div class="intelligence">
+					<p>We love robots. If you are a developer, hobbyist, or professional, check our dodedodo platform! It allows you to run robot algorithms in the cloud.</p>
+					<a href="http://www.dodedodo.com">Dodedodo Platform </a><br>
+					<a href="https://github.com/dobots/aim">Github code</a><br>
+					<a href="https://play.google.com/store/apps/developer?id=DoBots">Open-source Android apps</a><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> <!--end / light-blue-->
+
+<section class="dark-sep mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 top-text">
+				DoBots - Westerstraat 50 - 3016 DJ Rotterdam +31 (0)10 404 9444
+			</div>
+		</div>
+	</div>
+</section> <!--end / dark-sep-->
+
+
+
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a>. </div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog"><a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <a href="mailto:info@dobots.nl" class="btn btn-default">Yes</a>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="/assets/themes/flat/resources/jquery/jquery.min.js"></script>
+<script src="/assets/themes/flat/resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/themes/flat/js/jquery.flexslider.js"></script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+		$('.text-slider').flexslider({
+animation: "slide",
+start: function(slider){
+$('body').removeClass('loading');
+}
+});
+		});
+</script>
+
+</body>
 </html>
 

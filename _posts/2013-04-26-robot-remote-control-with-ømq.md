@@ -7,6 +7,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+# Robot Remote Control with ØMQ
+
 In earlier blog posts we presented the Swarm Control App where we added
 different robots to an Android app in order to control them remotely and
 display their sensor data on the phone. However, this was only the first step;
@@ -24,7 +26,9 @@ provides message queues, N-to-N connections, different messaging patterns, and
 several messaging transports. On the server we are running node.js to forward
 the ØMQ messages and provide the website for the web client.
 
-#  Romo Brain
+{% youtube wCX6XXzhrCM %}
+
+## Romo Brain
 
 The source code of the app running on Romo can be found
 [here](https://github.com/eggerdo/RomoBrain) and uses the
@@ -33,7 +37,7 @@ compresses the camera frames as 640 x 480 JPEG images and sends them encoded
 in ØMQ messages to the server. It also subscribes to ØMQ messages containing
 remote control commands which are decoded to control the Romo.
 
-#  Robot Server
+## Robot Server
 
 On the server side we are running node.js. The node provides two channels for
 video and two channels for command messages. The incoming channels uses the
@@ -51,14 +55,14 @@ designed such that the Subscriber can filter messages so that it only receives
 messages it is interested in. The server on the other hand will process every
 message.
 
-#  Remote Control Client
+## Remote Control Client
 
 In order to control the robot and to show the flexibility of ØMQ we
 implemented two different clients: an Android app and a web client. However,
 there is no limit to the possible clients, since ØMQ comes in over 30
 different programming languages.
 
-##  Android Client
+### Android Client
 
 The Android app to control the Romo over ØMQ can be found
 [here](https://github.com/eggerdo/RoboTalk-User). It provides the possibility
@@ -68,7 +72,7 @@ Server, decodes the video message and displays it on the screen. In turn,
 remote commands are encoded as a JSON string in a ØMQ message and pushed to
 the server.
 
-##  Web Client
+### Web Client
 
 The Web Client used to control the Romo from a Web Browser is composed of a
 node.js node which serves the HTML web page from a server and a bridge between
@@ -79,7 +83,7 @@ website. There a python script provides a bridge between WebSockets and ØMQ to
 connect to the Robot Server. The code for the web server and ZmqWebBridge can
 be found [here](https://github.com/eggerdo/robot_ctrl.node).
 
-#  Performance
+## Performance
 
 Performance of our setup looks quite well. To control the Romo we used an LG
 Optimus 2x which delivered a video stream of about 20 fps. The RTT is about
