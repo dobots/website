@@ -8,6 +8,8 @@ tags: ["maker culture", "nabaztag", "rfid"]
 ---
 {% include JB/setup %}
 
+# Make Inspiration
+
 When browsing through the various blogposts, I noticed that the ideas of DO
 have many parallels with the [maker culture](http://en.wikipedia.org/wiki/Maker_culture). The maker movement has
 quickly been gaining popularity over the past years, and in that respect DoBots is
