@@ -4,6 +4,7 @@ title: Self-organisation Literature
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 

@@ -4,6 +4,7 @@ title: IRC, XMPP and WhatsApp
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
@@ -34,6 +35,7 @@ another way to message people and it uses a customized protocol, with poor
 [security](http://en.wikipedia.org/wiki/Whatsapp#Security). Furthermore: all
 traffic goes via a single, commercial, company, which often makes it tempting
 to sell users privacy (like Facebook and Google do).  
+
 This made me think: why not replace WhatsApp with a nice app that uses IRC?
 The problem with IRC is that it isn't very noob friendly: it is made by and
 for people who aren't scared of computers, with many options, commands and
@@ -46,9 +48,11 @@ does not guarantee that this nick is actually the person you think it is.
 
 #  XMPP
 
-Recently I've been reading myself into XMPP (for[http://www.dodedodo.com](http://www.dodedodo.com)) and figured that this would
+Recently I've been reading myself into XMPP (for [http://www.dodedodo.com](http://www.dodedodo.com)) and figured that this would
 is perfect for the app, and of course it turns out that WhatsApp simply uses a
-customized XMPP protocol. XMPP basically works like email: everyone can setup
+customized XMPP protocol!
+
+XMPP basically works like email: everyone can setup
 a server and users get an address (JID) in the form of:
 user@server.com/device. When you send a message to another user, the message
 goes via your server, to the other user's server and ends up at the other

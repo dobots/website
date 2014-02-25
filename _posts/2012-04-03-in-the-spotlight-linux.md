@@ -4,12 +4,15 @@ title: In the spotlight, Linux!
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
 #  FireSwarm internals
 
-![](documents/10530/0/tux.jpg?t=1333441261323)The FireSwarm drones developed
+![Tux]({{ site.url }}/attachments/tux.jpg){: .float-right}
+
+The FireSwarm drones developed
 to detect fire as quick as possible, making use of their large numbers, have a
 series of sensors and processors on-board. The autopilot from MAVlab - known
 from the [DelFly](http://www.delfly.nl/), the micro-aerial vehicle lab at the
