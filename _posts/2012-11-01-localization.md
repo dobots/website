@@ -28,7 +28,7 @@ a webcam for robust SLAM?
 
 ##  Visual SLAM
 
-{% youtube 2zZ4MrcAqNQ %}{: .float-right} 
+{% youtube 2zZ4MrcAqNQ %}
 
 In fact, this has already been achieved with
 [PTAM](http://www.robots.ox.ac.uk/~gk/PTAM/). Unfortunately, PTAM and its
