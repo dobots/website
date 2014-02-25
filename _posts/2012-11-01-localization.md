@@ -1,20 +1,19 @@
 ---
 layout: post
 title: Localization
+author: remcotukker
 description: 
 category: 
-tags: []
+tags: ["localization", "slam"]
 ---
 {% include JB/setup %}
 
 This is a follow-up on the earlier post about
-[SLAM](http://www.dobots.nl/blog/-/blogs/a-brief-story-of-slam). Localization
-is inherent to SLAM if the system is working perfectly, but usually requires
+[SLAM]({{site.url}}/2012/02/28/a-brief-story-of-slam/). Localization
+is inherent to SLAM if the system is working perfectly, but that usually requires
 expensive sensors like laser range finders and lots of computing power. As we
 envision cheap and expendable robots, we would like to know whether reliable
 localization is also possible in a simpler way.
-
-
 
 For outdoor robots, the solution is easy: existing maps with GPS (and in the
 near future, [Galileo](http://www.esa.int/esaNA/galileo.html)). This is the
@@ -26,6 +25,8 @@ of information for almost no money though: a camera. Can we use something like
 a webcam for robust SLAM?
 
 ##  Visual SLAM
+
+{% youtube 2zZ4MrcAqNQ %}{: .float-right} 
 
 In fact, this has already been achieved with
 [PTAM](http://www.robots.ox.ac.uk/~gk/PTAM/). Unfortunately, PTAM and its
