@@ -4,19 +4,17 @@ title: Snakebot Project
 description: 
 category: 
 tags: []
+author: jannyramakers
 ---
 {% include JB/setup %}
 
-![Snakebot animation](http://jelkevandersande.nl/wp-content/uploads/2012/05/snakevoorbeeld.png)Over the past semester, we have
-been working with a group of students from the Hogeschool Rotterdam
-(University of Applied Sciences).
+![Snakebot animation]({{ site.url }}/attachments/snake_example.png){: .float-right} 
 
-The assignment: design a robot that is capable of locomotion on land, in
-shallow water, on sea beds and on river banks.
+Over the past semester, we have been working with a group of students from the Hogeschool Rotterdam (University of Applied Sciences).
+
+The assignment: design a robot that is capable of locomotion on land, in shallow water, on sea beds and on river banks.
 
 The result: a functioning 1,5m SnakeBot prototype.
-
-
 
 ##  Why a snake?
 
@@ -35,7 +33,9 @@ take a hint from mother nature, and copy the snake design?
 
 ##  3D printing
 
-![3D Printing](http://jelkevandersande.nl/wp-content/uploads/2012/05/20120510_103130-768x1024.jpg)The students designed a
+![3D Printing]({{ site.url }}/attachments/snake_printing1.jpg){: .float-right}) 
+
+The students designed a
 snake robot which is made up of 11 segments. Each segment (exept for the
 head/tail) contains either a battary, or two servos. Gears were added to
 transfer power from the relatively light servos to move the relatively heavy
@@ -51,7 +51,7 @@ this project was also a valuable learning experience for us! We're now
 seriously considering using the 3D printer to expand some of the off-the-shelf
 robots that we use in our experiments.
 
-For pictures, videos and and account of the printing-and-assembling process,[see the project blog](http://jelkevandersande.nl/projecten/snakebot-project/).
+For pictures, videos and and account of the printing-and-assembling process, [see the project blog](http://jelkevandersande.nl/projecten/snakebot-project/) by one of the students.
 
 The whole snakebot now cost us around 500 euros, but we're aiming to bring to
 price down even further, so that it becomes financially possible to introduce
@@ -59,7 +59,8 @@ price down even further, so that it becomes financially possible to introduce
 
 ##  Next steps
 
-![Snake components](http://jelkevandersande.nl/wp-content/uploads/2012/05/2012-06-21-14.50.06-1024x768.jpg)Over the next months,
+![Snake components]({{ site.url }}/attachments/snake_printing2.jpg){: .float-right}
+Over the next months,
 we will work hard to improve the prototype. We want to make the segments
 smaller, so that the robot itself becomes smaller, too. We would like to place
 the battery inside the servo-segment, so that there is less variation between
@@ -77,6 +78,6 @@ Keep an eye on our blog for updates!
 Do you think that working on our snakebot might be an interesting project for
 you? We can always use good interns with a background in computer science,
 (technical) informatics, electrical or mechanical engineering, so don't
-hesitate to [give us a call!](/contact)
+hesitate to give us a call!
 
 

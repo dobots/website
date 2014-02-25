@@ -2,10 +2,13 @@
 layout: post
 title: Review of Meccano SPYKEE spy robot
 description: 
-category: 
-tags: []
+category:
+author: remcotukker
+tags: ["spykee", "hacks", "mods", "firmware", "spy robot", "robot toy", "robots", "mecanno spykee"]
 ---
 {% include JB/setup %}
+
+# Review of Meccano SPYKEE spy robot
 
 Introduced a couple of years ago, Spykee was received warmly. Especially the
 promise of Meccano that the robot would be open-source was for many robot
@@ -15,7 +18,7 @@ community never grew very big. This is a pity, because the robot has many
 possibilities, as described in the modding section. I will first discuss the
 out-of-the-box features and experience.
 
-{% embedly https://www.youtube.com/watch?v=-GwdixdD6ms %}
+{% youtube -GwdixdD6ms %}
 
 Meccano has a long history of construction toys, and Spykee is no exception.
 On delivery, you will find a box full of small plastic parts and a manual.

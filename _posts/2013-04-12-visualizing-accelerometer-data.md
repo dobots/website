@@ -4,6 +4,7 @@ title: Visualizing accelerometer data
 description: 
 category: 
 tags: []
+author: roemervlasveld
 ---
 {% include JB/setup %}
 

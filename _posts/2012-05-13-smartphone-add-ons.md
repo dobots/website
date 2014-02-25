@@ -4,10 +4,13 @@ title: Smartphone add-ons
 description: 
 category: 
 tags: []
+author: annevanrossum
 ---
 {% include JB/setup %}
 
-![Romo](http://s3.amazonaws.com/ksr/projects/51323/photo-full.jpg?1317960512)There are more and more add-ons available for smartphones.
+![Romo]({{ site.url }}/attachments/romo.jpg){: .float-right} 
+
+There are more and more add-ons available for smartphones.
 We are eagerly awaiting for example the
 [Romo](http://www.kickstarter.com/projects/peterseid/romo-the-smartphone-robot) funded via [kickstarter.com](http://www.kickstarter.com). However,
 because of European regulations with respect to volume restrictions of
@@ -17,9 +20,7 @@ the Romo will arrive somewhere in early June.
 Most of the add-ons are sensors which do not have to create a graphical
 interface for the user because now they can hitchhike on the nice AMOLED, etc.
 screens of a smartphone which the customer does have anyway already. Such as
-for example the [Cardio Defender](http://www.everistg
-
-enomics.com/content/cardiodefender/summary.htm) from Everist Genomics, the
+for example the [Cardio Defender](http://www.everistgenomics.com/content/cardiodefender/summary.htm) from Everist Genomics, the
 [Tinké](http://www.zensorium.com/gallery/gallery.html) from Zensorium, the
 [Zeven Plus](http://www.dexcom.com/seven-plus) glucose meter from Dexcom, the
 [v-linc](http://www.valencell.com/) heart rhythm sensor from Valencell, the
@@ -28,9 +29,7 @@ enomics.com/content/cardiodefender/summary.htm) from Everist Genomics, the
 Slowly, however there are are also actuators (things with a motor) attached to
 the smartphone as an add-on. There is for example the [Xappr gun](http://www.xapprgun.com/), the [Vibease
 vibrator](http://www.techinasia.com/vibease-pre-order/), the [Cobra key finder](https://www.cobra.com/detail/cobra-phonetag.cfm) and the
-[bikn](http://www.bikn.com/index.php), the Panasonic [rice cooker](http://www.cnet.com/8301-13553_1-57400077-32/smartphone-talks-to-
-
-panasonic-rice-cooker/), several [PTZ IP cameras](http://www.lightinthebox.com/unique-design-h-264-wireless-ptz-ip-camera-smartphone-control-msn-server_p238092.html), numerous helicopters, the [Parrot
+[bikn](http://www.bikn.com/index.php), the Panasonic [rice cooker](http://www.cnet.com/8301-13553_1-57400077-32/smartphone-talks-to-panasonic-rice-cooker/), several [PTZ IP cameras](http://www.lightinthebox.com/unique-design-h-264-wireless-ptz-ip-camera-smartphone-control-msn-server_p238092.html), numerous helicopters, the [Parrot
 quadrocopter](http://ardrone.parrot.com/parrot-ar-drone/), the
 [sphero](http://www.gosphero.com/), an underwater robot, the Hydroview (3000
 dollar) from Aquabotix, the [Biometerrarium](http://samuelwilkinson.com/biome/), the [Orb music player](http://www.orb.com/en/store.html), etcetera, etcetera.
