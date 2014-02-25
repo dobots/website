@@ -8,6 +8,8 @@ tags: ["localization", "slam"]
 ---
 {% include JB/setup %}
 
+# Localization
+
 This is a follow-up on the earlier post about
 [SLAM]({{site.url}}/2012/02/28/a-brief-story-of-slam/). Localization
 is inherent to SLAM if the system is working perfectly, but that usually requires
