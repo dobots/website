@@ -10,9 +10,9 @@ tags: ["quadcopters", "painting", "demo", "prototype"]
 
 # Painting Qaudcopters
 
-It started with a simple question half a year ago: Besides capturing video and images from above, what can quadcopters actually do autonomously? More or less practical usecases haven been in the media already: [delivering books](http://edition.cnn.com/2013/10/18/tech/innovation/zookal-will-deliver-textbooks-using-drones/) or [medicines](http://matternet.us/) and [constructing buildings](http://www.youtube.com/watch?v=W18Z3UnnS_0) for example.
+It started with a simple question half a year ago: Besides capturing video and images from above, what can quadcopters actually do autonomously? More or less practical use cases haven been in the media already: [delivering books](http://edition.cnn.com/2013/10/18/tech/innovation/zookal-will-deliver-textbooks-using-drones/) or [medicines](http://matternet.us/) and [constructing buildings](http://www.youtube.com/watch?v=W18Z3UnnS_0) for example.
 
-However, the usecase that is most appealing to _us_ has not received much attention so far: simple maintenance tasks at places that are difficult to reach. We believe such tasks are a prime candidate for robotization with quadcopters. Therefore, we set out to build a simple demonstrator model of a quadcopter that can do paintjobs. 
+However, the use case that is most appealing to _us_ has not received much attention so far: simple maintenance tasks at places that are difficult to reach. We believe such tasks are a prime candidate for robotization with quadcopters. Therefore, we set out to build a simple demonstrator model of a quadcopter that can do paintjobs. 
 
 __This demonstrator is not finished yet!__ Nevertheless, we (in particular Juan Pablo Forero Cortés) made some good progress over the last half year and solved some of the challenges for this particular application. Watch the video to see how the work has been coming along!
 
