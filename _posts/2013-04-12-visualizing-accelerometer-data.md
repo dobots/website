@@ -60,8 +60,8 @@ mirror the SD-card directory to our computer, using the
 
 ##  Visualising the data
 
-![Annotated Accelerometer visual](\[$dl-reference=/groups/10157/portlets/20/file-entries/42056/1.0.xml$\])When the
-data is gathered on the computer, it needs to be transformed and plotted. For
+![Accelerometer data]({{ site.url }}/attachments/visualizing_accelerometer_data.png "Accelerometer data")
+When the data is gathered on the computer, it needs to be transformed and plotted. For
 this we use a combination of Ruby and Octave scripts. The first step of this
 process is to strip the csv files from comments and prepare them for an easy
 Octave [load](http://www.gnu.org/software/octave/doc/interpreter/Simple-File-I_002fO.html#doc_002dload) call. This is done by a Ruby script, which scans a
@@ -72,8 +72,8 @@ the directory with the transformed csv files is passed on to a Octave script.
 This script will create a graph for each measurement and one file with a few
 graphs accumulated.
 
-These steps can be executed by using the command line script:  
-`$ ./transform_logs_to_directory.rb logs/set- stand-walk-stand-sit`  
+These steps can be executed by using the command line script:
+    $ ./transform_logs_to_directory.rb logs/set- stand-walk-stand-sit
 An installed Ruby and Octave environment is required.
 
 ##  Results
