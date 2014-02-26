@@ -10,7 +10,7 @@ author: marchulscher
 
 # The Dotty
 
-![The Dotty PCB]({{ site.url }}/attachments/Dotty_open_hardware_printed_circuit_board.jpg "Open Hardware PCB"){: .float-right} 
+![The Dotty PCB]({{ site.url }}/attachments/Dotty_open_hardware_printed_circuit_board_small.jpg "Open Hardware PCB"){: .float-right} 
 
 Dotty is the name we've given to our prototype swarm robot. Dotty is a simple, extremely cheap robot.
 
@@ -37,7 +37,7 @@ Dotty components head
 
 ## Open hardware
 
-![Dotty's head]({{ site.url }}/attachments/Dotty_head.jpg "Dotty's head"){: .float-right} 
+![Dotty's head]({{ site.url }}/attachments/Dotty_head.jpg "Dotty's head"){: .float-right}
 
 DO Bots is a software company, and our main aim is to develop software for swarm robot applications. Dotty is an exception to this rule. Since we could not find an open hardware platform to suit our needs, we designed our own.
 
