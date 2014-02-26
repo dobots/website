@@ -8,6 +8,8 @@ author: roemervlasveld
 ---
 {% include JB/setup %}
 
+# Introduction to One-Class Support Vector Machine
+
 Traditionally, many classification problems try to solve the two or multi-
 class situation. The goal of the machine learning application is to
 distinguish test data between a number of classes, using training data. But
@@ -17,6 +19,6 @@ task, which gained much popularity the last two decades, is the One-Class
 Support Vector Machine. This (quite lengthly) blog post will give an
 introduction to this technique and will show the two main approaches.
 
-At [http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/](http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/) this blog post continues.
+At [this blog](http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/) the post continues.
 
 

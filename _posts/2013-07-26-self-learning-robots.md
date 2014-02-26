@@ -8,6 +8,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+# Self-learning robots
+
 Autonomous robots are supposed to perform their tasks without human guidance.
 One way to make this happen is by implementing some reward or penalty inside
 the robot; something similar to pleasure and pain in humans and animals. If
