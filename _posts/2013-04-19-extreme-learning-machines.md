@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Extreme Learning Machines
+title: "Extreme Learning Machines"
 description: 
 category: 
 tags: []
+author: laurensbliek
 ---
 {% include JB/setup %}
+
+# Extreme Learning Machines
 
 [Artificial neural networks](https://en.wikipedia.org/wiki/Neural_network) are
 a common technique in the field of machine learning. Inspired by biology, they
@@ -33,38 +36,34 @@ provide a supervised learning example implemented in MATLAB.
 Note that this technique is very similar to Reservoir Computing techniques for
 recurrent neural networks. See [Remco’s blog about Echo State Networks](http://www.dobots.nl/blog/-/blogs/echo-state-networks) for a description.
 
-#  Theory
+## Theory
 
 Suppose we want to train a feedforward neural network with one hidden layer in
-a supervised learning setting by providing input _x_ and desired output _y_.
-If the hidden layer contains synaptic weights _SH_ and bias _BH_ and the
-hyperbolic tangent as a sigmoid activation function, the output _H_ of the
-hidden layer can be computed as _H = tanh(-BH + SH*x)_.
+a supervised learning setting by providing input $$x$$ and desired output $$y$$.
+If the hidden layer contains synaptic weights $$SH$$ and bias $$BH$$ and the
+hyperbolic tangent as a sigmoid activation function, the output $$H$$ of the
+hidden layer can be computed as $$H = tanh(-BH + SH*x)$$.
 
 For the output layer, we use a linear activation function (though we could
-also use a sigmoid function here) and weights _S_ and no bias. Then the output
-_O_ of the whole neural network can be computed as _O = S*H_.
+also use a sigmoid function here) and weights $$S$$ and no bias. Then the output
+$$O$$ of the whole neural network can be computed as $$O = S*H$$.
 
-Now we want the neural network to produce an output _O_ that minimizes the
-error _||y-O||_, given input data _x_. In the backpropagation algorithm this
+Now we want the neural network to produce an output $$O$$ that minimizes the
+error $$||y-O||$$, given input data $$x$$. In the backpropagation algorithm this
 is done by performing a gradient descent on the error to update the hidden
-weights _SH _and the output weights _S_. In the ELM approach, however, the
+weights $$S*H$$ and the output weights $$S$$. In the ELM approach, however, the
 hidden weights are initialised randomly and remain fixed; only the output
 weights are adapted.
 
 Suppose the weights and biases of the hidden layer are fixed, then we can
 compute the outputs of the hidden layer for all the training samples at once.
-This gives a matrix **H **of dimension _h*T_, where_ h _is the amount of
-hidden neurons and_ T_ the amount of training samples. Since the desired
-output_ y_ is also known for all the training samples, for the network to
-produce the desired output we need to solve the linear matrix equation_
-S_***H**_=y_. This equation does not necessarily have an exact solution, but
-the best (smallest norm least-squares) solution of this equation is _S =
-y*_**H**_+_, where **H**+ is the [Moore-Penrose pseudo-inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_pseudoinverse) of **H**. Even with fixed weights going from input to hidden layer, using
-this _S_ for the output weights gives good results in theory and in practice.
+This gives a matrix $$\bf{H}$$ of dimension $$h*T$$, where $$h$$ is the amount of
+hidden neurons and $$T$$ the amount of training samples. Since the desired
+output $$y$$ is also known for all the training samples, for the network to
+produce the desired output we need to solve the linear matrix equation $$S*\bf{H}=y$$. This equation does not necessarily have an exact solution, but the best (smallest norm least-squares) solution of this equation is $$S = y*\bf{H^+}$$, where $$\bf{H^+}$$ is the [Moore-Penrose pseudo-inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_pseudoinverse) of $$\bf{H}$$. Even with fixed weights going from input to hidden layer, using this $$S$$ for the output weights gives good results in theory and in practice.
 For more information, see [Huang, Guang-Bin, Qin-Yu Zhu, and Chee-Kheong Siew. "Extreme learning machine: theory and applications." Neurocomputing 70.1 (2006): 489-501](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.217.3692&rep=rep1&type=pdf).
 
-#  Practice
+## Practice
 
 The above approach is easy to implement in MATLAB, or in any environment that
 can handle a pseudo-inverse (or you can implement a pseudo-inverse yourself).
@@ -74,9 +73,7 @@ layer learn the XOR function.
 First, set the amount of training and generalisation samples and the input and
 output dimensions:
 
-    
-    
-     T = 100; %amount of
+    T = 100; %amount of
     training samples gen = round(0.2*T); %amount of generalisation samples id = 2;
     %input dimension od = 1; %output dimension 
 
@@ -84,14 +81,12 @@ For the input, random values from the set _{0,1}2_ are picked. And since the
 function we want to learn is actually a known function, we can easily compute
 the desired output values:
 
-    
-    
-     x = round(rand(id,T+gen));
+    x = round(rand(id,T+gen));
     %input data y = zeros(od,T+gen); %output data for t=1:T+gen y(:,t) =
     xor(x(1,t),x(2,t)); %function to be learned end 
 
-Of course, in a more realistic application _y_ might not be given as a
-function of _x_ so easily, since that is exactly what the neural network needs
+Of course, in a more realistic application $$y$$ might not be given as a
+function of $$x$$ so easily, since that is exactly what the neural network needs
 to learn. But in this example the function to be learned is known explicitly.
 We also know the different possible values of the input data, so only 4 hidden
 nodes will suffice for the network. In practice, one might need to find the
@@ -100,12 +95,10 @@ algorithm.
 
 Initialise the neural network:
 
-    
-    
-     h = 4; %amount of
-    hidden nodes SH = rand(h,id); %input-to-hidden synaptic weights, fixed BH =
-    rand(h,1)*ones(1,T+gen); %hidden layer bias, fixed S = zeros(od,h); %hidden-
-    to-output synaptic weights, to be adapted 
+    h = 4; %amount of hidden nodes
+    SH = rand(h,id); %input-to-hidden synaptic weights, fixed
+    BH = rand(h,1)*ones(1,T+gen); %hidden layer bias, fixed
+    S = zeros(od,h); %hidden-to-output synaptic weights, to be adapted 
 
 The hidden layer bias and weights will be fixed during the whole algorithm,
 while the output weights will be adapted. It is important that the randomly
@@ -114,7 +107,7 @@ distribution, but it does not matter which one.
 
 The outputs of the hidden layer can be computed for every training sample:
 
-`H = tanh(-BH + SH*x); %Calculate hidden layer output matrix`
+    H = tanh(-BH + SH*x); %Calculate hidden layer output matrix
 
 When using your own inputs and outputs, sometimes the outputs of the hidden
 layer will all be 1 or -1, or close to it. This could give problems in the
@@ -123,18 +116,17 @@ in this case.
 
 The learning phase is now only one line of code:
 
-`S = y(:,1:T)*pinv(H(:,1:T)); %adjust hidden-to-output synaptic weights during
-learning phase`
+    S = y(:,1:T)*pinv(H(:,1:T)); %adjust hidden-to-output synaptic weights during
+learning phase
 
 Only the output weights are adapted, the hidden weights remain fixed. The
 neural network has now learned the XOR function in one step, by only adapting
 the output weights. The next code can be used to visualise this:
 
-    
-    
-     O =
-    S*H; %output plot(y,'b*'); %desired output hold on; plot(1:T,O(:,1:T),'r.');
-    %output during learning phase hold on; plot(T+1:T+gen,O(:,T+1:T+gen),'g.');
-    %output during generalisation phase hold off;
+    O = S*H; %output
+    plot(y,'b*'); %desired output hold on;
+    plot(1:T,O(:,1:T),'r.'); %output during learning phase
+    hold on; plot(T+1:T+gen,O(:,T+1:T+gen),'g.'); %output during generalisation phase
+    hold off;
 
-
+![Extreme learning machines]({{ site.url }}/attachments/extreme_learning_machines.png "Extreme learning machines")
