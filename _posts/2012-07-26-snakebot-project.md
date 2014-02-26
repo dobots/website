@@ -8,6 +8,8 @@ author: jannyramakers
 ---
 {% include JB/setup %}
 
+# Snakebot Project
+
 ![Snakebot animation]({{ site.url }}/attachments/snake_example.png){: .float-right} 
 
 Over the past semester, we have been working with a group of students from the Hogeschool Rotterdam (University of Applied Sciences).
