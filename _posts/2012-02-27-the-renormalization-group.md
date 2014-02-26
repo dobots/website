@@ -85,7 +85,7 @@ renormalization procedure can be divided into two different cases, which is
 very typical for the procedure. For $$k=1$$, their blocking procedure takes two
 subsequent vertices on the ring and replaces them by one vertex. A "shortcut"
 to one of the vertices is preserved and will now point to the new vertex. The
-number of vertices $$L$$ becomes $$L/2$$. The number of edges goes from $$L$$ to $$L/2$$ and
+number of vertices $$\L$$ becomes $$L/2$$. The number of edges goes from $$L$$ to $$L/2$$ and
 hence the probability to pick a given edge goes from $$p$$ to $$2p$$. For the case of
 $$k>1$$, the system size goes from $$L$$ to $$L/k$$, the probability from $$p$$ to $$k^2 p$$, the
 range parameter goes from $$k$$ to $$1$$, and the mean distance stays the same. Hence,
