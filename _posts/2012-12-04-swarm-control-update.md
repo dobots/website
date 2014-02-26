@@ -247,9 +247,9 @@ stock of robots were added already there is lots of interesting stuff to come
   * Interface robots with home automation systems, thus enabling them to interact with their surroundings and/or benefiting from sensors in their environment.
   * And not forgetting, the robots want to be hooked up to the Internet and the cloud
 
-If you are interested you should definitely check the blogs on this [website]({{ site.url }})
-where we will keep track of the
-development. But also the app is completely open source; you can find the code
+If you are interested you should definitely keep an eye on the blogs of this 
+[website]({{ site.url }}), where we will keep track of the development.
+But also the app is completely open source; you can find the code
 at [https://github.com/eggerdo/swarm-control](https://github.com/eggerdo/swarm-control) and the ready app on [Google Play](https://play.google.com/store/apps/details?id=org.dobots.swarmcontrol).
 Feel free to contribute and add your own robots to the list or let us know
 which ones you want to see added!
