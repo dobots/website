@@ -4,7 +4,7 @@ layout: post
 title: "Research with the Surveyor robot"
 description: 
 category: 
-tags: []
+tags: [surveyor, robot, blackfin]
 ---
 {% include JB/setup %}
 
