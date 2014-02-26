@@ -1,8 +1,12 @@
+# Here fill in your data, note that this is available to people online through github
+# If you want things not public, don't set them here.
+# The email address will be appended by @dobots.nl with a bit of Javascript obfuscation
+
 authors:
   annevanrossum:
     display_name: Anne van Rossum
     gravatar: 818dc2df03cd2f1ca7d6e6e701052f0c
-    email: anne@dobots.nl
+    email: anne
     web: http://www.annevanrossum.nl
     twitter: annevanrossum
     github: mrquincle

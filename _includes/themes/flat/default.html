@@ -93,7 +93,7 @@
 					</a>
 					<div class="footer-robot-dilog">
 						<div class="inner-robot-dilog">
-							Do you have a question? <a href="mailto:info@dobots.nl" class="btn btn-default">Yes</a>
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
 							<div class="inner-arrow-right">
 								<img alt="dilog" class="img-responsive" src="{{ BASE_PATH }}/images/inner-dilog.png" draggable="false"> </div>
 						</div>
@@ -118,12 +118,12 @@
 
 $(window).load(function(){
 		$('.text-slider').flexslider({
-animation: "slide",
-start: function(slider){
-$('body').removeClass('loading');
-}
-});
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
 		});
+	});
 </script>
 
 </body>

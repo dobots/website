@@ -11,11 +11,9 @@ pygments: true
 title : DoBots
 tagline: "Distributed Organisms: Robots, Devices and Humans"
 author :
-  name : Anne van Rossum
-  email : anne@dobots.nl
+  name : Distributed Organisms B.V.
+  email : not_in_use@dobots.nl
   github : dobots
-  twitter : annevanrossum
-  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
