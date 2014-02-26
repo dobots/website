@@ -8,12 +8,14 @@ author: jannyramakers
 ---
 {% include JB/setup %}
 
+# Robo-Router
+
 In the "world according to DO", people and organizations will soon be helped
 with their daily chores by swarms of intelligent robots. Vacuum cleaning and
 mopping robots clean the floors of hospitals, UAVs check for forest fires,
 mobile security cameras keep a look-out for unwanted intruders at night.
 
-###  Working together
+##  Working together
 
 One of the prerequisites for this scenario is that the robots must be able to
 collaborate; with each other, with other devices (doors, computers,
@@ -28,9 +30,9 @@ different languages, protocols and media. That is why we need a Robo-Router!
 The Robo-Router would act as an interpreter between humans, robots, and other
 devices, creating a robot internet.
 
-![Robo-Router prototype](\[$dl-reference=/groups/10157/portlets/20/file-entries/39818/1.0.xml$\])
+![Robo-Router prototype]({{ site.url }}/attachments/roborouter.png "Robo-Router prototype")
 
-###  The Roomba vs the Door
+##  The Roomba vs the Door
 
 Over the past six months, Enrico, one of our interns from the [Hogeschool Rotterdam](http://www.hogeschoolrotterdam.nl/opleidingen/technische-informatica/voltijd), worked on one aspect of this problem. His mission:
 allowing a Roomba to open a door, by triggering the electronic door opener.
@@ -43,14 +45,14 @@ capabilities, so we  fixed it up with an ATtiny45 with a 433 MHz receiver. Our
 Roombas are already equipped with a RooTooth from Sparkfun, which gives them
 Bluetooth capabilities.
 
-###  Robo-Router
+##  Robo-Router
 
 Next step was developing the Robo-Router. For the microcontroller, we chose an
 Arduino MEGA, since the Robo-Router only needs a minimal amount of memory. And
 because many Dutch domotica devices use the KaKu (Klik-aan-Klik-uit) protocol,
 supporting that was one of our first priorities.
 
-###  Graduation and further development
+##  Graduation and further development
 
 Enrico finished his internship this month, leaving us with a great proof-of-
 concept. Our Roomba can now open the door to our meeting room on its own, by

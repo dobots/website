@@ -34,7 +34,7 @@ will first show a summary of the theory behind this algorithm, and then
 provide a supervised learning example implemented in MATLAB.
 
 Note that this technique is very similar to Reservoir Computing techniques for
-recurrent neural networks. See [Remco’s blog about Echo State Networks](http://www.dobots.nl/blog/-/blogs/echo-state-networks) for a description.
+recurrent neural networks. See [Remco’s blog about Echo State Networks](//dobots.herokuapp.com/2012/07/06/echo-state-networks/) for a description.
 
 ## Theory
 
@@ -60,7 +60,7 @@ compute the outputs of the hidden layer for all the training samples at once.
 This gives a matrix $$\bf{H}$$ of dimension $$h*T$$, where $$h$$ is the amount of
 hidden neurons and $$T$$ the amount of training samples. Since the desired
 output $$y$$ is also known for all the training samples, for the network to
-produce the desired output we need to solve the linear matrix equation $$S*\bf{H}=y$$. This equation does not necessarily have an exact solution, but the best (smallest norm least-squares) solution of this equation is $$S = y*\bf{H^+}$$, where $$\bf{H^+}$$ is the [Moore-Penrose pseudo-inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_pseudoinverse) of $$\bf{H}$$. Even with fixed weights going from input to hidden layer, using this $$S$$ for the output weights gives good results in theory and in practice.
+produce the desired output we need to solve the linear matrix equation $$S*\bf{H} = y$$. This equation does not necessarily have an exact solution, but the best (smallest norm least-squares) solution of this equation is $$S = y*\bf{H^+}$$, where $$\bf{H^+}$$ is the [Moore-Penrose pseudo-inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_pseudoinverse) of $$\bf{H}$$. Even with fixed weights going from input to hidden layer, using this $$S$$ for the output weights gives good results in theory and in practice.
 For more information, see [Huang, Guang-Bin, Qin-Yu Zhu, and Chee-Kheong Siew. "Extreme learning machine: theory and applications." Neurocomputing 70.1 (2006): 489-501](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.217.3692&rep=rep1&type=pdf).
 
 ## Practice
@@ -77,7 +77,7 @@ output dimensions:
     training samples gen = round(0.2*T); %amount of generalisation samples id = 2;
     %input dimension od = 1; %output dimension 
 
-For the input, random values from the set _{0,1}2_ are picked. And since the
+For the input, random values from the set $$\{0,1\}^2$$ are picked. And since the
 function we want to learn is actually a known function, we can easily compute
 the desired output values:
 
