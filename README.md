@@ -66,4 +66,4 @@ With respect to our companies theme, please, try to create a distinct look for y
 * Almende B.V., http://www.almende.com and DO bots B.V., http://www.dobots.nl
 * Rotterdam, The Netherlands
 
-The theme design itself is done by Ahmet Bektes. The content of our website is our own, and thanks to Bart, Remco, Dominik, Marc, Peet, Anne, Roemer, Laurens, Jorik, Merel, Bhenaz, Remco, Jannie, Alexander, and others.
+The theme design itself is done by Ahmet Bektes. The content of our website is our own, and thanks to Bart, Remco, Dominik, Marc, Peet, Anne, Roemer, Laurens, Jorik, Merel, Bhenaz, Remco, Janny, Alexander, and others.
