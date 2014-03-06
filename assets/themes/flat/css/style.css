@@ -484,9 +484,9 @@ p{
 
 .author-block {
 	display: block;
-	margin: 20px -240px 0px 0px;
+	margin: 20px 0px 0px 20px;
 	float: right;
 	border: 0;
 	text-transform: uppercase;
-	height:150px;
+	height: auto;
 }
