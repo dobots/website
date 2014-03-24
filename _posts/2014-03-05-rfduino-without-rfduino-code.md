@@ -20,7 +20,7 @@ Anyway, interestingly, the RFduino code is not open-source, or most of it is not
 
 There is a lot of information on programming the nRF51822 on the Nordic website and the forums. Most of it however can only be obtained by buying a development or evaluation kit. The development kit comes with a so-called J-Link programmer from Segger, the J-Link LITE CortexM to be precise. Connecting it to the RFduino is not hard. In the following picture you can see how a little breadboard is enough. Here I just took a 9 pins FTSH Samtec connector we had lying around from a previous project (FireSwarm, a swarm of flying robots to find a dune fire). And there is no color coding whatsoever here!
 
-[!RFduino]({{ site.url }}/attachments/rfduino.jpg)
+![RFduino]({{ site.url }}/attachments/rfduino.jpg "RFduino connected")
 
 The J-Link comes with a connector with 9 pins, this means one pin is removed (pin 7) to give some asymmetry, very convenient! The pin layout is like this:
 
