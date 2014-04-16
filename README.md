@@ -20,6 +20,7 @@ In case you have never worked with a markdown syntax before. It is quite easy. T
  * A movie can be embedded by using `{% youtube YOUTUBE_ID %}`
  * An image can be embedded by placing it in the attachments folder and link it through `![Alternative description]({{ site.url }}/attachments/image_file.png "Image description")`
  * An example of a right-floated image: `![Meccano Spykee]({{ site.url }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right}` which uses kramdown to use the css style `float-right`.
+ * An example of a resized image: `![Barbecue color]({{ site.url }}/attachments/barbecue_test_5.png "Barbecue color"){: style="width: 500px"}`
  * A mathematical equation can be described with `$$y=x^2$$`
 
 The other syntax options you can probably find in no time searching online or checking other posts.
