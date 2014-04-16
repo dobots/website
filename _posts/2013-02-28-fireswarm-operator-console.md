@@ -3,7 +3,7 @@ layout: post
 title: FireSwarm operator console
 description: 
 category: 
-tags: []
+tags: [fireswarm]
 author: annevanrossum
 ---
 {% include JB/setup %}
