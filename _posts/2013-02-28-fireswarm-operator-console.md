@@ -1,10 +1,10 @@
 ---
+author: annevanrossum
 layout: post
 title: FireSwarm operator console
 description: 
 category: 
 tags: [fireswarm]
-author: annevanrossum
 ---
 {% include JB/setup %}
 

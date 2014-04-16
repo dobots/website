@@ -29,14 +29,14 @@ It includes the hardware and software for the autonomous aircraft as well as the
 Here you see an example of the behaviour of 10 UAVs when simulated with Levy flight combined with a repulsive force between UAVs.
 In this example no communication restrictions were used. The square is the area to be covered and spans 5 by 5 km.
 
-![Repulsive forces, no communication]({{ site.url }}/attachments/formation_tests_formule.png "Repulsive forces, no communication")
+![Repulsive forces, no communication]({{ site.url }}/attachments/formation_tests_repul_nocom.png "Repulsive forces, no communication")
 
 In Paparazzi, the easiest way to program the flight schedule for the individual UAVs is to set way points for each UAV.
 Then, each autopilot lays down the route to a way point. The carrots are the direction indicators of the UAVs.
 
 The tested algorithms shall be assessed using the following function:
 
-![Evaluation formula]({{ site.url }}/attachments/formation_tests_repul_nocom.png "Evaluation formula")
+![Evaluation formula]({{ site.url }}/attachments/formation_tests_formule.png "Evaluation formula")
 
 Where:
 
