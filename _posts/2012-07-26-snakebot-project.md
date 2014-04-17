@@ -61,7 +61,7 @@ price down even further, so that it becomes financially possible to introduce
 
 ##  Next steps
 
-![Snake components]({{ site.url }}/attachments/snake_printing2.jpg){: .float-right}
+![Snake components]({{ site.url }}/attachments/snake_printing2.jpg)
 Over the next months,
 we will work hard to improve the prototype. We want to make the segments
 smaller, so that the robot itself becomes smaller, too. We would like to place

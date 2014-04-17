@@ -60,7 +60,7 @@ mirror the SD-card directory to our computer, using the
 
 ##  Visualising the data
 
-![Accelerometer data]({{ site.url }}/attachments/visualizing_accelerometer_data.png "Accelerometer data")
+![Accelerometer data]({{ site.url }}/attachments/visualizing_accelerometer_data.png "Accelerometer data"){: style="width: 800px"}
 When the data is gathered on the computer, it needs to be transformed and plotted. For
 this we use a combination of Ruby and Octave scripts. The first step of this
 process is to strip the csv files from comments and prepare them for an easy

@@ -24,7 +24,7 @@ contains 2 motors, some experiment space in the form of two breadboard-like
 areas for electroniccomponents, and a battery compartment. The motors drive
 two wheels, the third is a passive turning wheel.
 
-![](http://www.arexx.com/data/images/dp/robo_chassis.jpg)
+![](http://www.arexx.com/data/images/dp/robo_chassis.jpg){: .float-right}
 
 One of our wishes is to attach a number of different sensors to the robot that
 are not optimized individually, but which will be used as a composite by the

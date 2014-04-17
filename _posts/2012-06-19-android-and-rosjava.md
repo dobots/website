@@ -8,9 +8,12 @@ author: annevanrossum
 ---
 {% include JB/setup %}
 
+# Android and rosjava
+
+## Open source
+
 ![Random shot of desk]({{ site.url }}/attachments/rosjava_image.jpg){: .float-right }
 
-Open source
 coders and employees from Google have joined forces to create rosjava. This is
 a pure Java implementation of [ROS](http://www.willowgarage.com/pages/software/ros-platform) (from Willow Garage). ROS shouldn't be seen as a solution for
 all and everything. So, for what can it be useful? Under other things, it
