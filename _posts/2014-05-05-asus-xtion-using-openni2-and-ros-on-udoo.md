@@ -10,6 +10,8 @@ author: dominikegger
 
 # Asus Xtion on UDOO with OpenNI2 and ROS
 
+![Asus Xtion on UDOO]({{ site.url }}/attachments/udoo,xtion,openni2.png "Asus Xtion on UDOO")
+
 This step by step tutorial shows how to setup the [UDOO](http://www.udoo.org/) in order to use an Asus Xtion with ROS. You can also skip the ROS steps and only install the ubuntu core for armhf from step 1 and then skip to step 2.
 
 ## Step 1: Install ROS on UDOO
