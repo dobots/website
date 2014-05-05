@@ -4,6 +4,7 @@ title: Robot Remote Control with ØMQ
 description: 
 category: 
 tags: []
+author: dominikegger
 ---
 {% include JB/setup %}
 
