@@ -12,7 +12,7 @@ author: dominikegger
 
 ![Asus Xtion on UDOO]({{ site.url }}/attachments/udoo,xtion,openni2.png "Asus Xtion on UDOO")
 
-This step by step tutorial shows how to setup the [UDOO](http://www.udoo.org/) in order to use an Asus Xtion with ROS. You can also skip the ROS steps and only install the ubuntu core for armhf from step 1 and then skip to step 2.
+This step by step tutorial shows how to setup the [UDOO](http://www.udoo.org/) in order to use an Asus Xtion with ROS. If ROS is not necessary, follow [this](http://feilipu.me/2013/11/09/udoo-ubuntu-12-04-guide/) tutorial alternatively and go directly to step 2.
 
 ## Step 1: Install ROS on UDOO
 
@@ -24,7 +24,7 @@ To use ROS on the UDOO set up an sdcard with an ubuntu core, following the steps
 	
 		sudo dd if=u-boot-d.imx of=/dev/sdb bs=512 seek=2 status=noxfer
 
-3. fix hostname problem. first add a correct hostname <HOST_NAME>
+3. Fix hostname problem. first add a correct hostname <HOST_NAME>
 
 		sudo nano /etc/hostname
 
@@ -37,6 +37,10 @@ To use ROS on the UDOO set up an sdcard with an ubuntu core, following the steps
 		127.0.0.1 	localhost <HOST_NAME>
 
 	then reboot.
+
+3. To use the WiFi module, the firmware has to be installed seperately and can be found [here](https://packages.debian.org/sid/firmware-ralink)
+
+		sudo dpkg -i firmware-ralink_0.41_all.deb
 
 ## Step 2: Install OpenNI2 Driver
 
@@ -170,15 +174,15 @@ which creates the archive OpenNI-Linux-Arm-2.2.tar.bz2 in Packaging/Final/
 
 The packages used to run the Asus Xtion on the UDOO are not availbale over apt yet, so they need to be compiled from source
 
-First create a catkin workspace as described [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), then check out the following packages in the src folder of the catkin workspace:
+First install the following dependencies, which will take some time and space (~900MB):
+
+	sudo apt-get install ros-hydro-ros ros-hydro-rostopic ros-hydro-nodelet ros-hydro-camera-info-manager ros-hydro-roscpp ros-hydro-sensor-msgs ros-hydro-dynamic-reconfigure ros-hydro-image-transport ros-hydro-image-proc ros-hydro-depth-image-proc ros-hydro-tf 
+
+then create a catkin workspace as described [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), and check out the following packages in the src folder of the catkin workspace:
 
 	git clone https://github.com/ros-drivers/openni2_camera
 	git clone https://github.com/ros-drivers/openni2_launch
 	git clone https://github.com/ros-drivers/rgbd_launch
-
-and install the following dependencies, which will take some time and space (~800MB):
-
-	sudo apt-get install ros-hydro-ros ros-hydro-rostopic ros-hydro-nodelet ros-hydro-camera_info_manager ros-hydro-roscpp ros-hydro-sensor_msgs ros-hydro-dynamic-reconfigure ros-hydro-image-transport ros-hydro-image-proc ros-hydro-depth-image-proc ros-hydro-tf 
 
 Now the ros packages checked out above to the catkin workspace can be compiled with catkin_make
 
@@ -189,5 +193,5 @@ Once the packages are compiled, the Xtion is ready for use with ROS with
 
 	roslaunch openni2_launch openni2.launch
 
-Performance on the UDOO is perfect with 30 Hz at 640x480
+Performance on the UDOO is good with 30 Hz at 640x480, compared to the Raspberry Pi that can only provide 30 Hz at 320x240 under no other load.
 
