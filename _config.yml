@@ -2,6 +2,8 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
+relative_permalinks: false
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile","Gemfile.lock","Procfile","vendor"]
 pygments: true
 
