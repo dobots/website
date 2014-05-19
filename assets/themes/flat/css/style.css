@@ -101,6 +101,11 @@ p{
 	background:#2398d6 url(../images/sep.jpg) repeat-x;
 	color:#fff;
 }
+
+.light-blue a{
+	color:#303e48;
+}
+
 .cheap{
 	margin-top:15px;
 }
@@ -489,4 +494,67 @@ p{
 	border: 0;
 	text-transform: uppercase;
 	height: auto;
+}
+
+.badge-ribbon {
+	position: relative;
+	background: #303e48;
+//	background: blue;
+	height: 100px;
+	width: 100px;
+	-moz-border-radius:    50px;
+	-webkit-border-radius: 50px;
+	border-radius:         50px;
+}
+
+.badge-ribbon:before,
+.badge-ribbon:after {
+	content: '';
+	position: absolute;
+	border-bottom: 70px solid #303e48;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	top: 70px;
+	left: -10px;
+	-webkit-transform: rotate(-140deg);
+	-moz-transform:    rotate(-140deg);
+	-ms-transform:     rotate(-140deg);
+	-o-transform:      rotate(-140deg);
+}
+
+.badge-ribbon:after {
+	left: auto;
+	right: -10px;
+	-webkit-transform: rotate(140deg);
+	-moz-transform:    rotate(140deg);
+	-ms-transform:     rotate(140deg);
+	-o-transform:      rotate(140deg);
+}
+
+.forget-box {
+	//max-height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+
+.forget-box .btn-default{
+	font:normal 18px/1 'oswaldbold', Helvetica, sans-serif;
+	color:#2398d6;
+}
+
+.forget-box .forget-button { 
+	position: absolute; 
+	bottom: 0; left: 0;
+	width: 100%; 
+	text-align: center; 
+	margin: 0; 
+	padding: 80px 0; 
+
+	/* background color expects is e1e3e4, or: 225, 227, 229 */ 
+	background-image: -webkit-gradient(linear, left top, left bottom,from(rgba(255,255,255,0)), to(rgba(225,227,229,1)));
+	background-image: -webkit-linear-gradient(left top, left bottom, rgba(255, 255, 255, 0), rgba(225, 227, 229, 1));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(225, 227, 229, 1));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(225, 255, 229, 1));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(225, 227, 229, 1));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0), rgba(22, 227, 229, 1));
 }
