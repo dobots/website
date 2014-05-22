@@ -3,14 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="{{ site.author.name }}">
-<link rel="shortcut icon" href="images/favicon.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="icon" type="image/x-icon" href="{{ BASE_PATH }}/favicon.ico?">
+<link rel="apple-touch-icon" href="{{ BASE_PATH }}/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/images/apple-touch-icon-114x114.png">
 
 <title>DoBots | {{ page.title }}</title>
 
@@ -27,10 +26,9 @@
 <link href="{{ ASSET_PATH }}/css/flexslider.css" rel="stylesheet">
 <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet"> 
 
-
 <!--[if lt IE 9]>
-      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
-    <![endif]-->
+	<script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+<![endif]-->
 
 <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
 <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
@@ -115,8 +113,9 @@
 <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{ ASSET_PATH }}/js/jquery.flexslider.js"></script>
 
-<script type="text/javascript" src="//c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- for http, we have this link, however we like to have https, so we use the rackcdn.com server directly -->
 <!-- <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script type="text/javascript" src="//c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <script type="text/javascript">
 
