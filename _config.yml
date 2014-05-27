@@ -27,8 +27,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://dobots.herokuapp.com
-#production_url : http://localhost:4000
+production_url : https://dobots.nl
 
 markdown : kramdown
 

@@ -469,6 +469,11 @@ p{
 	margin: 0 auto;
 }
 
+.social-button-footer {
+	float: right;
+	margin: 25px 0px 0px 0px;
+}
+
 .embed {
 	text-align: center;
 	border-radius: 3px;
