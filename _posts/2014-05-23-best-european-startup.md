@@ -3,6 +3,7 @@ layout: post
 title: "Best European Startup"
 description: "DoBots won the prize of Best European Startup in the Robot Launch competition"
 category: 
+author: annevanrossum
 tags: []
 ---
 {% include JB/setup %}
