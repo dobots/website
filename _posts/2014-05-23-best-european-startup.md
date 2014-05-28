@@ -10,6 +10,8 @@ tags: []
 
 # The Robot Launch competition
 
+![Best European Startup]({{ site.url }}/attachments/best_european_startup.png){: .float-right}
+
 It are exciting times for us at DoBots. We are very proud to be part of the six finalists of the [Robot Launch competition](http://robotlaunch.com/), selected out of 60 startups in robotics in total! Movies from the finalists can be found at [Robot Launch](http://robotlaunch.com/2014/05/robot-launch-2014-finalists-announced/). We can't do justice to the products and services of the finalists, but let us describe them briefly:
 
  * [RoboSoft Systems](http://www.robosoftsystems.co.in/), a duct inspection robot
