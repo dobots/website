@@ -62,7 +62,14 @@ And switch a theme through:
 If you want to adjust the theme, you have to navigate to `\_includes/themes/flat/` and `assets/themes/flat/`.
 
 For running on Heroku, there is a Gemfile added. You add for example kramdown to it, or oembed and run "bundle install".
-    
+
+The information for the different plugins is stored in an `.env` file which is not pushed to github (it is part of the `.gitignore` file. Its content currently defines identifiers for Embedly and Google:
+
+    EMBEDLY_KEY=...
+    GOOGLE_ANALYTICS_KEY=...
+
+Write here your own keys to get the analytics and use embedly (although the latter I found not so convenient in the end, requiring paid subscriptions already after showing a movie only several times).
+
 ## Copyrights
 
 The license for the Jekyll part is MIT. The license for Bootstrap as well. The copryights of Bootstrap belong to Twitter.
