@@ -3,20 +3,20 @@ layout: post
 title: "Sportopia, friends are your best coach!"
 description: "A smartphone application that allows you to send challenges to your friends"
 category: 
-tags: [coaching, excercise, motivation, app]
+tags: [coaching, exercise, motivation, app]
 author: annevanrossum
 ---
 {% include JB/setup %}
 
 # Motivation
 
-What if our smartphone would be a means for our friends and family to reach us to keep us motivated in excercising well? Wouldn't that help much better than setting our goals!? Everybody knows that taking up a sports, even only running, which does not need much of additional gear, is very difficult. You can motivate yourself by listening to nice music in the meantime, by reminding yourself of the nice feeling afterwards, or trying to measure an improvement in your physical condition. However, it is hard to listen to yourself at times. We are wired in such a way that we do not take ourselves too seriously, we do not admit it, but we know of ourselves that we make mistakes.
+What if our smartphone would be a means for our friends and family to reach us to keep us motivated in exercising well? Wouldn't that help much better than setting our goals!? Everybody knows that taking up a sports, even only running, which does not need much of additional gear, is very difficult. You can motivate yourself by listening to nice music in the meantime, by reminding yourself of the nice feeling afterwards, or trying to measure an improvement in your physical condition. However, it is hard to listen to yourself at times. We are wired in such a way that we do not take ourselves too seriously, we do not admit it, but we know of ourselves that we make mistakes.
 
-Friends! If we tell others of our achievements or if we can compete with them, this already changes a lot! Now we can talk about it, we think of it naturally in a nice social setting, others can compliment us, and so much more. Ideally we would not only communicate to each other after we have excercised, but before! Students at the University of Applied Sciences (in Dutch, the Hogeschool van Amsterdam, or HvA), have created a technological means to do so! A smartphone application that you can use to motivate others in the form of **challenges**.
+Friends! If we tell others of our achievements or if we can compete with them, this already changes a lot! Now we can talk about it, we think of it naturally in a nice social setting, others can compliment us, and so much more. Ideally we would not only communicate to each other after we have exercised, but before! Students at the University of Applied Sciences (in Dutch, the Hogeschool van Amsterdam, or HvA), have created a technological means to do so! A smartphone application that you can use to motivate others in the form of **challenges**.
 
 ## Sportopia
 
-The application developed by Kevin Groen, Aster Schultz, and Dennis Reep is called Sportopia and is available on [Google Play](https://play.google.com/store/apps/details?id=alm.motiv.AlmendeMotivator). It hooks up to your Facebook contacts, so it nicely integrates with your social network. It then enables you to send so-called challenges to your friends. For example, you can ask your roommate to get beer from the supermarket. A perhaps questionable activity with respect to excercise overall, but an activity nevertheless! As proof you can ask for evidence in the form of pictures. In the meantime you can try to motivate him with text messages.
+The application developed by Kevin Groen, Aster Schultz, and Dennis Reep is called Sportopia and is available on [Google Play](https://play.google.com/store/apps/details?id=alm.motiv.AlmendeMotivator). It hooks up to your Facebook contacts, so it nicely integrates with your social network. It then enables you to send so-called challenges to your friends. For example, you can ask your roommate to get beer from the supermarket. A perhaps questionable activity with respect to exercise overall, but an activity nevertheless! As proof you can ask for evidence in the form of pictures. In the meantime you can try to motivate him with text messages.
 
 ![Sportopia Friends]({{ site.url }}/attachments/friends.png){: style="width: 300px"}
 ![Sportopia Challenges]({{ site.url }}/attachments/challenges.png){: style="width: 300px"}

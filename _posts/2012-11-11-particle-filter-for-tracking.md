@@ -1,4 +1,4 @@
----
+--
 layout: post
 title: Particle filter for tracking
 description: 
@@ -19,7 +19,7 @@ code for the particle filter at
 it.
 
 There is not much time spend on this implementation. It is only meant as an
-excercise to get familiar with particle filtering techniques. There are
+exercise to get familiar with particle filtering techniques. There are
 approximate and generalised forms of belief propagation on networks of robots
 that require such expertise. Subsequently this can be used for either
 simultaneous localisation and mapping, tracking, or certain common visual
