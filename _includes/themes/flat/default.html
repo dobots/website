@@ -115,7 +115,19 @@
 
 <!-- for http, we have this link, however we like to have https, so we use the rackcdn.com server directly -->
 <!-- <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-<script type="text/javascript" src="//c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+
+<!--
+<script type="text/javascript">
+	if ( 'https:' == location.protocol && 'undefined' === typeof(MathJax) ) {
+		var mjs = $('script[src^="http://cdn.mathjax.org/"]').remove();
+		if ( mjs.length > 0 ) $.ajax( {
+			dataType: "script", cache: true,
+			url: mjs[0].src.replace('http://cdn.mathjax.org', 'https://c328740.ssl.cf1.rackcdn.com')
+		} );
+	}
+</script>
+-->
 
 <script type="text/javascript">
 
