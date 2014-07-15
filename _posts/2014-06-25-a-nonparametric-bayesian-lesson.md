@@ -24,7 +24,7 @@ It is quite hard to withstand the reasoning of Jaynes (it is a pity he couldn't 
 
 ## Nonparametric Bayesian
 
-This Bayesian prelude makes it clear that the structure of the prior is very important. Very interesting problems can be solved if the prior gets sufficient structure. A nice workshop has been held at Como, Italy, on Applied Bayesian Nonparametrics, from the Applied Bayesian Statistics School, [ABS14](http://www.mi.imati.cnr.it/conferences/abs14.html). The lecturers were [Michael Jordan](http://www.cs.berkeley.edu/~jordan/) and [Francois Caron](http://www.stats.ox.ac.uk/~caron/) who talked about Dirichlet processes and Beta processes, respectively. If you don't know this Michael Jordan, you probably also haven't heard of past students of him, under which e.g. Yoshua Bengio, Tommi Jaakkola, Andrew Ng, Emanuel Todorov, and Daniel Wolpert. But, enough small talk, let's face the truth.
+This Bayesian prelude makes it clear that the structure of the prior is very important. Very interesting problems can be solved if the prior gets sufficient structure. A nice workshop has been held at Como, Italy, on Applied Bayesian Nonparametrics, from the Applied Bayesian Statistics School, [ABS14](http://www.mi.imati.cnr.it/conferences/abs14.html). The lecturers were [Michael Jordan](http://www.cs.berkeley.edu/~jordan/) and [Francois Caron](http://www.stats.ox.ac.uk/~caron/) who talked about Dirichlet processes and Beta processes, respectively. If you don't know this Michael Jordan, you might instead have heard one time or another from one of his students, under which e.g. Yoshua Bengio, Tommi Jaakkola, Andrew Ng, Emanuel Todorov, and Daniel Wolpert. But, enough small talk, let's face the truth.
 
 ### The Chinese Restaurant Process
 
@@ -40,15 +40,15 @@ Why are these stochastic processes so interesting? With a Dirichlet process it i
 
 To explain how inference proceeds is something for another blog post (check the [code](https://github.com/mrquincle/aim_modules/tree/master/DirichletModule)). It is more interesting for now to see how these methods have been applied already.
 
-An illustrative example is from Del Pero et al.:
+An illustrative example is from Del Pero et al. in [Understanding bayesian rooms using composite 3d object models](http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Del_Pero_Understanding_Bayesian_Rooms_2013_CVPR_paper.pdf):
 
 ![Chairs]({{ site.url }}/slides/abs14/images/delpero.png "Chairs")`
 
 One of the chairs you can see very well, but the other is occluded by the table. To perform inference over this structure requires a presentation of a chair and the ability of reasoning over multiple of those composed objects. Only then it becomes feasible to infer the full chair behind this table.
 
-Another example is speaker diarization. Imagine an organized meeting, there are people talking, supposedly not at the same time, but sequentially. How do we perform inference on the number of speakers present and how can we build an inference engine that benefits from Bob talking at time $$t[0] \cdots t[30]$$, and him talking at time $$t[120]-t[180]$$? The system should all the time improve from Bob talking!
+Another example is speaker diarization. Imagine an organized meeting, there are people talking, supposedly not at the same time, but sequentially. How do we perform inference on the number of speakers present and how can we build an inference engine that benefits from Bob talking at time $$t[0] \cdots t[30]$$, and him talking at time $$t[120] \cdots t[180]$$? The system should all the time improve from Bob talking!
 
-This can be solved by a so-called sticky Hierarchical Dirichlet Process defined on a very well-known model structure, a Hidden Markov Model, see [A sticky HDP-HMM with application to speaker diarization](http://projecteuclid.org/download/pdfview_1/euclid.aoas/1310562215). A Hidden Markov Model, is built on a Markovian assumption, hence its name. This means that it is impossible to store long-term dependencies as required by this application: a person talking at the beginning and the end of a conversation. Remarkably is that this model actually performed on par with state-of-the-art algorithms that were very specific to this application!
+This can be solved by a so-called sticky Hierarchical Dirichlet Process defined on a very well-known model structure, a Hidden Markov Model (see [A sticky HDP-HMM with application to speaker diarization](http://projecteuclid.org/download/pdfview_1/euclid.aoas/1310562215)). A Hidden Markov Model, is built on a Markovian assumption, hence its name. This means that it is impossible to store long-term dependencies as required by this application: a person talking at the beginning and the end of a conversation. Remarkably is that this model actually performed on par with state-of-the-art algorithms that were very specific to this application!
 
 ### Slides
 

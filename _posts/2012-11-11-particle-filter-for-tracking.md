@@ -1,6 +1,6 @@
---
+---
 layout: post
-title: Particle filter for tracking
+title: "Particle filter for tracking"
 description: 
 category: 
 tags: []
@@ -29,8 +29,6 @@ With respect to the latter, it would be cool if an image segmentation task
 across a multi-agent system would indeed be solved as one general problem
 where the structure is exploited, rather than some ad-hoc user-defined
 decomposition depending on the coffee quantity in the morning.
-
-![smiley](http://www.dobots.nl/html/js/editor/ckeditor/plugins/smiley/images/regular_smile.gif)
 
 {% youtube LmxHQdzytRw %}
 
