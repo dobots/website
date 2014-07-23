@@ -46,3 +46,7 @@ For us, we'd like to experiment with the new SoftDevice, the S120. Contrary to t
 
 So, why using the RFduino at all? Its advantages are still there: certification, many extension boards, and a nice antenna design. We would like to concentrate on very rapid prototyping of services, such as a **Lost & Found service**, rather than spending too much time on the electronics itself.
 
+## Crownstone
+
+Make sure you take a look at our [Crownstone]({{ site.url }}/products/crownstone) offering. This is directly based on the nRF51822 and open-source for real. :-) So, this uses the code at github for [BlueNet](https://github.com/mrquincle/bluenet) as indicated above. If you want to have more details on how to program the different SoftDevice versions from Nordic etc., feel free to file an issue there. Also, look around if you want to get more information on Bluetooth Low-Energy in general, as for example in this blog post about [Linux and BLE]({{ site.url }}/2014/07/23/linux-and-ble/) or on the [iBeacon-type of device]({{ site.url }}/2014/07/15/ble-dobeacon-a-virtual-memo/) we build (with respect to software!) for [WOTS](http://wots.nl). To be clear, the services on top of the Crownstone that require a larger part of machine learning and artificial intelligence will not be open-source. If you think we do not communicate that properly, feel also free to suggest improvements in wording!
+
