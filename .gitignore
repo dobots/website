@@ -1,6 +1,10 @@
+# The generated files do not need to be on github
 _site/*
 _theme_packages/*
 .bundle/*
+
+# The identification for google analytics can be private
+google*
 
 serve
 
@@ -14,6 +18,6 @@ Thumbs.db
 
 .env
 
-# script for deployment, not necessary on github
-# if you want them, ask of course
+# The scripts to create blog posts, or deploy the site
+# If you want them, give a yell!
 scripts/
