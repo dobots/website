@@ -11,7 +11,11 @@
 <link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/images/apple-touch-icon-114x114.png">
 
+{% if page.hide_title %}
+<title>DoBots</title>
+{% else %}
 <title>DoBots | {{ page.title }}</title>
+{% endif %}
 
 <!--
 <link href='//fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:400,300,600,700,600italic,800' rel='stylesheet' type='text/css'>
