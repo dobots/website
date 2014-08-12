@@ -7,6 +7,12 @@ tags: []
 ---
 {% include JB/setup %}
 
+$$\newcommand{\E}{\mathbb{E}}$$
+$$\newcommand{\Var}{\mathrm{Var}}$$
+$$\newcommand{\Cov}{\mathrm{Cov}}$$
+$$\newcommand{\est}[1]{\hat{#1}}$$
+
+
 There are many introductions to machine learning that postulate all kind of different types of machine learning methods, like evolutionary methods, kernel-based methods, etc. The risk of a classification that is built upon the techniques used, rather than trying to get into detail into the underlying optimization procedure, is that it looks like you can pick anything you want to solve a specific problem. This is not the case. There are well-established relations between different machine learning methods, and knowing them is key to solving a problem efficiently.
 
 # Supervised, unsupervised, and semi-supervised learning
@@ -20,6 +26,20 @@ A supervised learning problem is also often called a classification problem. The
 * The machine is provided with a label, and it needs to generate a corresponding data item.
 
 Note, that there might be many other learning problems, but they will all require additional structure to be defined. For example, a binary classification problem only has labels that are of binary nature (say Dutch or American). Or a ranking structure within the items as in a [ranking SVM](https://en.wikipedia.org/wiki/Ranking_SVM). We will see examples of these additional structures and how, if they are properly defined, they often wind down to be the same problem, under wildly different names in different fields.
+
+## Properties
+
+Before we delve into classification (supervised learning) versus clustering (unsupervised learning), we will briefly mention several concepts that are of utmost importance in the machine learning literature:
+
+* convexity
+* optimality
+* sparsity
+* nonnegativity
+* submodularity
+* contraction
+* margins
+* generalization, especially the bias-variance tradeoff
+* capacity, especially the Vapnik-Chervonenkis dimension
 
 ## Clustering
 
@@ -77,7 +97,19 @@ The $$\alpha$$-divergence stems from Amari et al., and is a generalization of th
 
 $$D_\alpha(p\|q) = \frac{1}{\alpha(1-\alpha)}  \int_x \alpha p(x) + (1-\alpha) q(x)- p(x)^\alpha q(x)^{1-\alpha} dx$$
 
-Taking $$\lim_{\alpha \to 0} D_\alpha(p\|q) = KL(p\|q)$$, $$\lim_{\alpha \to 1} D_\alpha(p\|q) = KL(q\|p)$$ and $$\alpha=0.5$$ is the so-called [Hellinger distance](https://en.wikipedia.org/wiki/Hellinger_distance) for example.
+Taking $$\lim_{\alpha \to 0} D_\alpha(p\|q) = KL(p\|q)$$, $$\lim_{\alpha \to 1} D_\alpha(p\|q) = KL(q\|p)$$ and $$\alpha=0.5$$ is the so-called [Hellinger distance](https://en.wikipedia.org/wiki/Hellinger_distance) for example (a very simple distance metric, see e.g. this [Hellinger (and Battacharyya) distance calculation](https://github.com/mrquincle/aim_modules/blob/master/NaiveBayesModule/inc/dim1algebra.hpp)). The behaviour of the divergence ranges from prefering matching a single mode (when $$\alpha \to -\infty$$) to prefering to cover the entire distribution (when $$\alpha \to \infty$$).
+
+### Connection NMF 
+
+Information divergences have been used to minimize the approximation error between observed and predicted data, under which nonnegative matrix factorization, stochastic neighbour embedding, topic models, and Bayesian network optimization.[^8]
+
+### Variance and bias
+
+The variance of an estimator $$\est{X}$$ under a squared error loss, you might recognize as $$\E_{\est{X}}(\est{X} - \E\est{X})^2$$, or equivalently:[^9]
+
+$$\Var(\est{X})=\underset{\mu}{\min} \E_{\est{X}}(\est{X} - \mu)^2$$
+
+So it is a measure of variability...
 
 
 ## References
@@ -90,10 +122,14 @@ Feel free to suggest some other papers that you find to be must-reads!
 [^4]: The Unified Propagation and Scaling Algorithm (2002) Welling and Teh
 [^5]: Novel Iteration Schemes for the Cluster Variation Method (2002) Kappen and Wiegerinck
 [^6]: Divergence Measures and Message Passing (2005) Minka
-
+[^7]: Generalized Alpha-Beta Divergences and Their Application to Robust Nonnegative Matrix Factorization (2011) Cichocki et al.
+[^8]: Learning the Information Divergence (2014) Dikmen et al.
+[^9]: Variance and Bias for General Loss Functions (2003) James
+[^10]: A Unified Bias-Variance Decomposition and its Applications (200) Domingos
 
 *[SVM]: Support Vector Machine
 *[BP]: Belief Propagation
+*[NMF]: Nonnegative Matrix Factorization
 
 <!--
 * multiple kernel learning = group lasso
