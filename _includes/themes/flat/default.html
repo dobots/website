@@ -37,6 +37,7 @@
 <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
 <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+
 </head>
 
 <body>
@@ -116,9 +117,75 @@
 
 {% include JB/analytics %}
 
-<script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
-<script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="{{ ASSET_PATH }}/js/jquery.flexslider.js"></script>
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+<script type="text/javascript" src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.flexslider.js"></script>
+
+{% if page.twitter %}
+<script type="text/javascript" src="{{ ASSET_PATH }}/js/twitterFetcher_min.js"></script>
+
+<!-- get your own id at https://twitter.com/settings/widgets -->
+<script type="text/javascript">
+var config={
+	'id':'474532446478680064',
+	'domId':'twitter',
+	'maxTweets':5,
+	'showUser':false,
+	'dateFunction':formatDate,
+	'showRetweet':false,
+	'customCallback':handleTweets,
+	'showInteraction':false
+}
+
+twitterFetcher.fetch(config);
+
+
+function formatDate(date){
+	//return date.toString({day:'numeric', month:'long', year:'numeric'});
+	return date.toLocaleDateString('en-EN',{day:'numeric',month:'long',year:'numeric'});
+}
+
+
+function handleTweets(tweets){
+	var i=0;
+	var j=tweets.length;
+	var k=document.getElementById('twitter');
+	var l='<div id="tweets">';
+
+	while(i<j){
+		l+='<div class="tweet" id="cislo'+i+'">'+tweets[i]+'</div>';
+		i++;
+	}
+
+	l+='<a href="https://twitter.com/BotsDo"><i class="icon-twitter"></i></a>';
+	l+='</div>';
+
+	k.innerHTML=l;
+	var m=0;
+
+	function changeTweets(){
+		if(m==(tweets.length-1)){
+			m=0;
+		}else{
+			++m;
+		}
+
+		for(var n=0;n<tweets.length;n++){
+			document.getElementById('cislo'+n).style.display='none';
+		}
+
+		document.getElementById('cislo'+m).style.display='block';
+	}
+	changeTweets();
+
+	setInterval(changeTweets,5000);
+}
+</script>
+
+{% endif %}
+
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
