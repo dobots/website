@@ -131,10 +131,10 @@
 var config={
 	'id':'474532446478680064',
 	'domId':'twitter',
-	'maxTweets':5,
+	'maxTweets':10,
 	'showUser':false,
 	'dateFunction':formatDate,
-	'showRetweet':false,
+	'showRetweet':true,
 	'customCallback':handleTweets,
 	'showInteraction':false
 }
@@ -159,7 +159,7 @@ function handleTweets(tweets){
 		i++;
 	}
 
-	l+='<a href="https://twitter.com/BotsDo"><i class="icon-twitter"></i></a>';
+	l+='<a href="https://twitter.com/BotsDo" target="_blank"><i class="icon-twitter"></i></a>';
 	l+='</div>';
 
 	k.innerHTML=l;
