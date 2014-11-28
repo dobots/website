@@ -5,6 +5,7 @@ You can find this website at [www.dobots.nl](http://www.dobots.nl).
 ## Prerequisites
 
     sudo apt-get install rake
+    sudo apt-get install rubyX.X.X-dev
     sudo gem install jekyll
 
 ## Users
