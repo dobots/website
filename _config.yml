@@ -33,6 +33,12 @@ production_url : https://dobots.nl
 
 markdown : kramdown
 
+gems: ['jekyll-lunr-js-search']
+
+lunr_search:
+  excludes: [rss.xml, atom.xml]
+  min_length: 3
+
 embedly :
   youtube :
     text-align: center;

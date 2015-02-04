@@ -119,7 +119,11 @@
 
 <!-- in debug mode, Google Chrome worries about .map files, do not worry -->
 
+{% if page.skip_jquery %}
+<!-- Disable jQuery, use one in search.min.js -->
+{% else %}
 <script type="text/javascript" src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+{% endif %}
 <script type="text/javascript" src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.flexslider.js"></script>
 

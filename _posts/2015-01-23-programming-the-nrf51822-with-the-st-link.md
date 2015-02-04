@@ -3,6 +3,7 @@ layout: post
 title: "Programming the nRF51822 with the ST-link"
 description: "Programming the nRF51822 with the ST-link"
 category: 
+author: annevanrossum
 tags: [nrf51822, ble]
 ---
 {% include JB/setup %}
@@ -20,6 +21,8 @@ The ones that you will need to break out are four wires that at the top:
     3. GND
     4. SWCLK
 
+The first one is optional! It does not provide power, it is used to **measure** if the target board does have power.
+
 # ST-Link programmer
 
 The ST-Link programmer is not easy obtainable, just as the J-Link programmer is actually hard to come by as a separate
@@ -36,7 +39,17 @@ connect it to `SWDIO`.
 
 The Crownstone (or RFduino, or any other nRF51822 board) needs then also to be powered and grounded. The power can be
 fed to the device also from the STM32 board. You can connect one of the pins labeled `3V` on the right of the board
-to the corresponding pin on the connector. Ground can be obtained from many pins, pick one labeled `GND`.
+to the corresponding pin on your device. Ground can be obtained from many pins, pick one labeled `GND`. The VTref pin
+from the J-Link does not have a corresponding VTref pin on the ST-Link. On the STM32FDiscovery board probably 
+somewhere internally the reference voltage is measured. So, you'll only have to break out three pins of the cable to
+connect it:
+
+   2. SWDIO
+   3. GND
+   4. SWCLK
+
+Use something like a logic analyzer to see if you do things wrong. This is a very, very useful tool that can save you
+a lot of time.
 
 # Scripts
 
