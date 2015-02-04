@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Programming the nRF51822 with the ST-link"
-description: "Programming the nRF51822 with the ST-link"
+description: "The ST-Link is incorporated in cheap boards (STM32F boards) and can be used to program the nRF51822"
 category: 
 author: annevanrossum
 tags: [nrf51822, ble]
@@ -44,9 +44,9 @@ from the J-Link does not have a corresponding VTref pin on the ST-Link. On the S
 somewhere internally the reference voltage is measured. So, you'll only have to break out three pins of the cable to
 connect it:
 
-   2. SWDIO
-   3. GND
-   4. SWCLK
+    2. SWDIO
+    3. GND
+    4. SWCLK
 
 Use something like a logic analyzer to see if you do things wrong. This is a very, very useful tool that can save you
 a lot of time.
