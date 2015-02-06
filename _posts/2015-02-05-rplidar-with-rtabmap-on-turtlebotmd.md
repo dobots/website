@@ -121,7 +121,7 @@ Add this line under the other arguments:
 
 then change the line remapping the scan_topic in the visual SLAM and the visulation node to
 
-	      <remap from="scan" to="$(arg st)"/>
+	      <remap from="scan" to="$(arg scan_topic)"/>
 
 Make sur you have set the subscribe_laserScan to true in those nodes:
 
