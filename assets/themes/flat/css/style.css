@@ -161,8 +161,14 @@ p{
 	bottom:20px;
 	right:0;
 }
-.text-slider{
+.shift-down {
 	margin-top:50px;
+}
+.add-margin-bottom {
+	margin-bottom:50px;
+}
+.text-slider{
+	/*margin-top:50px;*/
 	position:relative;
 }
 .text-slider h2{
