@@ -75,9 +75,20 @@ You have to adjust that file on the moment manually to switch between softdevice
 
 ## OpenOCD
 
-Subsequently, we are gonna set up OpenOCD.
+Subsequently, we are gonna set up OpenOCD. You should **not** use the one from the Ubuntu repository: it is too old. In case you installed it before:
 
-     sudo apt-get install openocd
+     sudo apt-get remove --purge openocd
+
+Download fom github and compile the source:
+
+    cd /opt
+    git clone https://github.com/ntfreak/openocd
+    sudo aptitude install libtool automake libusb-1.0-0-dev expect
+    cd openocd
+    ./bootstrap 
+    ./configure --enable-stlink
+    make
+    sudo make install
 
 You will see that there are several files on [github](https://github.com/dobots/bluenet/tree/master/scripts/openocd) 
 that you can use. There is a `49-stlinkv2.rules` file that you can use for `udev` so that no superuser rights are 
