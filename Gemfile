@@ -9,4 +9,9 @@ gem 'domainatrix'
 #group :jekyll_plugins do
 gem 'jekyll-lunr-js-search'
 #end
-gem 'jekyll-responsive_image'
+#gem 'jekyll-responsive_image'
+
+gem 'jekyll-assets'
+
+gem 'sass'
+gem 'uglifier'

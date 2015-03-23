@@ -33,7 +33,7 @@ In the end we found a local printer manufacturer
 [felixprinters](http://www.felixprinters.com) that could supply us with all
 necessary parts and instructions to build our own.
 
-{% responsive_image path: attachments/3d_printer_0.jpg alt: "Felix 3D printer" %}
+![Felix printer]({{ site.url }}/attachments/3d_printer_0.jpg "Felix 3D printer")
 
 ##  Printing
 
@@ -45,7 +45,8 @@ Over the course of printing our first parts, we saw gradual improvement. Both
 due to our own tweaking to the calibration mechanics and adjustments to the
 printing parameters in the software host.
 
-{% responsive_image path: attachments/3d_printer_1.jpg title: "Fial!" alt: "Printer calibration" %}
+![Printer calibration]({{ site.url }}/attachments/3d_printer_1.jpg "Fial!")
+
 
 Parameters such as bed temperature, fill ratio and nozzle temperature all
 influence the outcome of the print job. The bed temperature in particular
@@ -59,7 +60,7 @@ Another thing we needed to get used to was the printing speed. Depending on
 the complexity, even small objects can take up to half an hour to complete.
 Printing this cat for instance took upwards of two hours.
 
-{% responsive_image path: attachments/3d_printer_2.jpg alt: "Printed cat" %}
+![Printed cat]({{ site.url }}/attachments/3d_printer_2.jpg "Printed cat")
 
 ##  CAD Programs
 
@@ -74,7 +75,7 @@ the model form by lines of code. This has as added bonus that it is easy to
 alter any object easily to fit different specifications, or to add options
 with the change of a single variable.
 
-{% responsive_image path: attachments/3d_printer_3.jpg alt: "Dotty components" %}
+![Dotty components]({{ site.url }}/attachments/3d_printer_3.jpg "Dotty components")
 
 This approach is particularly useful to people that are used to programming,
 of which we have plenty here at the office. Other popular modeling options

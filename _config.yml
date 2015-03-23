@@ -174,3 +174,21 @@ responsive_image:
   #   %{height}      Height of the resized image
   #
   output_path_format: assets/resized/%{width}/%{basename}
+
+assets:
+  dirname: assets
+  #
+  # Base URL of assets paths.
+  #
+  baseurl: /assets/
+  #
+  # Pathnames where to find assets relative to the root of the site.
+  #
+  sources:
+    - assets/themes/flat/js
+    - assets/themes/flat/css
+    - assets/themes/flat/images
+    - assets/themes/flat/fonts
+
+  js_compressor:  uglifier
+  css_compressor: sass

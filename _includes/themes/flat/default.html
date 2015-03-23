@@ -17,18 +17,16 @@
 <title>DoBots | {{ page.title }}</title>
 {% endif %}
 
-<!--
-<link href='//fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:400,300,600,700,600italic,800' rel='stylesheet' type='text/css'>
--->
-
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
-<link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="{{ ASSET_PATH }}/css/elusive-webfont.css" rel="stylesheet"> 
+<link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+{% stylesheet elusive-webfont %}
 
 <!-- Custom styles for this template -->
-<link href="{{ ASSET_PATH }}/css/flexslider.css" rel="stylesheet">
-<link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet"> 
+
+{% stylesheet flexslider %}
+{% stylesheet dobots-style %}
 
 <!--[if lt IE 9]>
 	<script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
