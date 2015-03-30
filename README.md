@@ -7,6 +7,8 @@ You can find this website at [www.dobots.nl](http://www.dobots.nl).
     sudo apt-get install rake
     sudo apt-get install rubyX.X.X-dev
     sudo gem install jekyll
+    sudo gem install jekyll-assets
+    sudo gem install jekyll-lunr-js-search
 
 ## Users
 
