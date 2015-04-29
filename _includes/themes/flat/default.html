@@ -68,15 +68,32 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="list-unstyled sub-menu pull-right slogan">
+				<ul class="list-unstyled sub-menu pull-left slogan">
 					<!--					<li>"Computers, come, join us in the real world!"</li> -->
 					<li><a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
 					</li>
-					<!--
-					<li><a href="#">Home Automation</a></li>
-					<li><a href="#">Smartbots</a></li>
-					<li><a href="#">Interested?</a></li>
-					-->
+				</ul>
+				<ul class="list-unstyled sub-menu pull-right">
+					{% for node in site.pages %}
+						{% if node.url contains page.url and node.url != page.url and page.permalink != '/' %}
+							<li><a href="{{node.url}}">{{node.title}}</a></li> 
+							{% assign menu_exists = true %}
+						{% endif %}
+					{% endfor %}
+					{% if menu_exists != true %}
+						{% assign url_parts = page.url | split: '/' %}
+						{% if url_parts %}
+							{% assign rm = url_parts | last %}
+							{% assign new_size = page.url.size | minus: rm.size %}
+							{% assign new_size = new_size | minus: 1 %}
+							{% assign base_url = page.url | truncate: new_size, '' %}
+							{% for node in site.pages %}
+								{% if node.url contains base_url and node.url != base_url %}
+								<li><a href="{{node.url}}">{{node.title}}</a></li> 
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endif %}
 				</ul>
 			</div>
 		</div>
