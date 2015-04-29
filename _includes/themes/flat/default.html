@@ -19,7 +19,7 @@
 
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
-<link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 {% stylesheet elusive-webfont %}
 
@@ -76,7 +76,7 @@
 				<ul class="list-unstyled sub-menu pull-right">
 					{% for node in site.pages %}
 						{% if node.url contains page.url and node.url != page.url and page.permalink != '/' %}
-							<li><a href="{{node.url}}">{{node.title}}</a></li> 
+							<li><a href="{{node.url}}">{{node.title}}</a></li>
 							{% assign menu_exists = true %}
 						{% endif %}
 					{% endfor %}
@@ -88,8 +88,8 @@
 							{% assign new_size = new_size | minus: 1 %}
 							{% assign base_url = page.url | truncate: new_size, '' %}
 							{% for node in site.pages %}
-								{% if node.url contains base_url and node.url != base_url %}
-								<li><a href="{{node.url}}">{{node.title}}</a></li> 
+								{% if node.url contains base_url and node.url != base_url and base_url != '/' %}
+								<li><a href="{{node.url}}">{{node.title}}</a></li>
 								{% endif %}
 							{% endfor %}
 						{% endif %}
