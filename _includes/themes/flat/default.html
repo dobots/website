@@ -80,7 +80,7 @@
 							{% assign menu_exists = true %}
 						{% endif %}
 					{% endfor %}
-					{% if menu_exists != true %}
+					{% if menu_exists != true and page.permalink != '/' %}
 						{% assign url_parts = page.url | split: '/' %}
 						{% if url_parts %}
 							{% assign rm = url_parts | last %}
