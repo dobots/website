@@ -2,7 +2,7 @@
 layout: post
 title: "The Dotty robot"
 description: ""
-category: 
+category:
 tags: [dotty]
 author: marchulscher
 ---
@@ -10,7 +10,7 @@ author: marchulscher
 
 # The Dotty
 
-![The Dotty PCB]({{ site.url }}/attachments/Dotty_open_hardware_printed_circuit_board_small.jpg "Open Hardware PCB"){: .float-right} 
+![The Dotty PCB]({{ site.url }}/attachments/Dotty_open_hardware_printed_circuit_board_small.jpg "Open Hardware PCB"){: .float-right}
 
 Dotty is the name we've given to our prototype swarm robot. Dotty is a simple, extremely cheap robot.
 
@@ -39,13 +39,13 @@ Dotty components head
 
 ![Dotty's head]({{ site.url }}/attachments/Dotty_head.jpg "Dotty's head"){: .float-right}
 
-DO Bots is a software company, and our main aim is to develop software for swarm robot applications. Dotty is an exception to this rule. Since we could not find an open hardware platform to suit our needs, we designed our own.
+DoBots is a software company, and our main aim is to develop software for swarm robot applications. Dotty is an exception to this rule. Since we could not find an open hardware platform to suit our needs, we designed our own.
 
 We do not intend to sell or produce any hardware, though. The specs for Dotty (printable circuit board, 3D-models) will be made available via our website, so roboticists can build their own Dotties.
 
 If any party would like to mass produce Dotty, don't hesitate to contact us!
 
-![Dotty's head with parts]({{ site.url }}/attachments/Dotty_head_components.jpg "Dotty's head with components"){: .float-right} 
+![Dotty's head with parts]({{ site.url }}/attachments/Dotty_head_components.jpg "Dotty's head with components"){: .float-right}
 
 ## Alternatives
 
