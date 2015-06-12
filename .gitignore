@@ -2,7 +2,7 @@
 _site/*
 _theme_packages/*
 .bundle/*
-
+.sass-cache/
 # The identification for google analytics can be private
 google*
 
@@ -21,3 +21,5 @@ Thumbs.db
 # The scripts to create blog posts, or deploy the site
 # If you want them, give a yell!
 scripts/
+
+assets/resized
