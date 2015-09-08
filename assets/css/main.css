@@ -26,6 +26,10 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+table   { border: 1px solid black; }
+td,th   { border: 1px solid black; }
+th      { width: 120px; }
+
 body {
 	padding-top: 80px;
 	color: #34495e;
@@ -1172,7 +1176,7 @@ letter-spacing:.06em;
 
 .wrapper-baloons {
 	padding: 4em;
-	width: 25em;    
+	width: 25em;
 }
 
 .baloon-thumb {
