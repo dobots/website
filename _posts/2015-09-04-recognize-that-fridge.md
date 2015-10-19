@@ -4,12 +4,14 @@ title: "Recognize that fridge!"
 description: "Recognition of "
 tags: []
 author: merijnvantooren
+published: true
 ---
+
 {% include JB/setup %}
 
 # Device recognition
 
-After thorough preparation, we have lift-off with the development of device classification for the Crownstone! For now I’m using second-hand data and starting with basic techniques, but with an accuracy in tests of 93.7% after just the first week of actual implementation and experimentation, the future looks bright!
+After thorough preparation, we have lift-off with the development of device classification for the Crownstone! For now I'm using second-hand data and starting with basic techniques, but with an accuracy in tests of 93.7% after just the first week of actual implementation and experimentation, the future looks bright!
 
 Here’s some stats and a confusion matrix of my latest cross-validation test, where you can see what kind of devices we can already identify. This classification method takes ‘traces’ of 24 hours as input, with a power level in Watts, each second. I extract 14 hand-implemented features from that data, and feed them through a [Random Committee classifier](http://weka.sourceforge.net/doc.dev/weka/classifiers/meta/RandomCommittee.html) from the Weka set. RandomCommittee follows the same concept as [Random Forest](https://en.wikipedia.org/wiki/Random_forest).
 
