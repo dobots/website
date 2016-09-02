@@ -8,6 +8,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 highlighter: pygments
 
 # safe: true
+mode: development
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -78,7 +79,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+#  BASE_PATH : false
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -188,7 +189,7 @@ assets:
   #
   # Base URL of assets paths.
   #
-  baseurl: /assets/
+  baseurl: https://dobots.github.io/website/assets/
   #
   # Pathnames where to find assets relative to the root of the site.
   #
