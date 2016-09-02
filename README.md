@@ -30,17 +30,17 @@ A movie can be embedded by using
 
 An image can be embedded by placing it in the attachments folder and link it through 
 
-    ![Alternative description]({{ site.url }}/attachments/image_file.png "Image description")
+    ![Alternative description]({{ site.baseurl }}/attachments/image_file.png "Image description")
 
 An example of a right-floated image: 
 
-    ![Meccano Spykee]({{ site.url }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right} 
+    ![Meccano Spykee]({{ site.baseurl }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right} 
 
 Here we use kramdown to use the css style `float-right`.
 
 An example of a resized image: 
 
-    ![Barbecue color]({{ site.url }}/attachments/barbecue_test_5.png "Barbecue color"){: style="width: 500px"}
+    ![Barbecue color]({{ site.baseurl }}/attachments/barbecue_test_5.png "Barbecue color"){: style="width: 500px"}
 
 ### Equation
 
