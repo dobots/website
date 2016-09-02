@@ -22,19 +22,19 @@ The last category includes coffee machines, dish washers, etc. to make sure it a
 
 By providing a short horizon forecast on individual LCH level and a combined forecast of upto 12 hours for an MV-point the energy provider is assured a much more accurate figure upon which to base his production and or buying decisions. The MV-point aggregated level in the system is called the aggregator control hub and is the control system that coordinates an entire set of LCH’s that for the full load of an MV-point (Medium Voltage). In general an MV-point is between 0.5 and 2 MW.
 
-![Switch loads]({{ site.url }}/attachments/inertia1.png "Switch loads to create a steady aggregated loads")
+![Switch loads]({{ site.baseurl }}/attachments/inertia1.png "Switch loads to create a steady aggregated loads")
 
 The experiments we have done have shown that the ability to switch loads in ms allows for a very steady aggregated load (see fig 1), The LCH’s can be instructed to use their control limits in such a way that they fulfill as much as possible their own predicted energy load. It is important to understand that load differs from energy consumption, as consumption is calculated over larger periods, which would still allow for large variations in load. These variations however are very detsabilizing for smaller subgrids with large contributions from locally generated energy such as PV and wind. The very fast reaction times of below 10ms and the tiered availability of flexibility both inside the LCH and between these LCH’s as facilitated by the ACH, are able to counteract the natural fluctuations that come with the use of PV and wind.
 
 
-![Under noise]({{ site.url }}/attachments/inertia2.png "Heavy noise from random user events")
+![Under noise]({{ site.baseurl }}/attachments/inertia2.png "Heavy noise from random user events")
 
 
 To illustrate the effectivity we have created the possibility to introduce random user events up to a scale that is normally impossible for humans to realize. (see fig 2).
 
 The aggregated flexibility of the well behaved LCH's is easily enough to compensate (fig 3)
 
-![Aggregated flexibility]({{ site.url }}/attachments/inertia3.png "Aggregated flexibility")
+![Aggregated flexibility]({{ site.baseurl }}/attachments/inertia3.png "Aggregated flexibility")
 
 We are more than happy to elaborate on the principles on your request 8-) and apologies for the rapid introduction of a lot of jargon...
 

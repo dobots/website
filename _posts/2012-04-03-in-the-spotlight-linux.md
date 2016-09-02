@@ -10,7 +10,7 @@ author: annevanrossum
 
 #  FireSwarm internals
 
-![Tux]({{ site.url }}/attachments/tux.jpg){: .float-right}
+![Tux]({{ site.baseurl }}/attachments/tux.jpg){: .float-right}
 
 The FireSwarm drones developed
 to detect fire as quick as possible, making use of their large numbers, have a

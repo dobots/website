@@ -19,14 +19,14 @@ During my graduation project at DoBots I worked on an algorithm, called SLAC : S
 
 The general idea of the project is to combine characteristics of devices with information from users that walk around in a building. The figure below illustrates this. We start without any knowledge (1), then we let users walk around and gather data (2), eventually we will learn the locations of each device in the building (3).
 
-![SLAC project overview]({{ site.url }}/attachments/slac_project_overview.png "SLAC project overview")
+![SLAC project overview]({{ site.baseurl }}/attachments/slac_project_overview.png "SLAC project overview")
 
 We use characteristics that are already available in many smart spaces: signal strength measurements (or RSSI) from devices and motion data from smart phones and other portable devices. These two inputs are combined in a system that can locate users and devices, respect individual users’ privacy and perform all estimations in real time. SLAC is based on a common technique from robotics, [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) (SLAM), and in particular the FastSLAM algorithm[^1].
 
 ### Algorithm overview
 
 
-![SLAC algorithm]({{ site.url }}/attachments/slac_algorithm.svg "SLAC algorithm")
+![SLAC algorithm]({{ site.baseurl }}/attachments/slac_algorithm.svg "SLAC algorithm")
 {: .float-right style="width: 400px; margin: 0px 0px 15px 20px;"}
 
 The SLAC algorithm uses two types of inputs: signal strength (RSSI) measurements to determine distances to devices and inertial measurement unit (IMU) data for pose estimations.
@@ -45,7 +45,7 @@ When each observation is processed all particles have been updated and contain n
 
 ### Implementation
 
-![Screenshots of application]({{ site.url }}/attachments/slac_devices_example.png "Screenshots of application")
+![Screenshots of application]({{ site.baseurl }}/attachments/slac_devices_example.png "Screenshots of application")
 {: .float-right style="width: 400px; margin: 0px 0px 15px 20px;"}
 
 SLAC has been fully implemented in Javascript and more specifically using the *ECMAScript version 6/2015* standard. Javascript has been chosen to support a large range of devices on which the algorithm can run; this includes web browsers and mobile phones. The [Apache Cordova platform](https://cordova.apache.org) was used to access native API’s of mobile devices such as the Bluetooth radio and the motion sensors.
@@ -56,7 +56,7 @@ We evaluated the system using simulations first; this granted the opportunity to
 
 We varied the number of RSSI updates each device broadcasts between each consecutive algorithm step. As the signal strength is used to make range estimates the number of received messages could have an effect on the overall performance. The different settings are: 1, 2, 5, 10, 25, 50 and 100 updates per step. The results are shown in the figure below.
 
-![Results of and simulations]({{ site.url }}/attachments/slac_rssi_step.png "Results of simulations")
+![Results of and simulations]({{ site.baseurl }}/attachments/slac_rssi_step.png "Results of simulations")
 
 We found that the number of RSSI updates per algorithm step has a very high effect on the performance of the system. This follows directly from our system: given more information the Kalman filter responsible for filtering the raw RSSI signal will be able to give a less noisy estimate of the current distance to a device. These distance estimates are vital in updating device positions and weighing particles. These results suggest that we need a high update rate for real world applications.
 
@@ -70,7 +70,7 @@ While SLAC runs online and in real time, the data for this live test has been re
 
 The results of our live tests are shown in the figure below (A_1 to A_4). Additionally, the simulations results of the two conditions (Sim 5 &amp; Sim 10) which are comparable to a real world setup are displayed as a reference.
 
-![Results of live tests and simulations]({{ site.url }}/attachments/slac_almende_results.png "Results of live tests and simulations")
+![Results of live tests and simulations]({{ site.baseurl }}/attachments/slac_almende_results.png "Results of live tests and simulations")
 
 All combined, our live tests showed a localization error of 2.3m, averaged over all devices. This result is good enough for room level accuracy, but there is room for improvement. These results where achieved by letting a single user walk around for one to two minutes (roughly 60 steps). All computations are done locally, i.e. running on users’ devices and without using prior information of the environment.
 

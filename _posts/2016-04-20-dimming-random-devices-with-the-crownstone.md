@@ -27,16 +27,16 @@ The monitor seemed to have the most trouble with PWM; it started to make a high 
 
 Another interesting thing was the current consumption of the monitor. In normal operation, the monitor consumes current in short bursts, 100 times per second. You can see this in the image below, where a graph of voltage (blue) and current (yellow) is shown over 0.02 seconds (1 period of AC power).
 
-![Voltage and current curve of a monitor in normal operation]({{ site.url }}/attachments/pwm-monitor-100.png "Voltage and current curve of a monitor in normal operation"){: style="width: 800px"}
+![Voltage and current curve of a monitor in normal operation]({{ site.baseurl }}/attachments/pwm-monitor-100.png "Voltage and current curve of a monitor in normal operation"){: style="width: 800px"}
 
 For a duty cycle of 50%, you start to see very different behaviour, you see more peaks of current consumption. It's likely that the power supply in the monitor draws current each time PWM is in the *on* state, which happens about 12 times as often as for the 50 Hz AC.
 Since the monitor still needs the same amount of power, the current peaks at higher levels (because power = voltage * current summed over time, see Pavg at [wikipedia](https://en.wikipedia.org/wiki/AC_power#Real_number_formulas)).
 
-![Voltage and current curve of a monitor at 50% PWM]({{ site.url }}/attachments/pwm-monitor-50.png "Voltage and current curve of a monitor at 50% PWM"){: style="width: 800px"}
+![Voltage and current curve of a monitor at 50% PWM]({{ site.baseurl }}/attachments/pwm-monitor-50.png "Voltage and current curve of a monitor at 50% PWM"){: style="width: 800px"}
 
 At 3% duty cycle, the peaks are even shorter.
 
-![Voltage and current curve of a monitor at 3% PWM]({{ site.url }}/attachments/pwm-monitor-3.png "Voltage and current curve of a monitor at 3% PWM"){: style="width: 800px"}
+![Voltage and current curve of a monitor at 3% PWM]({{ site.baseurl }}/attachments/pwm-monitor-3.png "Voltage and current curve of a monitor at 3% PWM"){: style="width: 800px"}
 
 If you also performed similar experiments, or if you have better explanations, feel free to leave it in the comments!
 

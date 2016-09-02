@@ -9,12 +9,12 @@ author: bartvanvliet
 {% include JB/setup %}
 
 # MicroView and Crownstone
-![Crownstone with attached MicroView]({{ site.url }}/attachments/microview.JPG "Crownstone with attached MicroView"){: style="width: 680px"}
+![Crownstone with attached MicroView]({{ site.baseurl }}/attachments/microview.JPG "Crownstone with attached MicroView"){: style="width: 680px"}
 
 Last week I figured it would be nice to attach the [MicroView](http://learn.microview.io/intro/general-overview-of-microview.html) to the [Crownstone](https://dobots.nl/products/crownstone), so that it could display some info you normally see on your phone.
 Since the Crownstone can only supply a low amount of power, the first thing I had to do is figure out how much power the MicroView consumes. I couldn't find this online quick enough, so I simply measured it: about 12mA at 3.3V. This should be low enough for the Crownstone to supply!
 
-![Schematic]({{ site.url }}/attachments/microview_schematic.svg){: style="width: 680px"}
+![Schematic]({{ site.baseurl }}/attachments/microview_schematic.svg){: style="width: 680px"}
 
 
 # Display the data

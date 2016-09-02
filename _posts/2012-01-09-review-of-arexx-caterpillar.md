@@ -16,7 +16,7 @@ yourself.
 
 {% youtube ttwfjcpefDs %} 
 
-![Assembled caterpillar]({{ site.url }}/attachments/AREXX_Caterpillar.jpg "Such sensors, wow, very legs")
+![Assembled caterpillar]({{ site.baseurl }}/attachments/AREXX_Caterpillar.jpg "Such sensors, wow, very legs")
 
 
 ## Hardware
@@ -38,7 +38,7 @@ Unfortunately the GUI did not work on my system (ubuntu 11.10), so I used
 windows. I'm sure though that there are other programs to connect to the
 robot, since it uses UART.
 
-![Caterpillar GUI]({{ site.url }}/attachments/AREXX_Caterpillar_gui "Caterpillar GUI")
+![Caterpillar GUI]({{ site.baseurl }}/attachments/AREXX_Caterpillar_gui "Caterpillar GUI")
   
 The robot comes with some example programs, with source code, so it's easy to
 modify and start making your own programs. At first, it is a bit tricky to

@@ -15,7 +15,7 @@ conference. On the moment you can read a bit more on the [Wots page](http://wots
 those websites tend to be removed after the event, so this blog post will be a sticky reference to what this thing is
 about and what you can do with it.
 
-![Memo logo]({{ site.url }}/attachments/memo_logo.jpg){: .float-right style="width: 500px"}
+![Memo logo]({{ site.baseurl }}/attachments/memo_logo.jpg){: .float-right style="width: 500px"}
 
 ## Section A: Winning the gadget
 
@@ -34,16 +34,16 @@ iBeacon advertisements and is not necessary for the quest.
 
 Because pictures say more than thousand words, you will see here some screenshots of the virtual memo application:
 
-![Memo guide]({{ site.url }}/attachments/memo_guide_wots1.png){: style="width: 280px"}
-![Memo guide]({{ site.url }}/attachments/memo_guide_wots2.png){: style="width: 280px"}
-![Memo guide]({{ site.url }}/attachments/memo_guide_wots3.png){: style="width: 280px"}
-![Memo registration]({{ site.url }}/attachments/memo_register.png){: style="width: 280px"}
+![Memo guide]({{ site.baseurl }}/attachments/memo_guide_wots1.png){: style="width: 280px"}
+![Memo guide]({{ site.baseurl }}/attachments/memo_guide_wots2.png){: style="width: 280px"}
+![Memo guide]({{ site.baseurl }}/attachments/memo_guide_wots3.png){: style="width: 280px"}
+![Memo registration]({{ site.baseurl }}/attachments/memo_register.png){: style="width: 280px"}
 
 And the actual functionality that allows the visitor to fulfill the assignment:
 
-![Memo list]({{ site.url }}/attachments/memo_list.png){: style="width: 280px"}
-![Memo question]({{ site.url }}/attachments/memo_question_dobots.png){: style="width: 280px"}
-![Memo list filled]({{ site.url }}/attachments/memo_list_filled.png){: style="width: 280px"}
+![Memo list]({{ site.baseurl }}/attachments/memo_list.png){: style="width: 280px"}
+![Memo question]({{ site.baseurl }}/attachments/memo_question_dobots.png){: style="width: 280px"}
+![Memo list filled]({{ site.baseurl }}/attachments/memo_list_filled.png){: style="width: 280px"}
 
 ## Section B: The gadget at home
 
@@ -51,9 +51,9 @@ At home you can follow the guide for home usage. You can glue the gadget to your
 Post-it's®.
 
 
-![Home guide]({{ site.url }}/attachments/memo_guide_home1.png){: style="width: 280px"}
-![Home guide]({{ site.url }}/attachments/memo_guide_home2.png){: style="width: 280px"}
-![Home guide]({{ site.url }}/attachments/memo_guide_home3.png){: style="width: 280px"}
+![Home guide]({{ site.baseurl }}/attachments/memo_guide_home1.png){: style="width: 280px"}
+![Home guide]({{ site.baseurl }}/attachments/memo_guide_home2.png){: style="width: 280px"}
+![Home guide]({{ site.baseurl }}/attachments/memo_guide_home3.png){: style="width: 280px"}
 
 The memo part is very rudimentary on the moment. The priority of the app development has been in providing the proper
 functionality at the one-time Wots event. In the following screenshots you see the actual memo notes. You can navigate 
@@ -64,13 +64,13 @@ discovered the screen shows an elaborate string below the note that indicates th
 an alert will light up the LEDs on the memo. Of course, a virtual memo can only be seen if it is nearby and the "on"
 button has been pressed.
 
-![Note]({{ site.url }}/attachments/memo_note.png){: style="width: 280px"}
-![Note]({{ site.url }}/attachments/memo_note_magnet.png){: style="width: 280px"}
+![Note]({{ site.baseurl }}/attachments/memo_note.png){: style="width: 280px"}
+![Note]({{ site.baseurl }}/attachments/memo_note_magnet.png){: style="width: 280px"}
 
 You can navigate to other memos, if you are so lucky to have multiple, by navigating to "Alle memos" in the menu:
 
-![Menu]({{ site.url }}/attachments/memo_menu.png){: style="width: 280px"}
-![Menu]({{ site.url }}/attachments/memo_overview.png){: style="width: 280px"}
+![Menu]({{ site.baseurl }}/attachments/memo_menu.png){: style="width: 280px"}
+![Menu]({{ site.baseurl }}/attachments/memo_overview.png){: style="width: 280px"}
 
 If you select the "okay" button at the top-right of a memo, it will briefly blink and send a sound alert. Then it will
 be selected in the software and navigate to the stack of memo notes corresponding to that device.

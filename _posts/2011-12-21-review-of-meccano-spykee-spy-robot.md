@@ -71,7 +71,7 @@ harder, but do your own research to find this out.
 
 ## Modding
 
-![Meccano Spykee]({{ site.url }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right}
+![Meccano Spykee]({{ site.baseurl }}/attachments/meccano_spykee_400.jpg "Meccano Spykee"){: .float-right}
 
 Even though Spykee turned out to be less friendly to modders than anticipated, there are many possibilities by now:
 

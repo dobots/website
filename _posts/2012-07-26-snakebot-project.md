@@ -10,7 +10,7 @@ author: jannyramakers
 
 # Snakebot Project
 
-![Snakebot animation]({{ site.url }}/attachments/snake_example.png){: .float-right} 
+![Snakebot animation]({{ site.baseurl }}/attachments/snake_example.png){: .float-right} 
 
 Over the past semester, we have been working with a group of students from the Hogeschool Rotterdam (University of Applied Sciences).
 
@@ -35,7 +35,7 @@ take a hint from mother nature, and copy the snake design?
 
 ##  3D printing
 
-![3D Printing]({{ site.url }}/attachments/snake_printing1.jpg){: .float-right}) 
+![3D Printing]({{ site.baseurl }}/attachments/snake_printing1.jpg){: .float-right}) 
 
 The students designed a
 snake robot which is made up of 11 segments. Each segment (exept for the
@@ -61,7 +61,7 @@ price down even further, so that it becomes financially possible to introduce
 
 ##  Next steps
 
-![Snake components]({{ site.url }}/attachments/snake_printing2.jpg)
+![Snake components]({{ site.baseurl }}/attachments/snake_printing2.jpg)
 Over the next months,
 we will work hard to improve the prototype. We want to make the segments
 smaller, so that the robot itself becomes smaller, too. We would like to place

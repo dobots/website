@@ -8,7 +8,7 @@ author: annevanrossum
 ---
 {% include JB/setup %}
 
-![Romo]({{ site.url }}/attachments/romo.jpg){: .float-right} 
+![Romo]({{ site.baseurl }}/attachments/romo.jpg){: .float-right} 
 
 There are more and more add-ons available for smartphones.
 We are eagerly awaiting for example the

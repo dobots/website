@@ -34,7 +34,7 @@ will first show a summary of the theory behind this algorithm, and then
 provide a supervised learning example implemented in MATLAB.
 
 Note that this technique is very similar to Reservoir Computing techniques for
-recurrent neural networks. See [Remco’s blog about Echo State Networks]({{ site.url }}/2012/07/06/echo-state-networks/) for a description.
+recurrent neural networks. See [Remco’s blog about Echo State Networks]({{ site.baseurl }}/2012/07/06/echo-state-networks/) for a description.
 
 ## Theory
 
@@ -129,4 +129,4 @@ the output weights. The next code can be used to visualise this:
     hold on; plot(T+1:T+gen,O(:,T+1:T+gen),'g.'); %output during generalisation phase
     hold off;
 
-![Extreme learning machines]({{ site.url }}/attachments/extreme_learning_machines.png "Extreme learning machines")
+![Extreme learning machines]({{ site.baseurl }}/attachments/extreme_learning_machines.png "Extreme learning machines")

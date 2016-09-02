@@ -29,7 +29,7 @@ It comes with a docking station and includes a USB webcam, a microphone, a
 speaker and 5 leds. With the Spykee we are now able to stream video from the
 robot to the phone.  
 For a more detailed review of the Spykee see our blog post
-[here]({{ site.url }}/2011/12/21/review-of-meccano-spykee-spy-robot/).
+[here]({{ site.baseurl }}/2011/12/21/review-of-meccano-spykee-spy-robot/).
 
 #### Prerequisites
 
@@ -64,7 +64,7 @@ addition, it has bumper sensors in it’s index fingers to detect if it hits an
 obstacle. The RoboScooper comes with an IR remote control to drive it around
 manually but has no means to connect directly to a phone or computer.
 
-![RoboScooper equiped with Brainlink]({{ site.url }}/attachments/roboscooper_brainlink.png "RoboScooper equiped with Brainlink")
+![RoboScooper equiped with Brainlink]({{ site.baseurl }}/attachments/roboscooper_brainlink.png "RoboScooper equiped with Brainlink")
 
 #### Prerequisites
 
@@ -110,7 +110,7 @@ and is not restricted to robots only.
 
 ### Parrot AR.Drone
 
-![Parrot AR.Drone]({{ site.url }}/attachments/swarmcontrol_ardrone.png "Parrot AR.Drone"){: .float-right}
+![Parrot AR.Drone]({{ site.baseurl }}/attachments/swarmcontrol_ardrone.png "Parrot AR.Drone"){: .float-right}
 
 One of the more interesting in our choice of robots
 is the AR Drone, a fully autonomous, radio controlled quadrocopter. It
@@ -167,9 +167,9 @@ providing 30 fps.
 
 ### DoBots Bot aka Dotty
 
-![Dotty, our home-made robot]({{ site.url }}/attachments/dotty.png "Dotty, our home-made robot"){: .float-right}
+![Dotty, our home-made robot]({{ site.baseurl }}/attachments/dotty.png "Dotty, our home-made robot"){: .float-right}
 
-Last but not least [Dotty]({{ site.url }}/2012/08/26/the-dotty-robot), our home-made robot was included in this update. Dotty is our prototype for an autonomously recharging swarm robot.
+Last but not least [Dotty]({{ site.baseurl }}/2012/08/26/the-dotty-robot), our home-made robot was included in this update. Dotty is our prototype for an autonomously recharging swarm robot.
 It’s bluetooth module enables us to directly connect it with an Android phone.
 It has a two motors which can be controlled separately and several sensors
 which can be streamed and displayed on the phone.
@@ -189,7 +189,7 @@ displayed on the phone:
   * Light
   * Microphone
 
-![Robot list for dancing swarm behaviour]({{ site.url }}/attachments/swarmcontrol_robotlist.png "Robot list for dancing swarm behaviour"){: .float-right}
+![Robot list for dancing swarm behaviour]({{ site.baseurl }}/attachments/swarmcontrol_robotlist.png "Robot list for dancing swarm behaviour"){: .float-right}
 
 ## Swarm Behaviour
 
@@ -227,7 +227,7 @@ as a single robot, using either the arrow keys or the joystick.
   
 Note: the joystick is not available for the AR Drone
 
-![Created dance list]({{ site.url }}/attachments/swarmcontrol_dancelist.png "Created dance list"){: .float-right}
+![Created dance list]({{ site.baseurl }}/attachments/swarmcontrol_dancelist.png "Created dance list"){: .float-right}
 
 ### Dance List
 
@@ -248,7 +248,7 @@ stock of robots were added already there is lots of interesting stuff to come
   * And not forgetting, the robots want to be hooked up to the Internet and the cloud
 
 If you are interested you should definitely keep an eye on the blogs of this 
-[website]({{ site.url }}), where we will keep track of the development.
+[website]({{ site.baseurl }}), where we will keep track of the development.
 But also the app is completely open source; you can find the code
 at [https://github.com/eggerdo/swarm-control](https://github.com/eggerdo/swarm-control) and the ready app on [Google Play](https://play.google.com/store/apps/details?id=org.dobots.swarmcontrol).
 Feel free to contribute and add your own robots to the list or let us know

@@ -10,7 +10,7 @@ author: annevanrossum
 
 # Reprogrammable Remote Control dongles
 
-![Toybien dongle]({{ site.url }}/attachments/toybien_dongle.jpg){: .float-right}
+![Toybien dongle]({{ site.baseurl }}/attachments/toybien_dongle.jpg){: .float-right}
 
 Interested as we are in swarming, our efforts include building sort of an army
 of moving bots. To keep cost down the available toys are our first port-of-

@@ -8,7 +8,7 @@ author: annevanrossum
 ---
 {% include JB/setup %}
 
-![Replicator robot prototypes]({{ site.url }}/attachments/replicator_2prototypes_square.png){: .float-right}
+![Replicator robot prototypes]({{ site.baseurl }}/attachments/replicator_2prototypes_square.png){: .float-right}
 
 In
 the near future smartphones will become important as the brains for robots.

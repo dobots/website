@@ -10,7 +10,7 @@ author: dominikegger
 
 # Asus Xtion on UDOO with OpenNI2 and ROS
 
-![Asus Xtion on UDOO]({{ site.url }}/attachments/udoo,xtion,openni2.png "Asus Xtion on UDOO")
+![Asus Xtion on UDOO]({{ site.baseurl }}/attachments/udoo,xtion,openni2.png "Asus Xtion on UDOO")
 
 This step by step tutorial shows how to setup the [UDOO](http://www.udoo.org/) in order to use an Asus Xtion with ROS. If ROS is not necessary, follow [this](http://feilipu.me/2013/11/09/udoo-ubuntu-12-04-guide/) tutorial alternatively and go directly to step 2.
 

@@ -14,7 +14,7 @@ The RPlidar is a 360° SLAM-ready laser scanner. It is amongst the cheapest of i
 
 More info and where to find it: [robotshop](http://www.robotshop.com/en/rplidar-360-laser-scanner.html)
 
-![RPlidar laser scan]({{ site.url }}/attachments/rplidar-360-laser-scanner.jpg "RPlidar laser scan"){: style="width: 140px"}
+![RPlidar laser scan]({{ site.baseurl }}/attachments/rplidar-360-laser-scanner.jpg "RPlidar laser scan"){: style="width: 140px"}
 
 ## RTabmap overview
 
@@ -26,7 +26,7 @@ More info and where to find: [RTabmap official website](http://introlab.github.i
 
 First, you have to physically mount the laser on your turtlebot. Get your drill, a screwdriver and screw it on an empty plate! I fixed mine just above the kinect:
 
-![RPlidar on turtlebot]({{ site.url }}/attachments/rplidar_on_turtlebot.jpg "RPlidar on turtlebot"){: style="width: 280px"}
+![RPlidar on turtlebot]({{ site.baseurl }}/attachments/rplidar_on_turtlebot.jpg "RPlidar on turtlebot"){: style="width: 280px"}
 
 The next step is to update your turtlebot's description files to include the laser.
 We need to find which plate is the laser fixed to:
@@ -64,7 +64,7 @@ visualize Turtlebot on rviz to make sure your parameters are good, open two term
 in rviz: add -> robot model (you may have to change the fixed frame to base_link)
 You should see something like this:
 
-![turtlebot visualisation]({{ site.url }}/attachments/turtlebot_visualisation.jpg "Turtlebot Visualisation"){: style="width: 280px"}
+![turtlebot visualisation]({{ site.baseurl }}/attachments/turtlebot_visualisation.jpg "Turtlebot Visualisation"){: style="width: 280px"}
 
 Where the green rectangle represent the RPlidar.
 
@@ -149,8 +149,8 @@ To play the recorded bagfile:
 
 Here is an example of run. This is what the room we used look like I.R.L.:
 
-![Testroom]({{ site.url }}/attachments/testroom.jpg "Testroom"){: style="width: 560px"}
-![Testroom2]({{ site.url }}/attachments/testroom2.jpg "Testroom2"){: style="width: 560px"}
+![Testroom]({{ site.baseurl }}/attachments/testroom.jpg "Testroom"){: style="width: 560px"}
+![Testroom2]({{ site.baseurl }}/attachments/testroom2.jpg "Testroom2"){: style="width: 560px"}
 
 Turtlebot ran around the pool table. The RTabmap run footage: (The multicolor voxels represent the rplidar scan)
 
@@ -158,14 +158,14 @@ Turtlebot ran around the pool table. The RTabmap run footage: (The multicolor vo
 
 Here are the two point clouds extracted from the laser scan and the kinect laser scan during a the fast run showed above:
 
-![rplidar vs kinect point cloud]({{ site.url }}/attachments/rplidarvskinect_pc.jpg "rplidar vs kinect point cloud"){: style="width: 840px"}
+![rplidar vs kinect point cloud]({{ site.baseurl }}/attachments/rplidarvskinect_pc.jpg "rplidar vs kinect point cloud"){: style="width: 840px"}
 
 The red line is the path followed by the turtlebot.
 As we can see, the results are similar except that the pool table is detected with the rplidar and not the kinect, because it was not in the kinect's field of vision.
 
 The graphview (occupancy grid) made from rtabmap looks like this:
 
-![rplidar vs kinect occupancy grid]({{ site.url }}/attachments/rplidarvskinect.jpg "occupancy grid"){: style="width: 840px"}
+![rplidar vs kinect occupancy grid]({{ site.baseurl }}/attachments/rplidarvskinect.jpg "occupancy grid"){: style="width: 840px"}
 
 A few details about the zone:
 There were some holes in the cardboard around the pool table. This is why the pool table is partially filled in the rplidar scan. Also, the mess on the top corner on both screen is due to the presence of a radiator.

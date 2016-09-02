@@ -12,7 +12,7 @@ tags: []
 
 ##  Introduction
 
-![Brookstone Rover AC13]({{ site.url }}/attachments/Brookstone_Rover_AC13_200.png "Brookstone Rover AC13")
+![Brookstone Rover AC13]({{ site.baseurl }}/attachments/Brookstone_Rover_AC13_200.png "Brookstone Rover AC13")
 
 The Brookstone® Rover is sold exclusively (for $99,-)
 in the United States and can be controlled by ipod, iphone, or other Apple
@@ -36,8 +36,8 @@ Version" phrase, just as Foscam IP cameras do! Probably the same developers
 have programmed the firmware for the Rover! Time to disassemble the robot to
 check if this is true.
 
-![Disassembled Rover]({{ site.url }}/attachments/Brookstone_Rover_AC13_0.jpeg "Disassembled Rover")
-![Disassembled Rover]({{ site.url }}/attachments/Brookstone_Rover_AC13_1.jpeg "Disassembled Rover")
+![Disassembled Rover]({{ site.baseurl }}/attachments/Brookstone_Rover_AC13_0.jpeg "Disassembled Rover")
+![Disassembled Rover]({{ site.baseurl }}/attachments/Brookstone_Rover_AC13_1.jpeg "Disassembled Rover")
 
 Yes! Remarkably enough there is a similar chip which reads spansion
 s29gl032n90tfi040 (Flash) as in the Foscam line of IP cameras. The board looks

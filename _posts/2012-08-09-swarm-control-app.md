@@ -10,7 +10,7 @@ author: dominikegger
 
 # Swarm Control App
 
-![Swarm Control]({{ site.url }}/attachments/swarmcontrol_main.png "Swarm Control"){: .float-right}
+![Swarm Control]({{ site.baseurl }}/attachments/swarmcontrol_main.png "Swarm Control"){: .float-right}
 
 ## Introduction
 
@@ -40,7 +40,7 @@ guarding etc).
 The app can be found on the Android market as the [Swarm Control app](https://play.google.com/store/apps/details?id=org.dobots.swarmcontrol). In the first
 draft we added the following two robots:
 
-![iRobot Roomba]({{ site.url }}/attachments/swarmcontrol_roomba.png "iRobot Roomba"){: .float-right}
+![iRobot Roomba]({{ site.baseurl }}/attachments/swarmcontrol_roomba.png "iRobot Roomba"){: .float-right}
 
 ##  IRobot Roomba
 
@@ -73,7 +73,7 @@ waiting for another to finish.
 
 ## Mindstorms NXT
 
-![Mindstorms NXT]({{ site.url }}/attachments/swarmcontrol_nxt.png "Mindstorms NXT"){: .float-right}
+![Mindstorms NXT]({{ site.baseurl }}/attachments/swarmcontrol_nxt.png "Mindstorms NXT"){: .float-right}
 
 The Mindstorms NXT 2.0 comes equipped with a Bluetooth module which made it
 perfect for a fast incorporation. We fixed the design of the robot to a
@@ -110,7 +110,7 @@ there are a lot of things that need to be done still.
   * And not forgetting, the robots want to be hooked up to the Internet and the cloud
 
 If you are interested you should definitely keep an eye on the blogs of this 
-[website]({{ site.url }}), where we will keep track of the development. But also the app is completely open source; you can find the code
+[website]({{ site.baseurl }}), where we will keep track of the development. But also the app is completely open source; you can find the code
 at [https://github.com/eggerdo/swarm-control](https://github.com/eggerdo/swarm-control). Feel free to contribute and add
 your own robots to the list or let us know which ones you want to see added!
 

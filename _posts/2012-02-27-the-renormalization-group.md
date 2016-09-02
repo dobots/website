@@ -54,7 +54,7 @@ behaviour - through a huge series of scales - from local interactions!
 
 ##  Network
 
-![Renormalization on networks]({{ site.url }}/attachments/renormalization_newman_and_watts.jpg){: .float-right}
+![Renormalization on networks]({{ site.baseurl }}/attachments/renormalization_newman_and_watts.jpg){: .float-right}
 
 This is all
 very well, but nothing makes much sense without examples. We can give an
@@ -94,7 +94,7 @@ renormalisation procedure can be applied over and over again.
 
 ##  The transition
 
-![Renormalization on networks, results]({{ site.url }}/attachments/renormalization_newman_and_watts_results.jpg){: .float-right}
+![Renormalization on networks, results]({{ site.baseurl }}/attachments/renormalization_newman_and_watts_results.jpg){: .float-right}
 
 The authors write down an expression for $$l$$, the
 average distance between vertices. Let us not repeat the exact form of this

@@ -42,7 +42,7 @@ To explain how inference proceeds is something for another blog post (check the 
 
 An illustrative example is from Del Pero et al. in [Understanding bayesian rooms using composite 3d object models](http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Del_Pero_Understanding_Bayesian_Rooms_2013_CVPR_paper.pdf):
 
-![Chairs]({{ site.url }}/slides/abs14/images/delpero.png "Chairs")`
+![Chairs]({{ site.baseurl }}/slides/abs14/images/delpero.png "Chairs")`
 
 One of the chairs you can see very well, but the other is occluded by the table. To perform inference over this structure requires a presentation of a chair and the ability of reasoning over multiple of those composed objects. Only then it becomes feasible to infer the full chair behind this table.
 
@@ -54,5 +54,5 @@ This can be solved by a so-called sticky Hierarchical Dirichlet Process defined 
 
 The problems you will encounter by applying nonparametric Bayesian methods in the real world are manifold. Foremost, the sampling methods to approximate a full Bayesian method, are not yet adapted to these hierarchical schemes. Although it might seem that having an abstraction of say, a chair, would allow you to move around, copy, and delete this entire chair through an inference process, these kind of abstraction handling have not been handed to the sampling algorithms themselves. All approximation methods, be it variational methods, or sampling methods, such as slice sampling or Gibbs sampling, are suddenly quite non-Bayesian in nature! To incorporate a prior (such as a hierarchical structure) in the sampling procedure itself, I have yet to see it. The methods are general, in the sense, that the sampling is able to sample any probability density function and is not able to take advantage of prior knowledge about this function (except for approximating a Bayesian formulation that entails this structure). 
 
-You can find my presentation with my questions about how to apply nonparametric Bayesian methodology to simple line estimation as in RANSAC or Hough [here]({{site.url}}/slides/abs14/nonparametric.html).
+You can find my presentation with my questions about how to apply nonparametric Bayesian methodology to simple line estimation as in RANSAC or Hough [here]({{site.baseurl}}/slides/abs14/nonparametric.html).
 

@@ -29,7 +29,7 @@ Here, the $$v_i$$ and $$w_i$$ are chosen randomly. Linear regression can then be
 
 So what does it look like when using these techniques? Can Romo understand its body and environment? To a certain extend, yes. The robot learned that rotating right corresponds to a linear model with larger values above the main diagonal:
 
-![Romo model]({{ site.url }}/attachments/romo_model.png "Romo linear model")
+![Romo model]({{ site.baseurl }}/attachments/romo_model.png "Romo linear model")
 
 Similar relations were found for rotating left, and at different speeds, and for standing still (which had mainly large values near the main diagonal, like the identity matrix).
 

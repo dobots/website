@@ -19,8 +19,8 @@ In the app you can see the status of your friends, and when you call someone who
 
 Here are some screenshots of the app:
 
-![Contact list]({{ site.url }}/attachments/imbusy-screenshot-contacts.png){: style="width: 280px"}
-![Calling a busy person]({{ site.url }}/attachments/imbusy-screenshot-calling.png){: style="width: 280px"}
+![Contact list]({{ site.baseurl }}/attachments/imbusy-screenshot-contacts.png){: style="width: 280px"}
+![Calling a busy person]({{ site.baseurl }}/attachments/imbusy-screenshot-calling.png){: style="width: 280px"}
 
 # Technical details
 

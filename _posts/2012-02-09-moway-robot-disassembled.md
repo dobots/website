@@ -18,8 +18,8 @@ have lying around. The Moway looks like a computer mouse, it has two round
 wheels, some LEDs, a USB connector, a flat 3.7V LiPo battery and a Microchip
 processor, the PIC18F87J50. You can see the robot disassembled in the picture.
 
-![Moway_disassembled]({{ site.url }}/attachments/moway_disassembled_0.jpg "Moway_disassembled")
-![Moway_disassembled]({{ site.url }}/attachments/moway_disassembled_1.jpg "Moway_disassembled")
+![Moway_disassembled]({{ site.baseurl }}/attachments/moway_disassembled_0.jpg "Moway_disassembled")
+![Moway_disassembled]({{ site.baseurl }}/attachments/moway_disassembled_1.jpg "Moway_disassembled")
 
 As you will immediately recognize, the poor thing is on the operation table.
 It turned out to be the case that using the Linux facility "picprog" which
@@ -36,7 +36,7 @@ recognized by the operating system is by adding a "udev" rule:
 
 ##  PICkit
 
-![PICkit]({{ site.url }}/attachments/moway_disassembled_2.jpg "PICkit")Thanks to the superb support staff at Moway this was
+![PICkit]({{ site.baseurl }}/attachments/moway_disassembled_2.jpg "PICkit")Thanks to the superb support staff at Moway this was
 not the end of the robot (yet)! The Moway has 5 pins at the right-side of the
 PIC chip. The support stuff was kind enough to provide the pin layout to
 revive the robot. From top to bottom: a.) VSS, b.) PGC, c.) PGD, d.) MCLR',
@@ -70,7 +70,7 @@ Saleae](http://www.saleae.com/Logic16). This neat small form factor device
 can sample up to 16 channels with a frequency of up to 100 MHz. The results
 can be seen in the following screenshot
 
-![Logic analyser]({{ site.url }}/attachments/moway_disassembled_3.png "Logic analyser")
+![Logic analyser]({{ site.baseurl }}/attachments/moway_disassembled_3.png "Logic analyser")
 
 You can see that all channels seem to do what they are supposed to do. The VDD
 is on a level of 3.7V, and there seems some data clocked back and forth. The

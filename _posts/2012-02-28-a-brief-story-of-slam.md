@@ -66,7 +66,7 @@ environmental feature.
 This prediction and correction process is described with the aid of some
 figures below:
 
-![Robot odometry: prediction of location and correction]({{ site.url }}/attachments/slam1.png)
+![Robot odometry: prediction of location and correction]({{ site.baseurl }}/attachments/slam1.png)
 
 In the figures, the robot is represented by the triangle. The stars represent
 landmarks (environmental features). The robot initially measures the location
@@ -75,21 +75,21 @@ of the landmarks, using its sensors (sensor measurements illustrated by the 'lig
 The robot moves. Based on robot odometry, the robot thinks that is it located
 here.
 
-![Robot odometry]({{ site.url }}/attachments/slam2.png)
+![Robot odometry]({{ site.baseurl }}/attachments/slam2.png)
 
 Once again the robot measures its distance to the landmarks using its range
 measurement sensors. What if the odometry and sensor measurements don't match?
 The answer is: The robot is not at the location where it thinks it is
 (odometry error).
 
-![Robot odometry error]({{ site.url }}/attachments/slam3.png)
+![Robot odometry error]({{ site.baseurl }}/attachments/slam3.png)
 
 The robot has more trust in sensor data than in odometry. So, the new location
 of the robot considering the landmarks distances is here. (The dashed triangle
 is where the robot thought it was using the odometry data).
 
 
-![Robot odometry]({{ site.url }}/attachments/slam4.png)
+![Robot odometry]({{ site.baseurl }}/attachments/slam4.png)
 
 The actual location of the robot is here. You can see that the sensors are not
 perfect but their measurements are more reliable than odometry. The lined
@@ -97,7 +97,7 @@ triangle is the actual position of the robot, the dotted triangle is its
 estimated location based on the sensor data and the dashed triangle is its
 estimated location based on odometry.
 
-![Robot odometry and sensor data]({{ site.url }}/attachments/slam5.png)
+![Robot odometry and sensor data]({{ site.baseurl }}/attachments/slam5.png)
 
 ## Visual SLAM
 
@@ -111,7 +111,7 @@ measurement device has some advantages such as:
 
 The basic procedure of Visual SLAM is described in the following figures:
 
-![Visual SLAM]({{ site.url }}/attachments/visual_slam1.png)
+![Visual SLAM]({{ site.baseurl }}/attachments/visual_slam1.png)
 
 The camera localization $$y_i^C$$ depends on three parameters: camera orientation
 and camera position (which are given by odometry) and the range measurements
@@ -125,7 +125,7 @@ At any moment(t) the robot localization can be predicted by the robot location
 at(t-1), the robot orientation and the robot position. This prediction will be
 corrected by the aid of range measurements as it is shown in below figure:
 
-![Visual SLAM]({{ site.url }}/attachments/visual_slam2.png)
+![Visual SLAM]({{ site.baseurl }}/attachments/visual_slam2.png)
 
 Three stages of the SLAM(Prediction, Observartion and Update) need to be done
 based on a recursive algorithm which can derive the Robot state from the noisy

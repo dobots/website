@@ -46,7 +46,7 @@ With the output:
     CF:72:4E:70:A6:DB Crown
     CF:72:4E:70:A6:DB (unknown)
 
-Here you see one of our [Crownstone]({{ site.url }}/products/crownstone)s.
+Here you see one of our [Crownstone]({{ site.baseurl }}/products/crownstone)s.
 
 Connecting to it:
 

@@ -10,7 +10,7 @@ author: marchulscher
 
 # 3D printing
 
-The [Snakebot Project]({{ site.url }}/2012/07/26/snakebot-project/) showed us the benefits of 3D printing when designing a
+The [Snakebot Project]({{ site.baseurl }}/2012/07/26/snakebot-project/) showed us the benefits of 3D printing when designing a
 robot. In particular, 3D printing allows for quick prototyping of parts with
 great accuracy and strength. This lead us to look for a 3D printer of our own,
 to aid us in building Dotty.
@@ -33,7 +33,7 @@ In the end we found a local printer manufacturer
 [felixprinters](http://www.felixprinters.com) that could supply us with all
 necessary parts and instructions to build our own.
 
-![Felix printer]({{ site.url }}/attachments/3d_printer_0.jpg "Felix 3D printer")
+![Felix printer]({{ site.baseurl }}/attachments/3d_printer_0.jpg "Felix 3D printer")
 
 ##  Printing
 
@@ -45,7 +45,7 @@ Over the course of printing our first parts, we saw gradual improvement. Both
 due to our own tweaking to the calibration mechanics and adjustments to the
 printing parameters in the software host.
 
-![Printer calibration]({{ site.url }}/attachments/3d_printer_1.jpg "Fial!")
+![Printer calibration]({{ site.baseurl }}/attachments/3d_printer_1.jpg "Fial!")
 
 
 Parameters such as bed temperature, fill ratio and nozzle temperature all
@@ -60,7 +60,7 @@ Another thing we needed to get used to was the printing speed. Depending on
 the complexity, even small objects can take up to half an hour to complete.
 Printing this cat for instance took upwards of two hours.
 
-![Printed cat]({{ site.url }}/attachments/3d_printer_2.jpg "Printed cat")
+![Printed cat]({{ site.baseurl }}/attachments/3d_printer_2.jpg "Printed cat")
 
 ##  CAD Programs
 
@@ -75,7 +75,7 @@ the model form by lines of code. This has as added bonus that it is easy to
 alter any object easily to fit different specifications, or to add options
 with the change of a single variable.
 
-![Dotty components]({{ site.url }}/attachments/3d_printer_3.jpg "Dotty components")
+![Dotty components]({{ site.baseurl }}/attachments/3d_printer_3.jpg "Dotty components")
 
 This approach is particularly useful to people that are used to programming,
 of which we have plenty here at the office. Other popular modeling options
@@ -85,7 +85,7 @@ programs and require model closing before it can be used as a printable file.
 ##  Dotty
 
 We intend to use our newly found printing toy to make casings and frames for
-the [Dotty]({{ site.url }}/2012/08/26/the-dotty-robot). Right now we're trying out multiple variants, so be sure
+the [Dotty]({{ site.baseurl }}/2012/08/26/the-dotty-robot). Right now we're trying out multiple variants, so be sure
 to check back here when we have more to show you.
 
 

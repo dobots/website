@@ -12,7 +12,7 @@ author: annevanrossum
 
 ## Open source
 
-![Random shot of desk]({{ site.url }}/attachments/rosjava_image.jpg){: .float-right }
+![Random shot of desk]({{ site.baseurl }}/attachments/rosjava_image.jpg){: .float-right }
 
 coders and employees from Google have joined forces to create rosjava. This is
 a pure Java implementation of [ROS](http://www.willowgarage.com/pages/software/ros-platform) (from Willow Garage). ROS shouldn't be seen as a solution for

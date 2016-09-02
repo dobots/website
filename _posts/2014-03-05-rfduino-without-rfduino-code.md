@@ -20,7 +20,7 @@ Anyway, interestingly, the RFduino code is not open-source, or most of it is not
 
 There is a lot of information on programming the nRF51822 on the Nordic website and the forums. Most of it however can only be obtained by buying a development or evaluation kit. The development kit comes with a so-called J-Link programmer from Segger, the J-Link LITE CortexM to be precise. Connecting it to the RFduino is not hard. In the following picture you can see how a little breadboard is enough. Here I just took a 9 pins FTSH Samtec connector we had lying around from a previous project (FireSwarm, a swarm of flying robots to find a dune fire). And there is no color coding whatsoever here!
 
-![RFduino]({{ site.url }}/attachments/rfduino.jpg "RFduino connected")
+![RFduino]({{ site.baseurl }}/attachments/rfduino.jpg "RFduino connected")
 
 The J-Link comes with a connector with 9 pins, this means one pin is removed (pin 7) to give some asymmetry, very convenient! The pin layout is like this:
 
@@ -48,5 +48,5 @@ So, why using the RFduino at all? Its advantages are still there: certification,
 
 ## Crownstone
 
-Make sure you take a look at our [Crownstone]({{ site.url }}/products/crownstone) offering. This is directly based on the nRF51822 and open-source for real. :-) So, this uses the code at github for [BlueNet](https://github.com/mrquincle/bluenet) as indicated above. If you want to have more details on how to program the different SoftDevice versions from Nordic etc., feel free to file an issue there. Also, look around if you want to get more information on Bluetooth Low-Energy in general, as for example in this blog post about [Linux and BLE]({{ site.url }}/2014/07/23/linux-and-ble/) or on the [iBeacon-type of device]({{ site.url }}/2014/07/15/ble-dobeacon-a-virtual-memo/) we build (with respect to software!) for [WOTS](http://wots.nl). To be clear, the services on top of the Crownstone that require a larger part of machine learning and artificial intelligence will not be open-source. If you think we do not communicate that properly, feel also free to suggest improvements in wording!
+Make sure you take a look at our [Crownstone]({{ site.baseurl }}/products/crownstone) offering. This is directly based on the nRF51822 and open-source for real. :-) So, this uses the code at github for [BlueNet](https://github.com/mrquincle/bluenet) as indicated above. If you want to have more details on how to program the different SoftDevice versions from Nordic etc., feel free to file an issue there. Also, look around if you want to get more information on Bluetooth Low-Energy in general, as for example in this blog post about [Linux and BLE]({{ site.baseurl }}/2014/07/23/linux-and-ble/) or on the [iBeacon-type of device]({{ site.baseurl }}/2014/07/15/ble-dobeacon-a-virtual-memo/) we build (with respect to software!) for [WOTS](http://wots.nl). To be clear, the services on top of the Crownstone that require a larger part of machine learning and artificial intelligence will not be open-source. If you think we do not communicate that properly, feel also free to suggest improvements in wording!
 

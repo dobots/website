@@ -10,7 +10,7 @@ author: annevanrossum
 
 # ROS
 
-![Lego Mindstorms NXT disassembled]({{ site.url }}/attachments/lego_mindstorms_nxt_disassembled.jpg){: .float-right}
+![Lego Mindstorms NXT disassembled]({{ site.baseurl }}/attachments/lego_mindstorms_nxt_disassembled.jpg){: .float-right}
 
 ROS, Robot Operating System, is more and more used in research organisations
 to quickly be able to connect to robots. This is a very down to earth blog

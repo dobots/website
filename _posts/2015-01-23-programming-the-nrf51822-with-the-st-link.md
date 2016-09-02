@@ -31,7 +31,7 @@ product.
 For that reason it is worth to check into the STM32FDISCOVERY board. You can get the [STM32FDISCOVERY at Mouser](http://no.mouser.com/ProductDetail/STMicroelectronics/STM32F4DISCOVERY/?qs=J2qbEwLrpCGdWLY96ibNeQ%3D%3D) for € 13,47. This board is anyway fun, it has a
 lot of GPIO (pins) and it has an ST-Link on-board.
 
-![STM32F Discovery Board]({{ site.url }}/attachments/stm32f4_discovery.jpg "STM32F Discovery Board")
+![STM32F Discovery Board]({{ site.baseurl }}/attachments/stm32f4_discovery.jpg "STM32F Discovery Board")
 
 On the STM32 board you see a connector with the label `SWD`. We need to pins from there. From the top (where there is
 the USB connection), we need the second pin and connect it to `SWCLK`. From the top we need also the fourth pin, and

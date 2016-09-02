@@ -30,7 +30,7 @@ different languages, protocols and media. That is why we need a Robo-Router!
 The Robo-Router would act as an interpreter between humans, robots, and other
 devices, creating a robot internet.
 
-![Robo-Router prototype]({{ site.url }}/attachments/roborouter.png "Robo-Router prototype")
+![Robo-Router prototype]({{ site.baseurl }}/attachments/roborouter.png "Robo-Router prototype")
 
 ##  The Roomba vs the Door
 
