@@ -41,7 +41,7 @@ contact-crownstone:
 #
 production_url : https://dobots.nl
 url : http://dobots.github.io
-baseurl : /website
+baseurl : http://dobots.nl
 
 markdown : kramdown
 
