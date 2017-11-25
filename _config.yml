@@ -41,11 +41,13 @@ contact-crownstone:
 #
 production_url : https://dobots.nl
 url : http://dobots.github.io
-baseurl : http://dobots.nl
+#baseurl : http://dobots.nl
 
 markdown : kramdown
 
-gems: ['jekyll-lunr-js-search']
+plugins: 
+- 'jekyll-lunr-js-search'
+- 'jekyll-assets'
 
 lunr_search:
   excludes: [rss.xml, atom.xml]
