@@ -15,3 +15,5 @@ gem 'jekyll-assets'
 
 gem 'sass'
 gem 'uglifier'
+
+gem 'rake'
