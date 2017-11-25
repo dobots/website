@@ -19,7 +19,7 @@
 
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
-<link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+{% asset bootstrap.min.css %}
 
 {% asset elusive-webfont.css %}
 
@@ -147,13 +147,13 @@
 {% if page.skip_jquery %}
 <!-- Disable jQuery, use one in search.min.js -->
 {% else %}
-<script type="text/javascript" src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+{% asset jquery.min.js %}
 {% endif %}
-<script type="text/javascript" src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.flexslider.js"></script>
+{% asset bootstrap.min.js %}
+{% asset jquery.flexslider.js %}
 
 {% if page.twitter %}
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/twitterFetcher_min.js"></script>
+{% asset twitterFetcher_min.js %}
 
 <!-- get your own id at https://twitter.com/settings/widgets -->
 <script type="text/javascript">
