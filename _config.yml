@@ -40,7 +40,7 @@ contact-crownstone:
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 #production_url : https://dobots.nl
-production_url: https://dobots.org
+production_url: https://dobots.rocks
 url : http://dobots.github.io
 #baseurl : http://dobots.nl
 
