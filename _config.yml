@@ -208,8 +208,6 @@ assets:
     - assets/themes/flat/images
     - assets/themes/flat/fonts
     - assets/themes/flat/resources/jquery
-    - assets/themes/flat/resources/bootstrap
-    - assets/themes/flat/resources/bootstrap/js
 
   js_compressor:  uglifier
   css_compressor: sass
