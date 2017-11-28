@@ -41,8 +41,8 @@ uploads_dir: "attachments"
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://dobots.nl
-url : http://dobots.nl
+production_url: https://dobots.nl
+url : https://dobots.nl
 
 markdown : kramdown
 
