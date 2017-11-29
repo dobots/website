@@ -4,7 +4,7 @@ module Jekyll
 		def generate(site)
 			site.config['env'] = ENV['JEKYLL_ENV'] || 'development'
 			
-			site.config['JB']['analytics']['google']['tracking_id'] = ENV['GOOGLE_ANALYTICS_KEY'] || 'ga-unknown'
+			site.config['JB']['analytics']['google']['tracking_id'] = ENV['GOOGLE_ANALYTICS_KEY'] || site.config['JB']['analytics']['google']['tracking_id'] || 'ga-unknown'
 		end
 
 	end
