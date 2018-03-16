@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | The making of the Virtual Memo</title>
+
+
+<meta name="description" content="How the Virtual Memo was made and what you can do with it">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>The making of the Virtual Memo </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Sep</strong>
+				<strong class="date_day">16</strong>
+				<strong class="date_year">2014</strong>
+				<!--      <span>16 September 2014</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<img src="https://secure.gravatar.com/avatar/818dc2df03cd2f1ca7d6e6e701052f0c?s=40">
+				
+				<span class="author">Anne van Rossum</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="virtual-memo">Virtual Memo</h1>
+
+<p>The virtual memo (or “virtuele memo”) is a gadget created by a group of companies for the <a href="http://wots.nl">Wots</a> 
+conference. On the moment you can read a bit more on the <a href="http://wots.nl/gadget-virtuele-memo/">Wots page</a>, but 
+those websites tend to be removed after the event, so this blog post will be a sticky reference to what this thing is
+about and what you can do with it.</p>
+
+<p><img src="/attachments/memo_logo.jpg" alt="Memo logo" class="float-right" style="width: 500px"></p>
+
+<h2 id="section-a-winning-the-gadget">Section A: Winning the gadget</h2>
+
+<p>The app for the virtual memo does have two separate functionalities integrated in one application. The first part will
+help the visitor of the conference to win this very gadget! This is done in the form of a quest that shows another
+facet of the virtual memo. Namely that of an iBeacon.</p>
+
+<p>The visitor gets a code, say <code>JV_Q5D8T6P7A9W</code> which he or she has to enter on the registration page of the smartphone 
+application. Subsequently a route is calculated that allows the visitor to, indeed, visit stands of the companies that 
+participated in the creation of the virtual memo. At each stand the app proposes an ice breaking question that might
+help you to initiate the conversation with the stand owner. Let’s hope it is not “Ah, this app sucks!”. :-) On his or 
+her turn the stand owner will give you a passcode that you can fill in that is coupled to your unique participant code
+entered at the beginning. Where the virtual memo enters the picture here is in the form of devices at each stand. When
+you are near a stand one of the round blobs will change color to indicate that you are close. This is done through
+iBeacon advertisements and is not necessary for the quest.</p>
+
+<p>Because pictures say more than thousand words, you will see here some screenshots of the virtual memo application:</p>
+
+<p><img src="/attachments/memo_guide_wots1.png" alt="Memo guide" style="width: 280px">
+<img src="/attachments/memo_guide_wots2.png" alt="Memo guide" style="width: 280px">
+<img src="/attachments/memo_guide_wots3.png" alt="Memo guide" style="width: 280px">
+<img src="/attachments/memo_register.png" alt="Memo registration" style="width: 280px"></p>
+
+<p>And the actual functionality that allows the visitor to fulfill the assignment:</p>
+
+<p><img src="/attachments/memo_list.png" alt="Memo list" style="width: 280px">
+<img src="/attachments/memo_question_dobots.png" alt="Memo question" style="width: 280px">
+<img src="/attachments/memo_list_filled.png" alt="Memo list filled" style="width: 280px"></p>
+
+<h2 id="section-b-the-gadget-at-home">Section B: The gadget at home</h2>
+
+<p>At home you can follow the guide for home usage. You can glue the gadget to your fridge and use it as conventional
+Post-it’s®.</p>
+
+<p><img src="/attachments/memo_guide_home1.png" alt="Home guide" style="width: 280px">
+<img src="/attachments/memo_guide_home2.png" alt="Home guide" style="width: 280px">
+<img src="/attachments/memo_guide_home3.png" alt="Home guide" style="width: 280px"></p>
+
+<p>The memo part is very rudimentary on the moment. The priority of the app development has been in providing the proper
+functionality at the one-time Wots event. In the following screenshots you see the actual memo notes. You can navigate 
+through them with the arrows at the top-right. Note that for this functionality a working link to the CommonSense
+database is required somewhere in the past. The virtual memo does namely not have the functionality to actually store
+the messages. This would have been neat by the way, and might be something we will provide later. When a memo is
+discovered the screen shows an elaborate string below the note that indicates the id of this memo. Moreover, shortly
+an alert will light up the LEDs on the memo. Of course, a virtual memo can only be seen if it is nearby and the “on”
+button has been pressed.</p>
+
+<p><img src="/attachments/memo_note.png" alt="Note" style="width: 280px">
+<img src="/attachments/memo_note_magnet.png" alt="Note" style="width: 280px"></p>
+
+<p>You can navigate to other memos, if you are so lucky to have multiple, by navigating to “Alle memos” in the menu:</p>
+
+<p><img src="/attachments/memo_menu.png" alt="Menu" style="width: 280px">
+<img src="/attachments/memo_overview.png" alt="Menu" style="width: 280px"></p>
+
+<p>If you select the “okay” button at the top-right of a memo, it will briefly blink and send a sound alert. Then it will
+be selected in the software and navigate to the stack of memo notes corresponding to that device.</p>
+
+<h2 id="for-nerds">For nerds</h2>
+
+<p>There are a lot of improvements possible! Please, help us in whatever way you can! This project was not paid for by the
+organizers (but we are happy we can present ourselves in this way). It is not finished!</p>
+
+<p>The original developers for the iOS application didn’t find the time to do so. Hence, this part of the app development
+was a learning experience for us. Let’s say it like this, one of our Apple fanboys didn’t like iOS development so much
+afterwards. :-) It is really long-winded to get into the Apple store. Something we anticipated and pushed for it, 
+although not all bugs were yet pletted. What this means, is that the iOS app will always lag behind the Android one,
+where an application shows up in a few hours after submission.</p>
+
+<p>You can find all the code at <a href="https://github.com/almende/virtuele-memo">github</a>! This code runs, although not smoothly,
+on both Android and iOS. This means you might also be able to use parts of the code if you want to, for different 
+projects. Perhaps even parts of it are useful in the browser. The application is a Cordova application (the commercial
+variant is called PhoneGap).</p>
+
+<p>You will find for example <a href="https://github.com/almende/virtuele-memo/blob/master/cordova/com.almende.VirtualMemo/www/js/senseapi.js">code</a> to communicate with the CommonSense API or you can find out easily which <a href="https://github.com/almende/virtuele-memo/tree/master/cordova/com.almende.VirtualMemo">plugins</a> work both on Android and iOS with respect to Bluetooth Low-Energy or iBeacon support.</p>
+
+<p>Please, help us by submitting issues to <a href="https://github.com/almende/virtuele-memo/issues">github</a>.</p>
+
+
+				</div>
+
+				
+
+				
+				<div class="tag_box inline">
+					<i class="icon-tags"></i>
+
+					
+					
+
+
+  
+     
+    	<a href="/tags.html#BLE-ref">BLE</a> 
+     
+    	<a href="/tags.html#iBeacon-ref">iBeacon</a> 
+    
+  
+
+
+
+
+				</div>
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2014/09/16/the-making-of-the-virtual-memo&amp;text=The%20making%20of%20the%20Virtual%20Memo"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2014/09/16/the-making-of-the-virtual-memo"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2014/09/16/the-making-of-the-virtual-memo"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2014/09/16/the-making-of-the-virtual-memo"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2014/09/16/the-making-of-the-virtual-memo&amp;title=The%20making%20of%20the%20Virtual%20Memo"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2014/08/02/european-webshops-for-diy-robots" title="European webshops for DIY robots">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2014/11/28/feltyou-prototype" title="FeltYou prototype">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

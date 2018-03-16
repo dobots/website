@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | The renormalization group on networks, an introduction</title>
+
+
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>The renormalization group on networks, an introduction </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Feb</strong>
+				<strong class="date_day">27</strong>
+				<strong class="date_year">2012</strong>
+				<!--      <span>27 February 2012</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<img src="https://secure.gravatar.com/avatar/818dc2df03cd2f1ca7d6e6e701052f0c?s=40">
+				
+				<span class="author">Anne van Rossum</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="the-renormalization-group-on-networks">The renormalization group on networks</h1>
+
+<p>Modern physics is actually one big quest to solve the many-body problem. Most
+often stated in soundbites invented by famous people from for example the
+influential Santa Fé school, but sometimes as old as Aristotle, such as “the
+whole is greater than the sum of the parts”. In physics this often came to
+mean: the whole is the sum of parts plus all their interactions. These
+interactions can sometimes be neatly organised in the form of Feynmann
+diagrams, the mysterious drawings you might sometimes see on the cover of
+physics books.</p>
+
+<h2 id="blocks">Blocks</h2>
+
+<p>Not exactly a new kid on the block, we are somewhere in the 50s-70s, group
+renormalization became a tool in particle physics to cope with the many
+possible interactions between elementary particles. First of all, the
+physicists borrowed from the old idea of considering a system at different
+scales. Think of the different resolutions of for example Google maps.
+Secondly, the physicist gave up on the idea that a system could be described
+by a finite number of interactions, but instead of that realised that an
+infinite number of interactions would not be such a big problem if the
+relation of the “interaction landscape” (my words) on one scale would have a
+simple reation with the “interaction landscape” on another scale. The example
+often used in statistical physics is that of the Ising model which is a 2D
+grid with so-called spins, that can point upwards or downwards. The spins
+influence their neighbours: a spin aligns its orientation according to the
+majority of its neighbours. By considering the larger scale of so-called block
+spins, we take blocks of say 3x3 spins and assign a spin direction to this
+larger block. Now, we have to come up with a description for the interactions
+between the block spins on this higher level. Not only that, but these
+interactions should also somehow be a coarse grained description of the
+interactions on the lower level. The idea of group renormalisation is that by
+repeating this pattern we end up with a flow from one “interaction landscape”
+to another: a flow through the space of coupling constants. We now miss one
+important piece of the puzzle to make sense of all this. This “flow” can
+namely be very chaotic. However, there is one specific phenomenon that is
+deeply related to the concept of scale invariance, which is the second order
+phase transition. A second order phase transition is a critical phenomenon
+that makes a system transition from one state to another in a very abrupt
+manner. Think earthquakes, crackling noise, etc. A system that is “poised at
+this edge of chaos” corresponds to a group renormalisation flow that is
+directed towards a fixed point! We suddenly have a way to describe the global
+behaviour - through a huge series of scales - from local interactions!</p>
+
+<h2 id="network">Network</h2>
+
+<p><img src="/attachments/renormalization_newman_and_watts.jpg" alt="Renormalization on networks" class="float-right"></p>
+
+<p>This is all
+very well, but nothing makes much sense without examples. We can give an
+example of the Ising model, or of self-organised criticality with sandpiles
+(Bak), but for swarm robotics, we are most interested in graphs. We have one
+remark here, most graph-based research disregards the spatial embedding of
+this graph in the real world, however, in our case of a network of robots,
+this is instead one of the most interesting and challenging future directions
+of “complex systems” research. The scientific world has been talking the last
+decade about networks with the so-called small world property. Imagine a
+network of people, where people correspond to the nodes on a graph and people
+that know each other are represented by edges. Imagine these nodes on a
+circle, and organise them a bit and you will see a structure as in Fig. 1
+(from Newman and Watts publicly available paper [1]). The hypothesis is that
+this small world property is a critial phenomenon, and hence group
+renormalization can be applied.</p>
+
+<h2 id="parameters-l-k-and-p">Parameters L, k and p</h2>
+
+<p>We just summarize Newman and Watts findings here… The authors want to show
+that if the number of “shortcuts” goes to zero, the system exhibits a second-
+order phase transition observing the parameter <script type="math/tex">l</script>, the average distance between
+vertices. Besides the system size <script type="math/tex">L</script>, and a parameter <script type="math/tex">k</script> which stands for some
+fixed range for which every node is connected to all its neighbours, there is
+a random parameter <script type="math/tex">p</script>. This <script type="math/tex">p</script> stands for a rewiring probability for every <script type="math/tex">kL</script>
+connection (and is “quenched”, that means, it is only done once). The
+renormalization procedure can be divided into two different cases, which is
+very typical for the procedure. For <script type="math/tex">k=1</script>, their blocking procedure takes two
+subsequent vertices on the ring and replaces them by one vertex. A “shortcut”
+to one of the vertices is preserved and will now point to the new vertex. The
+number of vertices <script type="math/tex">L</script> becomes <script type="math/tex">L/2</script>. The number of edges goes from <script type="math/tex">L</script> to <script type="math/tex">L/2</script> and
+hence the probability to pick a given edge goes from <script type="math/tex">p</script> to <script type="math/tex">2p</script>. For the case of
+<script type="math/tex">k>1</script>, the system size goes from <script type="math/tex">L</script> to <script type="math/tex">L/k</script>, the probability from <script type="math/tex">p</script> to <script type="math/tex">k^2 p</script>, the
+range parameter goes from <script type="math/tex">k</script> to <script type="math/tex">1</script>, and the mean distance stays the same. Hence,
+every system with <script type="math/tex">k>1</script> can be converted in a system with <script type="math/tex">k=1</script> and then a group
+renormalisation procedure can be applied over and over again.</p>
+
+<h2 id="the-transition">The transition</h2>
+
+<p><img src="/attachments/renormalization_newman_and_watts_results.jpg" alt="Renormalization on networks, results" class="float-right"></p>
+
+<p>The authors write down an expression for <script type="math/tex">l</script>, the
+average distance between vertices. Let us not repeat the exact form of this
+equation, but explain between which regimes the mentioned transition would
+take place. If a system is really small, then for a given fixed <script type="math/tex">p</script>, there is on
+average less than one shortcut in the graph. This means that the average
+distance between vertices just happens over the ring and hence scales linearly
+with the system size <script type="math/tex">L</script>. However, when the system becomes larger, and <script type="math/tex">p</script> is
+still fixed, in the end shortcuts will show up, and the distance between
+vertices will scale logarithmic with respect to <script type="math/tex">L</script>. The transition between
+these two regimes is the one that interests us.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In Fig. 2 you can see that the authors indeed were able to show this continous
+phase transition in the system. So, what do we have here!? We have a relation
+between system size and the famous average number of “degrees of separation”
+between nodes on a network. Now, you would be able to be all cocky on parties
+and tell fellow nerds that it’s not just six degrees of separation between you
+and some famous person, but that this depends on <script type="math/tex">L</script>, <script type="math/tex">p</script> and <script type="math/tex">k</script>: the system size,
+the number of shortcuts, and the range of neighbours someone has.</p>
+
+<p>This text introduced the renormalization group in networks. Interesting would be take these results and check how it can be applied to swarm robotics!</p>
+
+<p>[1] Renormalization group analysis of the small-world network model, 2009, T. Payne</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2012/02/27/the-renormalization-group&amp;text=The%20renormalization%20group%20on%20networks,%20an%20introduction"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2012/02/27/the-renormalization-group"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2012/02/27/the-renormalization-group"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2012/02/27/the-renormalization-group"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2012/02/27/the-renormalization-group&amp;title=The%20renormalization%20group%20on%20networks,%20an%20introduction"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2012/02/20/reprogrammable-remote-control-dongles" title="Reprogrammable Remote Control dongles">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2012/02/28/a-brief-story-of-slam" title="SLAM (Simultaneous Localization And Mapping)">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

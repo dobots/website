@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | RFduino without RFduino code</title>
+
+
+<meta name="description" content="">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>RFduino without RFduino code </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Mar</strong>
+				<strong class="date_day">5</strong>
+				<strong class="date_year">2014</strong>
+				<!--      <span>05 March 2014</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<img src="https://secure.gravatar.com/avatar/818dc2df03cd2f1ca7d6e6e701052f0c?s=40">
+				
+				<span class="author">Anne van Rossum</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="rfduino-without-rfduino-code">RFduino without RFduino code</h1>
+
+<p>The <a href="http://www.rfduino.com/">RFduino</a> was a successfull <a href="https://www.kickstarter.com/projects/1608192864/rfduino-iphone-bluetooth-40-arduino-compatible-boa">Kickstarter project</a>. Thanks to the fact that it basically is not much more than the nRF51822 chip by Nordic, its form factor is very small. Additional buttons, leds, sensors, etc. can be added by boards that precisely fit its connectors.</p>
+
+<p>The advantage of the RFduino is that it on top of the nRF51822 provides FCC and CE certification, has a thought out antenna design, and has so many boards that function as shields. It is created by the company <a href="http://rfdigital.com/">RF Digital</a> under the module name RFD51822 and later the RFD22102. Note that there are <a href="http://www.nordicsemi.com/eng/Products/3rd-Party-Bluetooth-low-energy-Modules">other 3rd Party Bluetooth Low Energy vendors</a> listed on the Nordic site, that have these advantages as well. Besides that, for example the MBDT40 from Raytac Corp has all the 31 GPIO available, while the RFduino only has 7 GPIO pins.</p>
+
+<p>Anyway, interestingly, the RFduino code is not open-source, or most of it is not open-source. This is awkward, given the fact that the guys from RF Digital, started the website <www.opensourcerf.com> to indicate their involvement. The RFduino first came with a simple means to upload a binary to the RFduino, namely using the same tool as with most of the other Arduino boards: __avrdude__. Regretfully, after learning that changes to the open-source code in avrdude must be made open-source as well, the developer behind RFduino took all his sites offline (github as well as the forums), and came back online again with a proprietary tool to do so. A very strange move. The bootloader that resides on the RFduino is made proprietary as well, it is not even available in binary form. Interestingly, I saw some wrapper code between the Arduino code and the SoftDevice libraries from Nordic. If anything, these header files should be kept private. On the Nordic forums the employees do not know of any reason why the flash tool or the bootloader has to be proprietary. It seems to run counter any business sense. The more ways the RFD22102 boards can be programmed, the more will be sold from them.</www.opensourcerf.com></p>
+
+<h2 id="programming-it-ourselves">Programming it ourselves…</h2>
+
+<p>There is a lot of information on programming the nRF51822 on the Nordic website and the forums. Most of it however can only be obtained by buying a development or evaluation kit. The development kit comes with a so-called J-Link programmer from Segger, the J-Link LITE CortexM to be precise. Connecting it to the RFduino is not hard. In the following picture you can see how a little breadboard is enough. Here I just took a 9 pins FTSH Samtec connector we had lying around from a previous project (FireSwarm, a swarm of flying robots to find a dune fire). And there is no color coding whatsoever here!</p>
+
+<p><img src="/attachments/rfduino.jpg" alt="RFduino" title="RFduino connected"></p>
+
+<p>The J-Link comes with a connector with 9 pins, this means one pin is removed (pin 7) to give some asymmetry, very convenient! The pin layout is like this:</p>
+
+<pre><code>VTref 1 * * 2  SWDIO / TMS
+GND   3 * * 4  SWCLK / TCK
+GND   5 * * 6  SWO / TDO
+--    7 o * 8  TDI
+NC    9 * * 10 nReset
+</code></pre>
+
+<p>So, power the RFduino from an external source on 3.3V. The 3V and GND pins are nicely indicated on the RFduino. And then there are only three pins you have to connect. The VTref measures if the RFduino has actually enough power and must be connected to the 3V pin. The two other pins to connect are the SWDIO and the SWCLK pins. The SWDIO is connected to the RESET pin on the RFduino, the SWDCLK to the FACTORY pin.</p>
+
+<p>Now, if you download the code at <a href="https://github.com/mrquincle/bluenet">github</a> you will get a project with a Makefile that calls scripts in the <code>scripts</code> directory. Most of the code is thanks to Christopher Mason, only the adaptations to support RFduino are mine. To program with the J-Link, you will need the JLinkExe binary and for debugging the JLinkGDBServer binary. You can download them from <a href="http://www.segger.com/jlink-software.html">segger.com</a>.</p>
+
+<p>The current code requires a lot more love, but the beginning is there. In this movie you can see how the LED on the RGB RFduino shield reacts on the signal strength with an Android smartphone.</p>
+
+<div class="videowrapper">
+		<iframe width="560" height="420" src="//www.youtube.com/embed/9rnCdWl4mto?color=white&amp;theme=light"></iframe>
+		</div>
+
+<p>Note, that if you use this code and flash the RFduino, there are two things you will have to keep in mind. First, the SoftDevice, in this case the S110, is proprietary. It comes with the development kit (of 100 bucks) from Nordic. You will not be able to use Bluetooth without it. I would not recommend starting to program your RFduinos without buying it. Second, you won’t be able to get back to the standard RFduino software. This would require the RFduino people to make certain information public, especially where it expects the SoftDevice and how it interfaces with it. This is not the same as providing open-source software, but also this information is not available. So, consider this a one-way direction. :-)</p>
+
+<p>Now we are in full control of our RFduinos. We can create our own Bluetooth characteristics, services, etc. We know which timers are used. We can take full advantage of the system that ARM uses to have peripheral devices communicate with each other without using the CPU for example. They use besides the well known interrupts, entities like “events” and “tasks” to do this, pretty neat.</p>
+
+<p>For us, we’d like to experiment with the new SoftDevice, the S120. Contrary to the S110, this SoftDevice allows mixing central and observer roles. This means it becomes possible to develop wireless sensor networks type of functionality. What is also really interesting is its support for wireless charging. More can be read in <a href="http://www.prnewswire.com/news-releases/nordic-semiconductor-announces-bluetooth-smart-solution-for-rezence-wireless-charging-and-the-s120-8-link-central-role-bluetooth-low-energy-softdevice-for-the-nrf51822-enabling-charge-pads-with-support-for-simultaneous-charging--236655491.html">Nordic’s press release</a>.</p>
+
+<p>So, why using the RFduino at all? Its advantages are still there: certification, many extension boards, and a nice antenna design. We would like to concentrate on very rapid prototyping of services, such as a <strong>Lost &amp; Found service</strong>, rather than spending too much time on the electronics itself.</p>
+
+<h2 id="crownstone">Crownstone</h2>
+
+<p>Make sure you take a look at our <a href="/products/crownstone">Crownstone</a> offering. This is directly based on the nRF51822 and open-source for real. :-) So, this uses the code at github for <a href="https://github.com/mrquincle/bluenet">BlueNet</a> as indicated above. If you want to have more details on how to program the different SoftDevice versions from Nordic etc., feel free to file an issue there. Also, look around if you want to get more information on Bluetooth Low-Energy in general, as for example in this blog post about <a href="/2014/07/23/linux-and-ble/">Linux and BLE</a> or on the <a href="/2014/07/15/ble-dobeacon-a-virtual-memo/">iBeacon-type of device</a> we build (with respect to software!) for <a href="http://wots.nl">WOTS</a>. To be clear, the services on top of the Crownstone that require a larger part of machine learning and artificial intelligence will not be open-source. If you think we do not communicate that properly, feel also free to suggest improvements in wording!</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2014/03/05/rfduino-without-rfduino-code&amp;text=RFduino%20without%20RFduino%20code"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2014/03/05/rfduino-without-rfduino-code"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2014/03/05/rfduino-without-rfduino-code"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2014/03/05/rfduino-without-rfduino-code"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2014/03/05/rfduino-without-rfduino-code&amp;title=RFduino%20without%20RFduino%20code"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2014/02/26/dotty-update" title="Dotty update">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2014/05/05/asus-xtion-using-openni2-and-ros-on-udoo" title="Asus Xtion on UDOO with OpenNI2 and ROS">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

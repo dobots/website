@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | Building a swarm bot</title>
+
+
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>Building a swarm bot </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Apr</strong>
+				<strong class="date_day">20</strong>
+				<strong class="date_year">2012</strong>
+				<!--      <span>20 April 2012</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<span class="author">Peet van Tooren</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="building-circuitry-for-a-small-robot-swarm">Building circuitry for a small robot swarm</h1>
+
+<p>The quest for a simple swarm has brought us 10 assembled Arexx frames.</p>
+
+<p><img src="/attachments/dotty_arexx.jpg" alt="Arexx frame for the Dotty"></p>
+
+<p>We do not require anything sophisticated. An Arduino board with a tiny microcontroller is already enough. Sparkfun also provides motor controllers, so nothing sophisticated using H-bridges is required anymore. The motor controller handles both DC motors and has a current handling capability of 1 A for each side, more than enough for our bots, that do not typically exceed 70 mA while running.</p>
+
+<p><img src="/attachments/arduino1.png" alt="Arduino">
+<img src="/attachments/arduino2.png" alt="Arduino"></p>
+
+<p>Our basic idea is to include inductive charging platforms to allow the bots to
+charge their batteries. We have bought these game-controller battery packs plus charger a number of times, including one of a different form just
+for variety.</p>
+
+<p>To control the movement of the bots we use this (fig 4)</p>
+
+<p><img src="/attachments/induction.jpg" alt="Charging station"></p>
+
+<p>To detect trouble it is useful to know if the motors are running smoothly or
+are being blocked, or maybe running without any friction, as this can prompt
+the bot to change its behaviour if the current strategy does not yield the
+required result.</p>
+
+<p>After surfing the web to learn which solutions are available to do this (<a href="http://ww1.microchip.com/downloads/en/AppNotes/00894a.pdf">http://ww1.microchip.com/downloads/en/AppNotes/00894a.pdf</a>) the following circuit has emerged which primarily excells at being very cheap with parts that everyone that has built any electronics whatsoever probably already owns. If not, Velleman (a Begian firm) has a standard set of parts available in shops and on the internet.</p>
+
+<p>The diagram is shown here:</p>
+
+<p><img src="/attachments/current_sensing_circuit.png" alt="Motor operation circuit"></p>
+
+<p>Here is a picture of the test setup 8-)</p>
+
+<p><img src="/attachments/test_setup.png" alt="Test setup"></p>
+
+<p>As could be expected a circuit that simple did surprise us with a few quirks.
+First of which was that the voltage drop observed in the testbed did not
+manifest itself in the prototype. The swing, originally from 2.3 to 4.4 Volts,
+only showed 3.1 to 4.3 Volts, with a lot of noise present in the sample data.</p>
+
+<p>A little test with a potentiometer and a reference voltage showed very stable
+results, so a more elaborate test setup was built including the motor
+controller this time.</p>
+
+<p><img src="/attachments/adc_input.png" alt="ADC Input"></p>
+
+<p>This diagram shows the results coming from the adc input of arduino, and the
+noise is quite apparent. The lower generic level is measured when the one
+motor is blocked.</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2012/04/20/building-a-swarm-bot&amp;text=Building%20a%20swarm%20bot"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2012/04/20/building-a-swarm-bot"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2012/04/20/building-a-swarm-bot"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2012/04/20/building-a-swarm-bot"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2012/04/20/building-a-swarm-bot&amp;title=Building%20a%20swarm%20bot"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2012/04/03/in-the-spotlight-linux" title="In the spotlight, Linux!">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2012/05/13/smartphone-add-ons" title="Smartphone add-ons">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

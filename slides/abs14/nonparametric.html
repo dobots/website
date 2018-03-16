@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Are nonparametric Bayesian methods ready for point clouds?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+
+	@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Droid+Serif|Yanone+Kaffeesatz)
+	<!--
+	@font-face {
+		font-family: 'Droid Serif'; 
+		font-weight: normal; 
+		font-style: normal; 
+		src: url('fonts/Droid_Serif/DroidSerif.ttf');
+		src: local('Droid Serif'), local('DroidSerifRegular'),
+		url('fonts/Droid_Serif/DroidSerif.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'Droid Serif'; 
+		font-weight: normal; 
+		font-style: italic; 
+		src: url('fonts/Droid_Serif/DroidSerif-Italic.ttf');
+		src: local('Droid Serif'), local('DroidSerifItalic'),
+		url('fonts/Droid_Serif/DroidSerif-Italic.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'Yanone Kaffeesatz'; 
+		font-weight: normal;
+		font-style: normal; 
+		src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf');
+		src: local('Yanone Kaffeesatz'), local('YanoneKaffeesatzRegular'),
+		url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'Ubuntu Mono'; 
+		font-weight: normal;
+		font-style: normal; 
+		src: url('fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf');
+		src: local('Ubuntu Mono'), local('UbuntuMonoRegular'),
+		url('fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+	}
+	-->
+	body {
+		font-family: 'Droid Serif';
+		font-size: 1.2em; // use this to size up for a projector
+	}
+	h1, h2, h3 {
+		font-family: 'Yanone Kaffeesatz';
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+	.remark-slide-content h1 { font-size: 3em; }
+	.remark-slide-content h2 { font-size: 2em; }
+	.remark-slide-content h3 { font-size: 1.6em; }
+	.footnote {
+		position: absolute;
+		bottom: 3em;
+		font-size: .8em;
+	}
+	li p { 
+		line-height: 1.25em; 
+	}
+	.red { color: #fa0000; }
+	.large { 
+		font-size: 2em; 
+	}
+	a, a > code {
+		color: rgb(0, 0, 114);
+		text-decoration: none;
+	}
+	code {
+		-moz-border-radius: 5px;
+		-web-border-radius: 5px;
+	//	background: #e7e8e2;
+		border-radius: 6px;
+	}
+	.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+	.remark-code-line-highlighted     { background-color: #373832; }
+	.pull-left {
+		float: left;
+		width: 47%;
+	}
+	.pull-right {
+		float: right;
+		width: 47%;
+	}
+	.pull-right ~ p {
+		clear: both;
+	}
+	#slideshow .slide .content code {
+		font-size: 0.8em;
+	}
+	#slideshow .slide .content pre code {
+		font-size: 0.9em;
+		padding: 15px;
+	}
+	.inverse {
+		background: #272822;
+		color: #777872;
+		text-shadow: 0 0 20px #333;
+	}
+	.inverse h1, .inverse h2 {
+		color: #f3f3f3;
+		line-height: 0.8em;
+	}
+
+	/* Slide-specific styling */
+	#slide-inverse .footnote {
+		bottom: 12px;
+		left: 20px;
+	}
+	#slide-how .slides {
+		font-size: 0.9em;
+		position: absolute;
+		top:  151px;
+		right: 140px;
+	}
+	#slide-how .slides h3 {
+		margin-top: 0.2em;
+	}
+	#slide-how .slides .first, #slide-how .slides .second {
+		padding: 1px 20px;
+		height: 90px;
+		width: 120px;
+		-moz-box-shadow: 0 0 10px #777;
+		-webkit-box-shadow: 0 0 10px #777;
+		box-shadow: 0 0 10px #777;
+	}
+	#slide-how .slides .first {
+		background: #fff;
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		z-index: 1;
+	}
+	#slide-how .slides .second {
+		position: relative;
+		background: #fff;
+		z-index: 0;
+	}
+
+	/* Two-column layout */
+	.left-column {
+		color: #777;
+		width: 20%;
+		height: 92%;
+		float: left;
+	}
+	.left-column h2:last-of-type, .left-column h3:last-child {
+		color: #000;
+	}
+	.right-column {
+		width: 75%;
+		float: right;
+		padding-top: 1em;
+	}
+</style>
+</head>
+<body>
+<textarea id="source">
+class: center, middle, inverse
+
+# Are nonparametric Bayesian methods ready for point clouds?
+
+Anne van Rossum
+
+.footnote[PhD candidate at Leiden, robotic startup [dobots.nl](https://dobots.nl)]
+
+---
+# Robotics
+
+* A bit on point cloud
+
+* Regression in computer vision
+
+* Can nonparametric Bayesian methods perform hard assignments?
+
+* Can nonparametric Bayesian methods aid robustness?
+
+---
+# Point cloud
+<p align="center"><img src="images/point_cloud_colored.png" alt="Point cloud, colored in"></img></p>
+Figure: Point cloud from a depth camera (Kinect-like), overlaid with colors from an RGB camera.
+---
+# Movie
+
+<center>
+<video width="640" height="480" controls="controls">  
+	<source src="movies/bart.mp4" type="video/mp4" />   
+	Nav doesn't support html5 video
+</video> 
+</center>
+---
+# What we want
+
+<p align="center"><img src="images/delpero.png" alt="Inference on objects"></img></p>
+Figure: Bayesian scene understanding (Del Pero et al. 2013)
+
+Types of scenes considered are supermarkets; aisles in regular patterns. We want to perform inference on objects starting from points in a 3D point cloud.
+
+Occam's razor: no RANSAC, no Hough, no dirty tricks! 
+
+---
+# Least Squares - Ordinary vs Total
+In **ordinary** least squares, we minimize the residuals $\mathbf{r_x}$ in the $y$-direction:
+
+.pull-left[
+$$S=\mathbf{r}^T \mathbf{W} \mathbf{r}$$
+If we expect errors in both variables, we can perform **total** least squares optimization:
+$$S=\mathbf{r}_x^T \mathbf{M}_x^{-1} \mathbf{r}_x + \mathbf{r}_y^T \mathbf{M}_y^{-1} \mathbf{r}_y$$
+]
+.pull-right[
+![image](images/total_least_squares.jpg)
+]
+<p/>
+<p/>
+In computer vision we need **total least squares**. For line or plane extraction the $y$-coordinate does have the same role as the $x$-coordinate.
+
+---
+# Space - Polar vs Cartesian Coordinates
+
+The Randomized Hough Transform (RHT) to extract lines from an image.
+
+.pull-left[
+<p align="center"><img src="images/square.bmp" height="280px" alt="Hough Transform input"></img></p>
+]
+.pull-right[
+<p align="right"><img src="images/square_accumulator.bmp" height="240px" alt="Hough Transform accumulator"></img></p>
+]
+<p/>
+Figure: *Left*: input. *Right*: the Hough accumulator (polar coordinates)
+<p/>
+Due to the fact that the Hough Transforms operates in polar coordinates, its complexity is (without adjustments) in the order of **pairs** of points.
+
+Other problems? Yes, there are many parameters: grid granularity, picking neighbourhood size for pairs, threshold levels, etc.
+
+---
+# Noise - Polar vs Cartesian Coordinates
+
+.pull-left[
+<p align="center"><img src="images/gaussian_polar.png" height="280px" alt="Noise in polar coordinates translated back to Cartesian coordinates"></img></p>
+]
+.pull-right[
+<p align="right"><img src="images/gaussian_cartesian.png" height="280px" alt="Noise in Cartesian coordinates"></img></p>
+]
+
+A Gaussian distribution for noise in polar coordinates is just not the same as the to-be-expected noise from the true structure.
+
+---
+# Robustness
+
+An example with inlier point weights `$w_{in}=1.0$`, and a single outlier with weight `$w_{out}=0.1$`:
+<p align="center"><img src="images/orthogonal_regression_outlier.png" width="500" alt="An outlier with orthogonal regression"></img></p>
+
+The outlier has a disastrous effect!
+
+---
+# A crisp mixture model
+
+A mixture model:
+
+$$f(x)=\sum_{i=1}^n w_i p_i(x) \text{ with for example } p_i=\mathcal{N}(x|\mu_i,\Sigma_i)$$
+
+**Problem!** Giving even a small weight $w_j$ to other clusters $j \ne i$ for our points, will screw up our (not yet robust) estimation step
+
+This property of soft assignments to clusters (every point belongs to each cluster for a bit) we want to replace by hard assignments.
+
+Soft assignments are used for "border-case" points. In computer vision a plane is in front of another plane, there is no need to assign a point to multiple planes simultaneously. 
+
+**Question:**.red[*] Can nonparametric Bayesian methods help us out? We need a level of "indirection". First, assign points to lines/planes. Second, do the detailed line fitting.
+
+.footnote[.red.bold[*] If you see "question", it really means I have no answer]
+---
+# A robust mixture model
+
+Student's t-distribution is well known for accomodating outliers due to its fat tail:
+
+$$f(t) = \frac{1}{\sqrt{\tau}B(\frac{1}{2},\frac{\tau}{2})}\( 1 + \frac{t^2}{\tau} \)^{\frac{-\tau+1}{2}}$$
+
+It is possible to use a mixture of t-distributions, but it is not really Bayesian. We do not even attempt to capture the distribution of noise. 
+
+Example: Suppose we have no lines at all, only noise. We don't want a method that tries to fit lines anyway!
+
+---
+# A robust mixture model 
+
+We can use redescending M-estimators. They assign zero weight to gross outliers.
+
+**Question:** Is there a redescending M-estimator that has a proper probability distribution associated to it?
+
+---
+# A robust mixture model
+
+Separate gross outliers from pseudo-outliers by a heterogeneous probability distribution mixture. And allow for a potential infinite number of structures:
+
+$$G \sim SomeP(\ldots, G_0)$$
+
+$$\theta_i|G \stackrel{iid}{\sim} G \qquad for \quad i = 1,\ldots,N$$
+
+$$x_i|\theta_i \stackrel{ind}{\sim} F_i(\theta_i) \qquad for \quad i = 1,\ldots,N$$
+
+Here $F_i(.)$ is different, can be a uniform distribution for the noise, and a "robust" distribution for points on a line. The $\theta_i$ correspond to a line object. It is easy to imagine that the number of lines (or planes) might be modeled by some process, even a DP.
+
+**Question:** What is computationally feasible to have as $F_i(.)$?
+
+---
+class: center, middle, inverse
+# Answers?
+
+
+</textarea>
+<script src="http://gnab.github.io/remark/downloads/remark-0.6.1.min.js" type="text/javascript"></script> 
+
+<!-- <script src="lib/remark.min.js" type="text/javascript"></script> -->
+
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script> 
+<!-- <script src="lib/mathjax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>  -->
+<script type="text/javascript">
+	var slideshow = remark.create();
+
+	// Setup MathJax
+	MathJax.Hub.Config({
+		tex2jax: {
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			inlineMath: [['$','$'], ['\\(','\\)']],
+			processEscapes: true
+		}
+	});
+	MathJax.Hub.Queue(function() {
+			$(MathJax.Hub.getAllJax()).map(function(index, elem) {
+				return(elem.SourceElement());
+				}).parent().addClass('has-jax');
+			});
+
+	MathJax.Hub.Configured();
+</script>
+<script type="text/css" media="screen">
+	code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</script>
+</body>
+<!--
+-->
+</html>

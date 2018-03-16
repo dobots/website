@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | Robot-to-robot communication</title>
+
+
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>Robot-to-robot communication </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Jun</strong>
+				<strong class="date_day">11</strong>
+				<strong class="date_year">2012</strong>
+				<!--      <span>11 June 2012</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<img src="https://secure.gravatar.com/avatar/818dc2df03cd2f1ca7d6e6e701052f0c?s=40">
+				
+				<span class="author">Anne van Rossum</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<p><img src="/attachments/replicator_2prototypes_square.png" alt="Replicator robot prototypes" class="float-right"></p>
+
+<p>In
+the near future smartphones will become important as the brains for robots.
+How can we best setup phone-to-phone communication? Or in our case, robot-to-
+robot communication. We do not only want to have robot-in-the-cloud
+functionality, but want to be able to stream sensor data from one robot to the
+other. One of the important criteria for us is the availability on
+contemporary smartphones. The requirements of the solutions we find should not
+be judged on the fact that they support a MIPS or ARM computer architecture,
+but on the fact that it is works fine with Android 2.3. Robot-to-robot
+communication is especially useful in settings where the robots are physically
+close. However, for remote presence applications it would be nice to have
+mobile-to-robot communication which is not limited to one (wireless) network.
+This opens up possibilities of remote control and remote monitoring. The
+ability to bridge the firewall that separates a home or company from the
+internet is called <a href="http://en.wikipedia.org/wiki/NAT_traversal">NAT traversal</a>, so it will be really
+nice if a library or tool makes this easy for us. One of our last requirements
+is about what we want to communicate. We want to be able to stream data on the
+level and quality as video chat applications. This means that text-based
+approaches using JSON or XML per pixel ;-) might not be the best way to go.
+Tools that try to achieve some quality of service will have a big plus.
+Especially for communicating accelerometer data between users it is important
+that this goes very fast. There should be a small delay between a command to a
+robot and the action by the robot.</p>
+
+<h2 id="cross-platform-tools">Cross-platform tools</h2>
+
+<p>There are tools available that makes it possible to program for both Android
+and iOS at the same time. These tools differ in how much they make use of web
+functionality. The extreme is an “app” which is only a browser that displays
+pages from an HTML5 website. Such an app does not look like native
+applications on your smartphone and has many difficulties in accessing the
+sensors on board. As Jonas Lind <a href="http://www.visionmobile.com/blog/2011/06/platform-x-how-cross-platform-tools-can-end-the-os-wars/">tells us</a>, it might very well be that the final solution for
+this platform “war” will be more important than the platforms themselves. To
+us, it seems inevitable to have a solution that can run natively on the
+smartphone and has access to many of the sensors, attached devices, and as a
+side-effect has a high performance.
+<a href="http://www.madewithmarmalade.com/">Marmalade</a> and
+<a href="http://www.mosync.com/">Mosync</a> seem to be such cross-platform APIs.</p>
+
+<p>We are not so much interested in these cross-platform capabilities as such: we
+want to have <em>phone-to-phone streaming</em> of sensor data. Although, it looks
+like there must be a huge market for multi-user peer-to-peer applications,
+there does not seem to be many frameworks yet that make it easy for developers
+to create multi-user games. The streaming capabilities seem not be up to par.
+The newest Mosync API (3.0.1) might have audio streaming now, but there is
+nothing in place that really targets peer-to-peer data streaming.</p>
+
+<h2 id="middleware-solutions-and-standards">Middleware solutions and standards</h2>
+
+<p>In home networking there is UPnP (of which e.g.
+<a href="http://4thline.org/projects/cling">Cling</a> seems to be big) and DLNA which you
+will probably recognize from a sticker on your televion set. There do not seem
+many libraries for Android for UPnP. One of the most professional looking ones
+is <a href="http://www.openhome.org/wiki/OhNet">ohNet</a> from
+<a href="http://openhome.org/">OpenHome</a>. The UPnP technology does not use any
+authorisation schemes and is hence only useful in the house itself. That’s why
+there is an OpenHome hub to which you can connect to your home and control
+everything. Besides looking for multimedia streaming solutions, we can also
+look at the parties that implement phone conversation. So, we have to look at
+<a href="http://en.wikipedia.org/wiki/Session_Initiation_Protocol">SIP</a> (voice) or <a href="http://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol">XMPP</a> (chat) or extensions on that. There is for
+example the <a href="http://sensor.andrew.cmu.edu/xep/sox-xep.html">SOX- XEP</a>
+extension. It stands for Sensor-Over-XMPP and an ejabberd server will be work
+fine. Jingle adds peer-to-peer session control to XMPP. Hence, maybe something
+can be cooked up to combine this and create something that works for robot-to-
+robot communication, but it will be a lot of effort! There is peerdroid and
+<a href="http://code.google.com/p/sip2peer">sip2peer</a>, but both projects do not seem
+to be backed up by a company or diligent programmers. SIP is a signaling
+protocol that comes with a real-time transport protocol. The RTCP is a control
+protocol that is needed besides the data transfer protocol (RTP), which is
+about quality of service, etc. Audio and video streams have typically separate
+RTP sessions (and hence different ports). What’s most interesting to us is
+that there is an experimental Control Data Profile for RTP for machine-to-
+machine communications. Regretfully, it doesn’t seem anyone picked up on that
+either. Then, there is
+<a href="http://en.wikipedia.org/wiki/Data_distribution_service">DDS</a>, Data
+Distribution Service middleware, which seems to be promoted by at least one
+company (Twin Oaks) for use on smartphones and which has a
+<a href="http://blogs.rti.com/2011/03/02/new-video-data-centric-integration-demo-android/">demo</a>. And from a middleware perspective there is
+<a href="http://www.zeromq.org/">zeromq</a>, which also takes messaging between devices
+more seriously, but which is fairly general (and does not have examples of
+streaming from <a href="http://www.zeromq.org/build:android">Android</a> to iOS for
+example). To summarize all these solutions seem to have good ingredients for
+what we want, but to stream for example images and acccelerometer data from
+phone-to-phone in a nice plug-and-play and reconfigurable manner seems to be
+not there yet.</p>
+
+<h2 id="recommendation">Recommendation</h2>
+
+<p>For a roboticist or computer scientist it might now be most natural to roll
+your own solution, but we are convinced something will show up that meets our
+demands completely in not a very long time. It is most logical to jump the
+bandwagon with one of the solutions that solves basically everything except
+for the NAT traversal and only requires an additional hub similar to the
+OpenHome strategy. Contrary, to the latter though, we would like to pick
+something that makes development on the smartphone side extremely easy. One
+choice could have been <a href="https://bu.mp/">bump</a>, which has an API that can make
+a connection on physically bumping devices together. Most promising though
+seems to be <a href="https://www.alljoyn.org/">Alljoyn</a>, backed up by Qualcomm and
+open-source. It works for both Wifi and Bluetooth. You can find the source
+code <a href="http://alljoyn.github.com/build.html">here at github</a>. Happy coding!</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2012/06/11/robot-to-robot-communication&amp;text=Robot-to-robot%20communication"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2012/06/11/robot-to-robot-communication"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2012/06/11/robot-to-robot-communication"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2012/06/11/robot-to-robot-communication"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2012/06/11/robot-to-robot-communication&amp;title=Robot-to-robot%20communication"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2012/05/13/smartphone-add-ons" title="Smartphone add-ons">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2012/06/12/visual-fire-detection" title="Visual fire detection">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

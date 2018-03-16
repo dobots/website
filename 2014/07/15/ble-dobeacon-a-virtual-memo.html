@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | BLE, doBeacon, a Virtual Memo</title>
+
+
+<meta name="description" content="Bluetooth Low Energy, the iBeacon, the WOTS app, the Virtuele Memo, and how it all comes together.">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>BLE, doBeacon, a Virtual Memo </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Jul</strong>
+				<strong class="date_day">15</strong>
+				<strong class="date_year">2014</strong>
+				<!--      <span>15 July 2014</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<img src="https://secure.gravatar.com/avatar/818dc2df03cd2f1ca7d6e6e701052f0c?s=40">
+				
+				<span class="author">Anne van Rossum</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="what-is-this-ibeacon-stuff">What is this iBeacon stuff?</h1>
+
+<p>Bluetooth Low Energy is becoming largely available. At DoBots we have always promoted technology that can hitchhike on the success of smartphones and other personal devices around smartphones. The use of Bluetooth Low Energy (BLE), also called Bluetooth Smart, is therefore one of our core technologies.</p>
+
+<p>It is quite remarkable that the Bluetooth consortium allowed Apple to claim an extremely impoverished subset of the BLE standard and call it iBeacon. This term <a href="https://en.wikipedia.org/wiki/IBeacon">iBeacon</a> is a trademark and cannot be used without an <a href="https://developer.apple.com/ibeacon/">iBeacon License</a>. These kind of products are in the market at 3 for €100,- at <a href="http://www.beaconic.nl/buy-beacons/">Beaconic</a>, 3 for $100,- at <a href="http://estimote.com/">Estimote</a>, 3 for $116,- at <a href="http://todhq.com/purchase.html">Tōd</a>. This is exactly the same technology as for example the crowdsource funded <a href="https://www.sticknfind.com/store.aspx">stick-n-find</a>, which comes with 4 in a package at around $90,-.</p>
+
+<p>Perhaps it is worth to explain how little Apple did. The standard BLE specification divides the spectrum into channels. There are 37 channels for data communication, and there are 3 channels for advertising. The advertising channels are spread over the spectrum to be resilient against interference on the crowded 2.4GHz band (where also normal Bluetooth and Wi-Fi resides). There are actually two modes of operation, let’s call the first mode <a href="https://en.wikipedia.org/wiki/Simplex_communication">simplex</a> and the second mode <a href="http://bit.ly/1qcD5RX">duplex</a> according to the telecommunication tradition. In simplex mode there is a broadcasting party and a receiving party. Broadcasting in BLE is called <strong>advertising</strong>, and receiving is called <strong>scanning</strong>. The duplex case is handled by classical master-slave roles. Now, we encounter a nice property of BLE: A device might only support an advertising mode and hence only requires circuitry for the transmission of messages. This is exactly an iBeacon with respect to <em>hardware</em> required. Subsequently, the content of the message that is sent in the BLE-dictated advertising mode is up to the user. Here Apple got a brilliant invention on par with the wheel, the steam engine, the laser, the transistor… Namely, sending an <em>identifier</em> within an advertising message. :scratching_head_icon:</p>
+
+<p>Okay! We can do that of course. Our code for the <a href="https://github.com/mrquincle/bluenet">nRF51822</a> builds on top of code by Christopher Mason, is open-source, and can do already much more. You can start experimenting with this code if you buy a <a href="https://www.nordicsemi.com/eng/Products/Bluetooth-R-low-energy/nRF51822-Development-Kit">Nordic development kit for the nRF51822</a>, which is around €100,-. Note, that you absolutely do not need that if you only want to communicate with iBeacons!</p>
+
+<p>Our super-elaborate technology to be able to use advertising for proximity purposes, we call <strong>doBeacon</strong>. This is one of the functionalities you will find in our <a href="http://dobots.nl/products/crownstone.html">crownstone</a> product.</p>
+
+<h1 id="virtual-memo">Virtual Memo</h1>
+
+<p>The <a href="http://wots.nl">WOTS</a>, World of Technology &amp; Science, conference, will be held in Utrecht, the Jaarbeurs. It is <a href="https://registration2.n200.com/survey/0o33vcrxufeeo?check=1">free</a> and allows you to see our technology at our stand! With a consortium of companies we are creating a gadget for visitors, which is called the <a href="http://wots.nl/gadget-virtuele-memo">Virtuele Memo</a>. It is meant as an electronic Post-it® that you can use to leave messages as on say a fridge, such as “Please, don’t forget the milk, honey!”, or a reminder for yourself such as “Hairdresser time!”.</p>
+
+<div class="videowrapper">
+		<iframe width="560" height="420" src="//www.youtube.com/embed/e6o2Mrdqt5g?color=white&amp;theme=light"></iframe>
+		</div>
+
+<p>A very short clip with flashing LEDs. This is to be expected of a movie shot by an engineer. :-)</p>
+
+<p>The Virtual Memo (or Virtuele Memo in Dutch), surprise!, uses BLE functionality. It is exactly a beacon as described before. So, how can you leave messages? This is done through the internet. Your phone comes in close proximity to the fridge, and a note that you want to attach to it, is uploaded to a server. By the way, this is is the <a href="http://www.sense-os.nl/developers">CommonSense</a> internet-of-things infrastructure from Sense, the sister company of DoBots. Okay, so, suppose now your roommate is coming home. Her phone will come in proximity with the Virtuele Memo on the fridge. It will then contact the server and download new messages for her. The app on the phone can be very energy-efficient in this way. It only needs contact with a server when it gets a trigger over BLE.</p>
+
+<p>DoBots is responsible for developing the smartphone application. It is based on <a href="https://cordova.apache.org/">Cordova</a>, so it uses HTML, CSS, and Javascript on the phone. Cordova is the codebase at the Apache Software Foundation, and originally developed by Adobe/Nitobi under the name PhoneGap (which still exists under its own name). See for the entire story this blog post at <a href="http://phonegap.com/2012/03/19/phonegap-cordova-and-what%E2%80%99s-in-a-name/">PhoneGap</a>. This means it can run on Android and iOS both! We decided upon making our application open source, so you can find it at <a href="https://github.com/almende/virtuele-memo">https://github.com/almende/virtuele-memo</a>. This software makes use of e.g. the <a href="https://github.com/senseobservationsystems/commonsense-javascript-lib">commonsense-javascript-lib</a> and a <a href="https://github.com/mrquincle/BluetoothLE">BluetoothLE</a> plugin for Cordova.</p>
+
+<h1 id="ble-and-beyond">BLE and Beyond</h1>
+
+<p>DoBots does not believe that the IP (intellectual property) resides on the level of such applications. But again, our technology offering is around services that can make use of BLE technology on a large scale, such as the <a href="http://dobots.nl/products/crownstone.html">crownstone</a>, which has the potential to become ubiquitous. This means namely that interesting algorithms, hence, nice IP, are required, for example:</p>
+
+<ul>
+  <li>recognition of <strong>activities of daily living</strong> (ADLs) to support independent living (only anomalies are communicated to family, and finally caretakers, see also the <a href="http://ppats.wordpress.com/">PPATS project</a>)</li>
+  <li>recognition of devices, <strong>standby power killers</strong>, but also standby for an <strong>entire building</strong> without turning off the fridge!</li>
+  <li>indoor localization, the use of multiple doBeacons for more <strong>accurate positioning</strong>
+</li>
+</ul>
+
+<p>For indoor localization often scenarios are described that are a bit fancy. However, in a business context, knowing which facilities are in use, really saves money! Cleaning unused offices should be a lot cheaper!</p>
+
+<p>If you want to know in general why DoBots puts so much effort in consumer electronics such as BLE, come also to one of the <a href="http://wots.nl/elektronicatrendsindtoepassing/">seminars</a> at WOTS. Anne van Rossum is going to talk about <a href="http://wots.nl/slimme-fabriek/">smart factories</a> in the <a href="http://wots.nl/elektronicatrendsindtoepassing/">industry</a> where also connections will be made with Almende projects such as <a href="http://www.almende.com/arum">ARUM</a> which focus on agile manufacturing.</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2014/07/15/ble-dobeacon-a-virtual-memo&amp;text=BLE,%20doBeacon,%20a%20Virtual%20Memo"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2014/07/15/ble-dobeacon-a-virtual-memo"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2014/07/15/ble-dobeacon-a-virtual-memo"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2014/07/15/ble-dobeacon-a-virtual-memo"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2014/07/15/ble-dobeacon-a-virtual-memo&amp;title=BLE,%20doBeacon,%20a%20Virtual%20Memo"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2014/06/25/a-nonparametric-bayesian-lesson" title="A nonparametric Bayesian lesson">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2014/07/23/linux-and-ble" title="Linux and BLE">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Distributed Organisms B.V., shorthand DoBots, specializes in Smart Robots and Smart Buildings. DoBots implements localization, mapping, and navigation algorithms on robots and indoor localization, automation, and tracking algorithms in buildings.">
+<meta name="author" content="Distributed Organisms B.V.">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+
+<title>DoBots | Visualizing accelerometer data</title>
+
+
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/assets/elusive-webfont-b4b08c54aa385fbc9433a5864604eb0a37430d49016644f6c2225b9c9f6528d4.css">
+
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" type="text/css" href="/assets/flexslider-af37d743866caa19c33f16fdb8585f2b6331c7b25bfcb9b0b2fd4720d61df9b5.css">
+<link rel="stylesheet" type="text/css" href="/assets/dobots-style-6a93bbafd311befa179f35a7f457349cb1b7ed24686877defdb4530f84dcc1fe.css">
+
+<!--[if lt IE 9]>
+	<script src="/assets/themes//resources/respond/Respond.min.js"></script>
+<![endif]-->
+
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+<body>
+    <!--
+<div id="headerBar" onclick="location.href='http://crownstone.rocks';">
+<center>
+<h4>
+<a href="http://crownstone.rocks/">http://crownstone.rocks</a> power outlet!
+</h4>
+</center>
+</div>
+    -->
+<header id="header" class="mini-wrap">
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logo.png" class="img-responsive" alt="DoBots"></a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/applications/cleaning/">Applications</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/products/autopilot/">Technology</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/jobs/">Jobs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about-us/">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search/">Search</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+	<li><a href="mailto:info@dobots.nl?subject=Get%20in%20contact">Contact</a></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="sub-menu" class="mini-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled sub-menu pull-left slogan">
+					<!--					<li>"Computers, come, join us in the real world!"</li> -->
+					<li>
+<a href="/2014/05/23/best-european-startup/">Best European Startup Award</a> winner of <a href="http://robotlaunch.com/">Robot Launch</a>!
+					</li>
+				</ul>
+                <!--
+				<ul class="list-unstyled sub-menu pull-right">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+						
+							
+							
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+				</ul>
+                -->
+			</div>
+		</div>
+	</div>
+</section> <!--end / sub-menu-->
+
+
+<!--
+<div class="page-header">
+  <h1>Visualizing accelerometer data </h1>
+</div>
+-->
+
+<div class="container">
+	<div class="row post-full">
+		<div class="col-md-12">
+			<div class="date">
+				<strong class="date_month">Apr</strong>
+				<strong class="date_day">12</strong>
+				<strong class="date_year">2013</strong>
+				<!--      <span>12 April 2013</span> -->
+			</div>
+			
+			
+			<div class="author-block">
+				
+				<span class="author">Roemer Vlasveld</span>
+			</div>
+			
+			<div class="post">
+				<div class="content">
+					
+<h1 id="visualizing-accelerometer-data">Visualizing accelerometer data</h1>
+
+<p><em>Every major application or breakthrough starts with just a simple idea. But
+an idea that has developed in the mind of one needs to tested to the real
+world, and preferably in an easy and fast manner. During a research project on
+recognizing human activities using accelerometer data, the need for quick
+visualizations of collected data emerged. Using a simple setup this is made
+possible, for everybody with an Android smartphone.</em></p>
+
+<p>We are working on a system that can be seen as a part of a pipeline process of
+recognizing human activities using smartphone data. The hypotheses is that by
+segmenting the gathered sensory data before applying classification, as is
+often done directly, a richer and better understanding of the data can be
+obtained. To try out this idea, one can work with artificial data or, as we
+liked to do, with real world data. In our first attempt we used free and open
+available datasets with labeled activity data; the dataset of <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Human Activity Recognition Using Smarthphones from the UCI Machine Learning Repository</a>
+and the <a href="http://www.cis.fordham.edu/wisdm/dataset.php">WISDM dataset</a>.
+Although it is a luxury to have labeled data, any uncertainty about performed
+activities and conditions is still a drawback.</p>
+
+<p>To overcome this problem of unknown factors, we want to gather our own data.
+Because we will do small runs of a few consecutive performed activities, such
+as sitting, walking and taking the stairs, manual annotation would suffice and
+there is no need for precise labeling of each measurement. The requirements
+are to quickly perform an activity (without an extensive environment setup)
+and visualise the data for human inspection. This way we are able to get a
+<em>feel</em> of the data, before formalizing the idea.</p>
+
+<h2 id="android-apps">Android Apps</h2>
+
+<p>Although the implementation of an Android app to gather the accelerometer data
+is not that complicated, it is easier to choose an existing solution. This
+implementation simplicity is reflected in the number of apps available
+performing the task of recording sensory data. After a quick review of
+available apps in the Google <a href="http://play.google.com/">Play store</a>, our weapon
+of choice became <a href="https://play.google.com/store/apps/details?id=com.kzs6502.sensorlogger">Sensor Logger</a>. Its benefits are the adjustable sensor rate, the
+number of (virtual) sensors (raw accelerometer, linear acceleration,
+orientation, rotation, etc) and the easy csv format in which data is logged. A
+drawback is the lack of gps recording, but due the nature of your recordings
+(small in- or outdoor activities), this is not a big problem for now.</p>
+
+<h2 id="data-gathering">Data gathering</h2>
+
+<p>The Sensor Logger app logs the sensor data to eight separate csv files on the
+SD-card of the smartphone. These files can be transmitted to a PC, e.g. by USB
+or bluetooth. Because our wish is fast data- gathering, <a href="https://pl%0Aay.google.com/store/apps/details?id=kr.pe.meinside.DropSpace">DropSpace</a> is used to
+mirror the SD-card directory to our computer, using the
+<a href="http://www.dropbox.com/">Dropbox</a> system.</p>
+
+<h2 id="visualising-the-data">Visualising the data</h2>
+
+<p><img src="/attachments/visualizing_accelerometer_data.png" alt="Accelerometer data" title="Accelerometer data" style="width: 800px">
+When the data is gathered on the computer, it needs to be transformed and plotted. For
+this we use a combination of Ruby and Octave scripts. The first step of this
+process is to strip the csv files from comments and prepare them for an easy
+Octave <a href="http://www.gnu.org/software/octave/doc/interpreter/Simple-File-I_002fO.html#doc_002dload">load</a> call. This is done by a Ruby script, which scans a
+directory for Sensor Logger created files.</p>
+
+<p>The next step is to plot the data and save the graphs is png format. For this
+the directory with the transformed csv files is passed on to a Octave script.
+This script will create a graph for each measurement and one file with a few
+graphs accumulated.</p>
+
+<p>These steps can be executed by using the command line script:
+    $ ./transform_logs_to_directory.rb logs/set- stand-walk-stand-sit
+An installed Ruby and Octave environment is required.</p>
+
+<h2 id="results">Results</h2>
+
+<p>An example of a gathered plot can be seen
+<a href="https://github.com/rvlasveld/accelerometer_plotting/blob/master/logs/stand-sit-walk-stand-sit/20130404_111852/_accumulated_annotated.png">here</a>. Without
+any knowledge about the performed activities, a (slightly trained) human eye
+can recognize different activities, or at least transitions between them. The
+annotations are added manually to aid the interpretation of the data for the
+reader. The noisy measurements and the beginning and ending are the result of
+starting and stopping the logging while the phone is in the hand. The goal of
+this research project to automatically create the segments, i.e. the cut-
+points between activities.</p>
+
+<p>With this setup of quick data gathering we are able to get a feeling about the
+data and test them in a visual manner, without the need of an (superfluous)
+extensive laboratory setup. This way of implementation enables fast feedback
+from a theoretical idea and wish for data to practical measurements which are
+easily interpretable for humans.</p>
+
+<h2 id="source-code">Source code</h2>
+
+<p>All the used source code is available on a Github project <a href="https://github.com/rvlasveld/accelerometer_plotting">Accelerometer Plotting</a>. Please feel
+free to use, reuse and modify the code to your needs. Included is one example
+run of activities. The graphs in <a href="https://github.com/rvlasveld/accelerometer_plotting/blob/master/logs/stand-sit-walk-stand-sit/20130404_111852/">logs/stand-sit- walk-stand-sit</a> are the result of executing a
+single run. The activities performed are, in executed order, standing,
+sitting, walking with a 180 degree turn, standing and sitting. The file
+_accumulated_annotated.png has manually annotations to provide the reading
+some insight in the data.</p>
+
+
+				</div>
+
+				
+
+				
+				<hr>
+
+				<div class="social-button-footer">
+					<p>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/intent/tweet?url=https://dobots.nl/2013/04/12/visualizing-accelerometer-data&amp;text=Visualizing%20accelerometer%20data"><i class="icon-twitter"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/sharer.php?u=https://dobots.nl/2013/04/12/visualizing-accelerometer-data"><i class="icon-facebook"></i></a>
+					<a class="btn btn-social-icon btn-googleplus" href="https://plus.google.com/share?url=https://dobots.nl/2013/04/12/visualizing-accelerometer-data"><i class="icon-googleplus"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dobots.nl/2013/04/12/visualizing-accelerometer-data"><i class="icon-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-reddit" href="http://reddit.com/submit?url=https://dobots.nl/2013/04/12/visualizing-accelerometer-data&amp;title=Visualizing%20accelerometer%20data"><i class="icon-reddit"></i></a>
+					</p>
+				</div>
+
+
+				<ul class="pagination">
+					
+					<li class="prev"><a href="/2013/03/14/robo-router" title="Roborouter">← Previous</a></li>
+					
+					<li><a href="/blog">Archive</a></li>
+					
+					<li class="next"><a href="/2013/04/19/extreme-learning-machines" title="Extreme Learning Machines">Next →</a></li>
+					
+				</ul>
+				<hr>
+				
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dobots'; 
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<footer id="footer" class="mini-wrap gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6 more-padding">
+				<img src="/images/youtube.png" alt="youtube"> Watch our <a href="https://www.youtube.com/channel/UC7bsuzp2BfL5F5RX07oLIzw">movies</a> and follow us on <a href="http://facebook.com/dobots">Facebook!</a>
+</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<ul class="list-items pull-right gutter-top-btm">
+					<li><a href="index.html">
+						<img src="/images/footer-logo.png" class="img-responsive" alt="DoBots"></a></li>
+					<li class="robot-info-dilog">
+<a href="#">
+						<img src="/images/two-robot.png" width="103" height="85" alt="robot">
+					</a>
+					<div class="footer-robot-dilog">
+						<div class="inner-robot-dilog">
+							Do you have a question? <script type="text/javascript">/*<![CDATA[*/var a=new Array(".nl","bots","do","@","fo","in");document.write("<a href='mailto:");for(i=a.length-1;i>=0;i--){document.write(a[i])}document.write("?subject=DoBots Contact' class='btn btn-default'>Yes</a>");/*]]>*/</script>
+							<div class="inner-arrow-right">
+								<img alt="dilog" class="img-responsive" src="/images/inner-dilog.png" draggable="false"> </div>
+						</div>
+
+					</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+  <script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-17146802-10', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+<!-- in debug mode, Google Chrome worries about .map files, do not worry -->
+
+
+<script type="text/javascript" src="/assets/jquery.min-7f30f220312176c728c3bb41a567ccc2e1ce2e7a8dd7c9cefd59fe197ba047b2.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/jquery.flexslider-122776e067a7b77f685ce8fbbd3cb75136ce8ca23f243a50de28c1545ec6bb68.js"></script>
+
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+		$('.text-slider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+</div>
+</body>
+</html>
